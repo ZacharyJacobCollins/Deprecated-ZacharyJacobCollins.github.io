@@ -2,14 +2,15 @@
 <html>
 	<head>
 		<title>Zachary Jacob Collins</title>
-		<link rel="shortcut icon"	 href="images/favicon.ico"	 type="image/x-icon" />
+		<link rel="shortcut icon"	 href="public/images/favicon.ico"	 type="image/x-icon" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<link rel="stylesheet" href="public/css/main.css" />
+		<noscript><link rel="stylesheet" href="public/css/noscript.css" /></noscript>
+		<!--[if lte IE 8]><script src="public/js/html5shiv.js"></script><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="public/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="public/css/ie8.css" /><![endif]-->
 	</head>
 	<body class="is-loading">
 
@@ -19,7 +20,6 @@
 				<!-- Main -->
   				<section id="main" style="border-radius: .5in;">
 						<header>
-							<!--<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>-->
 							<h1>Zachary Jacob Collins</h1>
 						</header>
 
@@ -45,13 +45,14 @@
 
 			</div>
 
-		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+	</body>
+			
+			<!-- Scripts -->
+			<!--[if lte IE 8]><script src="public/js/respond.min.js"></script><![endif]-->
 			<script>
 				if ('addEventListener' in window) {
 					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 				}
 			</script>
-	</body>
 </html>
