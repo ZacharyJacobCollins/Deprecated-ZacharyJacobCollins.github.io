@@ -64,12 +64,10 @@
 			<input placeholder="search" type="text" v-model="search" id="search-input" v-on:blur="reset" />
 		</div>
 
-		<ul class="main-nav" v-if="! search">
-			<li class="nav-docs"><a href="/home">Home</a></li>
-			<li class="nav-laracasts"><a href="/projects">Projects</a></li>
-			<li class="nav-laravel-news"><a href="/bodybuilding">Body Building</a></li>
-			<li class="nav-forge"><a href="/snippets">Snippets</a></li>
-			<li class="nav-forge"><a href="/books">Books</a></li>
+		<ul id="topNav" class="main-nav" v-if="! search">
+			<template v-for="button in buttons">
+					<li><a href="{{ button.link }}">{{ button.text }}</a></li>
+			</template>
 
 			<!-- An extra dropdown I currently don't need
 			<li class="dropdown community-dropdown">
@@ -294,7 +292,7 @@
 
 		<section id="sidebar" class="sidebar">
 			<ul>
-				<li>College
+				<li>
 					<ul>
 						<template v-for="course in college">
 								<li><a href="{{ course.link }}">{{ course.text }}</a></li>
@@ -327,7 +325,7 @@
 					<ul>
 						<li><a href="/docs/5.3/routing">Routing</a></li>
 						<li><a href="/docs/5.3/middleware">Middleware</a></li>
-						<li><a href="/docs/5.3/csrf">CSRF Protection</a></li>
+ 						<li><a href="/docs/5.3/csrf">CSRF Protection</a></li>
 						<li><a href="/docs/5.3/controllers">Controllers</a></li>
 						<li><a href="/docs/5.3/requests">Requests</a></li>
 						<li><a href="/docs/5.3/responses">Responses</a></li>
@@ -421,35 +419,17 @@
 			</ul>
 		</section>
 
-
-
 		<article>
-			<h1>I go by Zac.  </h1>
-			<ul>
-				<li><a href="#installation">Index</a>
-					<ul>
-						<li><a href="#about">About me</a></li>
-						<li><a href="#resume">Resume</a></li>
-						<li><a href="#resume">Interests</a></li>
-					</ul>
-				</li>
-			</ul>
+			<h1> I'm Zac. </h1>
 			<p>
 				<a name="installation"></a>
 			</p>
-			<h2>College</h2>
 			<p>
 				<a name="courses"></a>
 			</p>
-			<div class="content-list">
-				<ul>
-					<li><a href="http://people.emich.edu/aross15/math360/math360-syllabus-201609.html">Statistics 360</a></li>
-				</ul>
-			</div>
 			<p>
 				<a name="installing-laravel"></a>
 			</p>
-			<h3>Installing Laravel</h3>
 			<p>Laravel utilizes <a href="http://getcomposer.org">Composer</a> to manage its dependencies. So, before using Laravel, make sure you have Composer installed on your machine.</p>
 			<h4>Via Laravel Installer</h4>
 			<p>First, download the Laravel installer using Composer:</p>
