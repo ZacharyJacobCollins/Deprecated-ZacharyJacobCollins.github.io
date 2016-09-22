@@ -9,5 +9,5 @@
 
 #Colors
   * Main blue: #3949ab
-  * Accent hover blue:
-  * Name Logo Blue: 
+  * Accent hover blue: #42a5f5
+  * Name Logo Blue:

@@ -5,12 +5,12 @@ var sidebar = new Vue({
         {
           title: 'College',
           content: [
-            { text: 'Statistics 360', link: '/stats'},
-            { text: 'Discrete Math', link: '/discrete'},
+            { text: 'Statistics 360', link: '/college/stats'},
+            { text: 'Discrete Math', link: '/college/discrete'},
           ]
         },
         {
-          title: 'Association for Computing Machinery',
+          title: 'Acm ',
           content: [
             { text: 'About', link: '/acm/about'},
             { text: 'Meeting Minutes', link: '/acm/meetings/minutes'},
