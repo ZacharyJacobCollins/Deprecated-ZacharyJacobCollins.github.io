@@ -6,3 +6,8 @@
 #Code Format
   * class=prettyprint is for code formatting
   * <pre class="prettyprint"></pre>
+
+#Colors
+  * Main blue: #3949ab
+  * Accent hover blue:
+  * Name Logo Blue: 
