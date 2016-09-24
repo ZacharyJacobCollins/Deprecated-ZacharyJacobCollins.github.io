@@ -333,11 +333,11 @@
 		</article>
 	</div>
 
-	<footer class="main">
+	<footer id="footer" class="main">
 		<ul>
-			<li class="nav-docs"><a href="/docs">Github</a></li>
-			<li class="nav-laracasts"><a href="https://laracasts.com">ZacharyJacobCollins@Gmail.com</a></li>
-			<li class="nav-laravel-news"><a href="https://laravel-news.com">Twitter</a></li>
+			<template v-for="section in sections">
+						<li><a href="{{ section.link }}">{{ section.text }}</a></li>
+			</template>
 		</ul>
 		<p> MIT <a href="https://github.com/ZacharyJacobCollins">@Zachary Collins.</a></p>
 		<p class="less-significant">
@@ -347,16 +347,6 @@
 
 	<!-- Libraries -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
-
-	<script id="search_footer_template" type="text/template">
-		<div class="footer">
-			<a target="_blank" href="http://www.algolia.com/?utm_source=lavarel&utm_medium=link&utm_campaign=lavarel_documentation_search">
-				<img width="50" src="/assets/img/algolia-logo.png">
-				<div class="powered">powered by</div>
-				<div style="clear: both"></div>
-			</a>
-		</div>
-	</script>
 	<script src="public/js/viewport-units-buggyfill.js"></script>
 	<script>
 		window.viewportUnitsBuggyfill.init();
@@ -365,6 +355,8 @@
 	<!-- Vue Components -->
 	<script src="public/js/vue/sidebar.js"></script>
 	<script src="public/js/vue/topnav.js"></script>
+	<script src="public/js/vue/footer.js"></script>
+
 
 
 </body>
