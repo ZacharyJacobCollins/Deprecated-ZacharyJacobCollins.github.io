@@ -21,7 +21,7 @@ var sidebar = new Vue({
           content: [
             { text: 'Remember', link: '/projects/remember'},
             { text: 'Go chat', link: '/projects/gochat'},
-            { text: 'Go chat', link: '/projects/gochat'},
+            { text: 'Valet', link: '/projects/valet'},
           ]
         },
         {
@@ -50,6 +50,20 @@ var sidebar = new Vue({
             { text: 'Workouts', link: '/bodybuilding/workouts'},
             { text: 'Log', link: '/bodybuilding/workoutlog'},
             { text: 'Eating', link: '/bodybuilding/eating'},
+          ]
+        },
+        {
+          title: 'Inspiration',
+          content: [
+            { text: 'Videos', link: '/inspiration/videos'},
+            { text: 'Quotes', link: '/inspiration/quotes'},
+          ]
+        },
+        {
+          title: 'Meetups',
+          content: [
+            { text: 'Videos', link: '/inspiration/videos'},
+            { text: 'Quotes', link: '/inspiration/quotes'},
           ]
         },
       ],

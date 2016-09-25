@@ -10,4 +10,5 @@
 #Colors
   * Main blue: #3949ab
   * Accent hover blue: #42a5f5
-  * Name Logo Blue:
+
+Quotes: Obsessed is a word used often by the lazy, in order to describe the dedicated
