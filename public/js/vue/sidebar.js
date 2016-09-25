@@ -24,12 +24,14 @@ var sidebar = new Vue({
         {
           title: 'Snippets',
           content: [
-            { text: 'Go', link: '/snippets/go'},
-            { text: 'Laravel', link: '/snippets/laravel'},
-            { text: 'SQL', link: '/snippets/sql'},
-            { text: 'Javascript', link: '/snippets/javascript'},
-            { text: 'Bash', link: '/snippets/bash'},
-            { text: 'Vim', link: '/snippets/vim'},
+            { text: 'Go', link: '/snippets/go.html'},
+            { text: 'Laravel', link: '/snippets/laravel.html'},
+            { text: 'SQL', link: '/snippets/sql.html'},
+            { text: 'Javascript', link: '/snippets/javascript.html'},
+            { text: 'Bash', link: '/snippets/bash.html'},
+            { text: 'Vim', link: '/snippets/vim.html'},
+            { text: '.bashrc', link: 'snippets/bashrc.html'},
+            { text: '.vimrc', link: '/snippets/vimrc.html'},
           ]
         },
         {
