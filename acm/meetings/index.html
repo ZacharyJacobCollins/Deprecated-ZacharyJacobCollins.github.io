@@ -70,27 +70,7 @@
 					<li><a href="{{ button.link }}"><strong>{{ button.text }}</strong></a></li>
 			</template>
 
-			<!-- An extra dropdown I currently don't need
-			<li class="dropdown community-dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Ecosystem <span class="caret"></span></a>
-				<ul class="dropdown-menu" role="menu">
-					<li><a href="https://github.com/laravel/laravel">GitHub</a></li>
-					<li class="divider"></li>
-					<li><a href="https://envoyer.io">Envoyer</a></li>
-					<li><a href="https://lumen.laravel.com">Lumen</a></li>
-					<li><a href="https://spark.laravel.com">Spark</a></li>
-					<li class="divider"></li>
-					<li><a href="https://laracasts.com/discuss">Forums</a></li>
-					<li><a href="https://larajobs.com/?partner=5#/">Jobs</a></li>
-					<li><a href="http://www.laravelpodcast.com/">Podcast</a></li>
-					<li><a href="http://larachat.co">Slack</a></li>
-					<li><a href="https://twitter.com/laravelphp">Twitter</a></li>
-				</ul>
-			</li>
-		</ul>
-	-->
-
-		<div class="responsive-sidebar-nav">
+			<div class="responsive-sidebar-nav">
 			<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
 		</div>
 		</ul>
@@ -129,74 +109,6 @@
 			</li>
 		</ul>
 
-		<div class="slide-docs-nav">
-			<h2>Documentation</h2>
-			<ul>
-				<li>Prologue
-					<ul>
-						<li><a href="/docs/5.3/releases">Release Notes</a></li>
-						<li><a href="/docs/5.3/upgrade">Upgrade Guide</a></li>
-						<li><a href="/docs/5.3/contributions">Contribution Guide</a></li>
-						<li><a href="/api/5.3">API Documentation</a></li>
-					</ul>
-				</li>
-				<li>Getting Started
-					<ul>
-						<li><a href="/docs/5.3/installation">Resources</a></li>
-						<li><a href="/docs/5.3/configuration">Configuration</a></li>
-						<li><a href="/docs/5.3/structure">Directory Structure</a></li>
-						<li><a href="/docs/5.3/errors">Errors &amp; Logging</a></li>
-					</ul>
-				</li>
-				<li>Dev Environments
-					<ul>
-						<li><a href="/docs/5.3/homestead">Homestead</a></li>
-						<li><a href="/docs/5.3/valet">Valet</a></li>
-					</ul>
-				</li>
-				<li>Core Concepts
-					<ul>
-						<li><a href="/docs/5.3/container">Service Container</a></li>
-						<li><a href="/docs/5.3/providers">Service Providers</a></li>
-						<li><a href="/docs/5.3/facades">Facades</a></li>
-						<li><a href="/docs/5.3/contracts">Contracts</a></li>
-					</ul>
-				</li>
-				<li>The HTTP Layer
-					<ul>
-						<li><a href="/docs/5.3/routing">Routing</a></li>
-						<li><a href="/docs/5.3/middleware">Middleware</a></li>
-						<li><a href="/docs/5.3/csrf">CSRF Protection</a></li>
-						<li><a href="/docs/5.3/controllers">Controllers</a></li>
-						<li><a href="/docs/5.3/requests">Requests</a></li>
-						<li><a href="/docs/5.3/responses">Responses</a></li>
-						<li><a href="/docs/5.3/session">Session</a></li>
-						<li><a href="/docs/5.3/validation">Validation</a></li>
-					</ul>
-				</li>
-				<li>Views &amp; Templates
-					<ul>
-						<li><a href="/docs/5.3/views">Views</a></li>
-						<li><a href="/docs/5.3/blade">Blade Templates</a></li>
-						<li><a href="/docs/5.3/localization">Localization</a></li>
-					</ul>
-				</li>
-				<li>JavaScript &amp; CSS
-					<ul>
-						<li><a href="/docs/5.3/frontend">Getting Started</a></li>
-						<li><a href="/docs/5.3/elixir">Compiling Assets</a></li>
-					</ul>
-				</li>
-				<li>Security
-					<ul>
-						<li><a href="/docs/5.3/authentication">Authentication</a></li>
-						<li><a href="/docs/5.3/authorization">Authorization</a></li>
-						<li><a href="/docs/5.3/passwords">Password Reset</a></li>
-						<li><a href="/docs/5.3/passport">API Authentication</a></li>
-						<li><a href="/docs/5.3/encryption">Encryption</a></li>
-						<li><a href="/docs/5.3/hashing">Hashing</a></li>
-					</ul>
-				</li>
 				<li>General Topics
 					<ul>
 						<li><a href="/docs/5.3/broadcasting">Broadcasting</a></li>
@@ -280,18 +192,18 @@
 
 		<article>
 			<h1> 127.0.0.1 </h1>
-			<h4>Projects</h4>
-			<p>I've been working on a number of pretty cool projects (IMHO) beyond school stuff.  Here are a few.</p>
-			<div class="content-list projects">
-				<ul>
-					{{ projectData.title }}
-					<template v-for="project in projectData">
-							<li>
-									<a href="{{ project.link }}">{{ project.text }}</a>
-							</li>
-					</template>
-				</ul>
-			</div>
+			<p>
+				<a name="installation"></a>
+			</p>
+			<p>
+				<a name="courses"></a>
+			</p>
+			<p>
+				<a name="installing-laravel"></a>
+			</p>
+			<p>Laravel utilizes <a href="http://getcomposer.org">Composer</a> to manage its dependencies. So, before using Laravel, make sure you have Composer installed on your machine.</p>
+			<h4>Via Laravel Installer</h4>
+			<p>First, download the Laravel installer using Composer:</p>
 			<pre><code>composer global require "laravel/installer"</code></pre>
 			<p>Make sure to place the <code>~/.composer/vendor/bin</code> directory (or the equivalent directory for your OS) in your $PATH so the <code>laravel</code> executable can be located by your system.</p>
 			<p>Once installed, the <code>laravel new</code> command will create a fresh Laravel installation in the directory you specify. For instance, <code>laravel new blog</code> will create a directory named <code>blog</code> containing a fresh Laravel installation
@@ -333,7 +245,7 @@
 		</article>
 	</div>
 
-	<footer id="footer" clrss="main">
+	<footer id="footer" class="main">
 		<ul>
 			<template v-for="section in sections">
 						<li><a href="{{ section.link }}">{{ section.text }}</a></li>
@@ -347,14 +259,16 @@
 
 	<!-- Libraries -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+	<script src="public/js/viewport-units-buggyfill.js"></script>
+	<script>
+		window.viewportUnitsBuggyfill.init();
+	</script>
 
-	<!-- Small Vue Components -->
-	<script src="public/js/vue/projects.js"></script>
-
-	<!-- Larger Vue Components -->
+	<!-- Vue Components -->
 	<script src="public/js/vue/sidebar.js"></script>
 	<script src="public/js/vue/topnav.js"></script>
 	<script src="public/js/vue/footer.js"></script>
+
 
 </body>
 </html>
