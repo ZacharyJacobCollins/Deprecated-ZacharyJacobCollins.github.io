@@ -6,6 +6,7 @@ var projects = new Vue({
             { text: 'Remember', link: '/projects/remember'},
             { text: 'Go chat', link: '/projects/gochat'},
             { text: 'Valet', link: '/projects/valet'},
+            { text: 'Cracking the Coding Initiative', link: '/projects/cracking'},
         ],
     }
 });
