@@ -1,6 +1,6 @@
 #Overview
   * Uses vue.js to parse json objects and generate reference
-  * Each json object contains a title, code snippets array, resources array, id/link
+  * Each json object contains a title, code technologies array, resources array, id/link
 
 
 #Code Format

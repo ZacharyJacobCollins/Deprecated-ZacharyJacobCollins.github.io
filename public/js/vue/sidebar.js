@@ -22,16 +22,16 @@ var sidebar = new Vue({
           content: projects._data.projectData
         },
         {
-          title: 'Snippets',
+          title: 'Technologies',
           content: [
-            { text: 'Go', link: '/snippets/go.html'},
-            { text: 'Laravel', link: '/snippets/laravel.html'},
-            { text: 'SQL', link: '/snippets/sql.html'},
-            { text: 'Javascript', link: '/snippets/javascript.html'},
-            { text: 'Bash', link: '/snippets/bash.html'},
-            { text: 'Vim', link: '/snippets/vim.html'},
-            { text: '.bashrc', link: 'snippets/bashrc.html'},
-            { text: '.vimrc', link: '/snippets/vimrc.html'},
+            { text: 'Go', link: 'technologies/go.html'},
+            { text: 'Laravel', link: 'technologies/laravel.html'},
+            { text: 'SQL', link: 'technologies/sql.html'},
+            { text: 'Javascript', link: 'technologies/javascript.html'},
+            { text: 'Bash', link: 'technologies/bash.html'},
+            { text: 'Vim', link: 'technologies/vim.html'},
+            { text: '.bashrc', link: 'technologies/bashrc.html'},
+            { text: '.vimrc', link: 'technologies/vimrc.html'},
           ]
         },
         {
@@ -46,23 +46,21 @@ var sidebar = new Vue({
         {
           title: 'Body Building',
           content: [
-            { text: 'Workouts', link: '/bodybuilding/workouts'},
-            { text: 'Log', link: '/bodybuilding/workoutlog'},
-            { text: 'Eating', link: '/bodybuilding/eating'},
+            { text: 'Workouts', link: 'bodybuilding/workouts.html'},
+            { text: 'Log', link: 'bodybuilding/workoutlog.html'},
+            { text: 'Eating', link: 'bodybuilding/eating.html'},
           ]
         },
         {
           title: 'Inspiration',
           content: [
-            { text: 'Videos', link: '/inspiration/videos'},
-            { text: 'Quotes', link: '/inspiration/quotes'},
+            { text: 'Videos', link: 'inspiration/videos.html'},
+            { text: 'Quotes', link: 'inspiration/quotes.html'},
           ]
         },
         {
           title: 'Meetups',
           content: [
-            { text: 'Videos', link: '/inspiration/videos'},
-            { text: 'Quotes', link: '/inspiration/quotes'},
           ]
         },
       ],
