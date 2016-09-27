@@ -37,10 +37,7 @@ var sidebar = new Vue({
         {
           title: 'Books',
           content: [
-            { text: 'Full index', link: '/books/index'},
-            { text: 'Interview Prep', link: '/books/interviews'},
-            { text: 'Growth', link: '/books/growth'},
-            { text: 'Pleasure', link: '/books/pleasure'},
+            { text: 'index', link: 'books.html'},
           ],
         },
         {
