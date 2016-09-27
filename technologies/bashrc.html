@@ -8,212 +8,43 @@
 	<meta name="description" content="Laravel - The PHP framework for web artisans.">
 	<meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="canonical" href="https://laravel.com/docs/5.3/installation" />
+	<link href='https://fonts.googleapis.com/css?family=Miriam+Libre:400,700|Source+Sans+Pro:200,400,700,600,400italic,700italic' rel='stylesheet' type='text/css'>
 	<!--[if lte IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<link href='https://fonts.googleapis.com/css?family=Miriam+Libre:400,700|Source+Sans+Pro:200,400,700,600,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../public/css/laravel-9d78469b5d.css">
 	<link rel="apple-touch-icon" href="/favicon.png">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
 </head>
 
-<body class="docs language-php">
-
+<body class="docs">
 	<span class="overlay"></span>
 
 	<!-- Top nav bar -->
 	<nav class="main">
+  		<!-- Name -->
+  		<a href="/" class="brand nav-block">
+  			<span>Zachary Jacob Collins</span>
+  		</a>
 
-		<!-- Name -->
-		<a href="/" class="brand nav-block">
-			<span>Zachary Jacob Collins</span>
-		</a>
+  		<!-- Search input -->
+  		<div class="search nav-block">
+  			<input placeholder="search" type="text" v-model="search" id="search-input" v-on:blur="reset" />
+  		</div>
 
-		<!-- Search input -->
-		<div class="search nav-block">
-			<input placeholder="search" type="text" v-model="search" id="search-input" v-on:blur="reset" />
-		</div>
-
-		<!-- Top nav bar -->
-		<ul id="topNav" class="main-nav" v-if="! search">
-			<template v-for="button in buttons">
-					<li><a href="{{ button.link }}"><strong>{{ button.text }}</strong></a></li>
-			</template>
-
-		<div class="responsive-sidebar-nav">
-			<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
-		</div>
-		</ul>
+  		<!-- Top nav bar -->
+  		<ul id="topNav" class="main-nav" v-if="! search">
+    			<template v-for="button in buttons">
+    					<li><a href="{{ button.link }}"><strong>{{ button.text }}</strong></a></li>
+    			</template>
+      		<div class="responsive-sidebar-nav">
+      			<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+      		</div>
+  		</ul>
+      <!-- Top nav bar -->
 	</nav>
 
-	<nav id="slide-menu" class="slide-menu" role="navigation">
-
-		<div class="brand">
-			<a href="/">
-				<img src="/assets/img/laravel-logo-white.png" height="50">
-			</a>
-		</div>
-
-		<ul class="slide-main-nav">
-			<li><a href="/">Home</a></li>
-			<li class="nav-docs"><a href="/docs">Documentation</a></li>
-			<li class="nav-laracasts"><a href="https://laracasts.com">Laracasts</a></li>
-			<li class="nav-laravel-news"><a href="https://laravel-news.com">News</a></li>
-			<li class="nav-forge"><a href="https://forge.laravel.com">Forge</a></li>
-
-			<li class="dropdown community-dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Ecosystem <span class="caret"></span></a>
-				<ul class="dropdown-menu" role="menu">
-					<li><a href="https://github.com/laravel/laravel">GitHub</a></li>
-					<li class="divider"></li>
-					<li><a href="https://envoyer.io">Envoyer</a></li>
-					<li><a href="https://lumen.laravel.com">Lumen</a></li>
-					<li><a href="https://spark.laravel.com">Spark</a></li>
-					<li class="divider"></li>
-					<li><a href="https://laracasts.com/discuss">Forums</a></li>
-					<li><a href="https://larajobs.com/?partner=5#/">Jobs</a></li>
-					<li><a href="http://www.laravelpodcast.com/">Podcast</a></li>
-					<li><a href="http://larachat.co">Slack</a></li>
-					<li><a href="https://twitter.com/laravelphp">Twitter</a></li>
-				</ul>
-			</li>
-		</ul>
-
-		<div class="slide-docs-nav">
-			<h2>Documentation</h2>
-			<ul>
-				<li>Prologue
-					<ul>
-						<li><a href="/docs/5.3/releases">Release Notes</a></li>
-						<li><a href="/docs/5.3/upgrade">Upgrade Guide</a></li>
-						<li><a href="/docs/5.3/contributions">Contribution Guide</a></li>
-						<li><a href="/api/5.3">API Documentation</a></li>
-					</ul>
-				</li>
-				<li>Getting Started
-					<ul>
-						<li><a href="/docs/5.3/installation">Resources</a></li>
-						<li><a href="/docs/5.3/configuration">Configuration</a></li>
-						<li><a href="/docs/5.3/structure">Directory Structure</a></li>
-						<li><a href="/docs/5.3/errors">Errors &amp; Logging</a></li>
-					</ul>
-				</li>
-				<li>Dev Environments
-					<ul>
-						<li><a href="/docs/5.3/homestead">Homestead</a></li>
-						<li><a href="/docs/5.3/valet">Valet</a></li>
-					</ul>
-				</li>
-				<li>Core Concepts
-					<ul>
-						<li><a href="/docs/5.3/container">Service Container</a></li>
-						<li><a href="/docs/5.3/providers">Service Providers</a></li>
-						<li><a href="/docs/5.3/facades">Facades</a></li>
-						<li><a href="/docs/5.3/contracts">Contracts</a></li>
-					</ul>
-				</li>
-				<li>The HTTP Layer
-					<ul>
-						<li><a href="/docs/5.3/routing">Routing</a></li>
-						<li><a href="/docs/5.3/middleware">Middleware</a></li>
-						<li><a href="/docs/5.3/csrf">CSRF Protection</a></li>
-						<li><a href="/docs/5.3/controllers">Controllers</a></li>
-						<li><a href="/docs/5.3/requests">Requests</a></li>
-						<li><a href="/docs/5.3/responses">Responses</a></li>
-						<li><a href="/docs/5.3/session">Session</a></li>
-						<li><a href="/docs/5.3/validation">Validation</a></li>
-					</ul>
-				</li>
-				<li>Views &amp; Templates
-					<ul>
-						<li><a href="/docs/5.3/views">Views</a></li>
-						<li><a href="/docs/5.3/blade">Blade Templates</a></li>
-						<li><a href="/docs/5.3/localization">Localization</a></li>
-					</ul>
-				</li>
-				<li>JavaScript &amp; CSS
-					<ul>
-						<li><a href="/docs/5.3/frontend">Getting Started</a></li>
-						<li><a href="/docs/5.3/elixir">Compiling Assets</a></li>
-					</ul>
-				</li>
-				<li>Security
-					<ul>
-						<li><a href="/docs/5.3/authentication">Authentication</a></li>
-						<li><a href="/docs/5.3/authorization">Authorization</a></li>
-						<li><a href="/docs/5.3/passwords">Password Reset</a></li>
-						<li><a href="/docs/5.3/passport">API Authentication</a></li>
-						<li><a href="/docs/5.3/encryption">Encryption</a></li>
-						<li><a href="/docs/5.3/hashing">Hashing</a></li>
-					</ul>
-				</li>
-				<li>General Topics
-					<ul>
-						<li><a href="/docs/5.3/broadcasting">Broadcasting</a></li>
-						<li><a href="/docs/5.3/cache">Cache</a></li>
-						<li><a href="/docs/5.3/events">Events</a></li>
-						<li><a href="/docs/5.3/filesystem">File Storage</a></li>
-						<li><a href="/docs/5.3/mail">Mail</a></li>
-						<li><a href="/docs/5.3/notifications">Notifications</a></li>
-						<li><a href="/docs/5.3/queues">Queues</a></li>
-					</ul>
-				</li>
-				<li>Database
-					<ul>
-						<li><a href="/docs/5.3/database">Getting Started</a></li>
-						<li><a href="/docs/5.3/queries">Query Builder</a></li>
-						<li><a href="/docs/5.3/pagination">Pagination</a></li>
-						<li><a href="/docs/5.3/migrations">Migrations</a></li>
-						<li><a href="/docs/5.3/seeding">Seeding</a></li>
-						<li><a href="/docs/5.3/redis">Redis</a></li>
-					</ul>
-				</li>
-				<li>Eloquent ORM
-					<ul>
-						<li><a href="/docs/5.3/eloquent">Getting Started</a></li>
-						<li><a href="/docs/5.3/eloquent-relationships">Relationships</a></li>
-						<li><a href="/docs/5.3/eloquent-collections">Collections</a></li>
-						<li><a href="/docs/5.3/eloquent-mutators">Mutators</a></li>
-						<li><a href="/docs/5.3/eloquent-serialization">Serialization</a></li>
-					</ul>
-				</li>
-				<li>Artisan Console
-					<ul>
-						<li><a href="/docs/5.3/artisan">Commands</a></li>
-						<li><a href="/docs/5.3/scheduling">Task Scheduling</a></li>
-					</ul>
-				</li>
-				<li>Testing
-					<ul>
-						<li><a href="/docs/5.3/testing">Getting Started</a></li>
-						<li><a href="/docs/5.3/application-testing">Application Testing</a></li>
-						<li><a href="/docs/5.3/database-testing">Database</a></li>
-						<li><a href="/docs/5.3/mocking">Mocking</a></li>
-					</ul>
-				</li>
-				<li>Official Packages
-					<ul>
-						<li><a href="/docs/5.3/billing">Cashier</a></li>
-						<li><a href="/docs/5.3/envoy">Envoy</a></li>
-						<li><a href="/docs/5.3/passport">Passport</a></li>
-						<li><a href="/docs/5.3/scout">Scout</a></li>
-						<li><a href="https://github.com/laravel/socialite">Socialite</a></li>
-					</ul>
-				</li>
-				<li>Appendix
-					<ul>
-						<li><a href="/docs/5.3/collections">Collections</a></li>
-						<li><a href="/docs/5.3/helpers">Helpers</a></li>
-						<li><a href="/docs/5.3/packages">Packages</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-
-	</nav>
 	<div class="docs-wrapper container">
-
 		<!-- Begin Vue templating of Sidebar -->
 		<section id="sidebar" class="sidebar">
 			<ul>
@@ -229,36 +60,46 @@
 			</ul>
 		</section>
 
-		<article>
-			<h1> ~/.bashrc </h1>
 
-      <!-- Update syntax -->
-      <hr>
-        <code> vim ~/.bashrc && source ~/.bashrc </code>
-      <hr>
+    <!--Page Content-->
+    <content>
+				<article>
+				  <h1> ~/.bashrc </h1>
 
-      <!-- .bashrc file -->
-      <pre class="language-bash">
-        alias c='clear'
-        alias add='git add -A && git commit -m "Updates to the projects including..."'
-        alias pushm='git pull origin master && git push origin master'
-        alias pushd='git pull origin dev && git push origin dev'
-      </pre>
+				  <!-- Update syntax -->
+				  <code> vim ~/.bashrc && source ~/.bashrc </code>
 
-		</article>
+				  <!-- .bashrc file -->
+				  <pre class="language-bash">
+
+alias c='clear'
+alias add='git add -A && git commit -m "Updates to the projects including..."'
+alias pushm='git pull origin master && git push origin master'
+alias pushd='git pull origin dev && git push origin dev'
+
+				  </pre>
+				</article>
+    </content>
+    <!--Page Content-->
+
+
 	</div>
 
+
+
 	<footer id="footer" clrss="main">
-		<ul>
-			<template v-for="section in sections">
-						<li><a href="{{ section.link }}">{{ section.text }}</a></li>
-			</template>
-		</ul>
-		<p> MIT <a href="https://github.com/ZacharyJacobCollins">@Zachary Collins.</a></p>
-		<p class="less-significant">
-			<!-- Logo here.  SVG Works well .  -->
-		</p>
+  		<ul>
+  			<template v-for="section in sections">
+  						<li><a href="{{ section.link }}">{{ section.text }}</a></li>
+  			</template>
+  		</ul>
+  		<p> MIT <a href="https://github.com/ZacharyJacobCollins">@Zachary Collins.</a></p>
+  		<p class="less-significant">
+  			<!-- Logo here.  SVG Works well .  -->
+  		</p>
 	</footer>
+
+
 
 	<!-- Libraries -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
