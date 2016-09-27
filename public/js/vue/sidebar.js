@@ -30,6 +30,7 @@ var sidebar = new Vue({
             { text: 'Javascript', link: 'technologies/javascript.html'},
             { text: 'Bash', link: 'technologies/bash.html'},
             { text: 'Vim', link: 'technologies/vim.html'},
+            { text: 'Vue.js', link: 'technologies/vue.html'},
             { text: '.bashrc', link: 'technologies/bashrc.html'},
             { text: '.vimrc', link: 'technologies/vimrc.html'},
           ]
