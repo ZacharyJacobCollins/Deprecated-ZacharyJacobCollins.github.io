@@ -66,6 +66,12 @@ var sidebar = new Vue({
             { text: 'Quotes', link: '/inspiration/quotes'},
           ]
         },
+        {
+          title: 'Career',
+          content: [
+            { text: 'Interviews', link: '/career/interviews' },
+          ]
+        },
       ],
     }
 });
