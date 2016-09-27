@@ -5,7 +5,7 @@ var topNav = new Vue({
           { text: '127.0.0.1', link: '/'},
           { text: 'Projects', link: '/projects/index'},
           { text: 'Body Building', link: '/bodybuilding/index'},
-          { text: 'Snippets', link: '/snippets/index'},
+          { text: 'Technologies', link: '/technologies/index'},
           { text: 'Books', link: '/books/index'},
         ],
       },

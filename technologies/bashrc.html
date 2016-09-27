@@ -13,7 +13,7 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<link href='https://fonts.googleapis.com/css?family=Miriam+Libre:400,700|Source+Sans+Pro:200,400,700,600,400italic,700italic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="public/css/laravel-9d78469b5d.css">
+	<link rel="stylesheet" href="../public/css/laravel-9d78469b5d.css">
 	<link rel="apple-touch-icon" href="/favicon.png">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
 </head>
@@ -230,48 +230,21 @@
 		</section>
 
 		<article>
-			<h1> 127.0.0.1 </h1>
-			<h4>Projects</h4>
-			<p>I've worked on/been working on a number of pretty cool projects (IMHO) beyond school and work stuff.  Here are a few.</p>
-			<div class="content-list projects">
-				<ul>
-					{{ projectData.title }}
-					<template v-for="project in projectData">
-							<li>
-									<a href="{{ project.link }}">{{ project.text }}</a>
-							</li>
-					</template>
-				</ul>
-			</div>
-			<h4>Local Development Server</h4>
-			<p>If you have PHP installed locally and you would like to use PHP's built-in development server to serve your application, you may use the <code>serve</code> Artisan command. This command will start a development server at <code>http://localhost:8000</code>:</p>
-			<pre><code>php artisan serve</code></pre>
-			<p>Of course, more robust local development options are available via <a href="/docs/5.3/homestead">Homestead</a> and <a href="/docs/5.3/valet">Valet</a>.</p>
-			<p>
-				<a name="configuration"></a>
-			</p>
-			<h3>Configuration</h3>
-			<h4>Public Directory</h4>
-			<p>After installing Laravel, you should configure your web server's document / web root to be the <code>public</code> directory. The <code>index.php</code> in this directory serves as the front controller for all HTTP requests entering your application.</p>
-			<h4>Configuration Files</h4>
-			<p>All of the configuration files for the Laravel framework are stored in the <code>config</code> directory. Each option is documented, so feel free to look through the files and get familiar with the options available to you.</p>
-			<h4>Directory Permissions</h4>
-			<p>After installing Laravel, you may need to configure some permissions. Directories within the <code>storage</code> and the <code>bootstrap/cache</code> directories should be writable by your web server or Laravel will not run. If you are using the
-				<a href="/docs/5.3/homestead">Homestead</a> virtual machine, these permissions should already be set.</p>
-			<h4>Application Key</h4>
-			<p>The next thing you should do after installing Laravel is set your application key to a random string. If you installed Laravel via Composer or the Laravel installer, this key has already been set for you by the <code>php artisan key:generate</code>				command.</p>
-			<p>Typically, this string should be 32 characters long. The key can be set in the <code>.env</code> environment file. If you have not renamed the <code>.env.example</code> file to <code>.env</code>, you should do that now. <strong>If the application key is not set, your user sessions and other encrypted data will not be secure!</strong></p>
-			<h4>Additional Configuration</h4>
-			<p>Laravel needs almost no other configuration out of the box. You are free to get started developing! However, you may wish to review the <code>config/app.php</code> file and its documentation. It contains several options such as <code>timezone</code>				and <code>locale</code> that you may wish to change according to your application.</p>
-			<p>You may also want to configure a few additional components of Laravel, such as:</p>
-			<div class="content-list">
-				<ul>
-					<li><a href="/docs/5.3/cache#configuration">Cache</a></li>
-					<li><a href="/docs/5.3/database#configuration">Database</a></li>
-					<li><a href="/docs/5.3/session#configuration">Session</a></li>
-				</ul>
-			</div>
-			<p>Once Laravel is installed, you should also <a href="/docs/5.3/configuration#environment-configuration">configure your local environment</a>.</p>
+			<h1> ~/.bashrc </h1>
+
+      <!-- Update syntax -->
+      <hr>
+        <code> vim ~/.bashrc && source ~/.bashrc </code>
+      <hr>
+
+      <!-- .bashrc file -->
+      <pre class="language-bash">
+        alias c='clear'
+        alias add='git add -A && git commit -m "Updates to the projects including..."'
+        alias pushm='git pull origin master && git push origin master'
+        alias pushd='git pull origin dev && git push origin dev'
+      </pre>
+
 		</article>
 	</div>
 
@@ -291,12 +264,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
 
 	<!-- Small Vue Components -->
-	<script src="public/js/vue/projects.js"></script>
+	<script src="../public/js/vue/projects.js"></script>
 
 	<!-- Larger Vue Components -->
-	<script src="public/js/vue/sidebar.js"></script>
-	<script src="public/js/vue/topnav.js"></script>
-	<script src="public/js/vue/footer.js"></script>
+	<script src="../public/js/vue/sidebar.js"></script>
+	<script src="../public/js/vue/topnav.js"></script>
+	<script src="../public/js/vue/footer.js"></script>
 
 </body>
 </html>

@@ -18,21 +18,20 @@ var sidebar = new Vue({
         },
         {
           title: 'Projects',
-          content: [
-            { text: 'Remember', link: '/projects/remember'},
-            { text: 'Go chat', link: '/projects/gochat'},
-            { text: 'Valet', link: '/projects/valet'},
-          ]
+          //The array of projects coming from the projects vue component
+          content: projects._data.projectData
         },
         {
-          title: 'Snippets',
+          title: 'Technologies',
           content: [
-            { text: 'Go', link: '/snippets/go'},
-            { text: 'Laravel', link: '/snippets/laravel'},
-            { text: 'SQL', link: '/snippets/sql'},
-            { text: 'Javascript', link: '/snippets/javascript'},
-            { text: 'Bash', link: '/snippets/bash'},
-            { text: 'Vim', link: '/snippets/vim'},
+            { text: 'Go', link: 'technologies/go.html'},
+            { text: 'Laravel', link: 'technologies/laravel.html'},
+            { text: 'SQL', link: 'technologies/sql.html'},
+            { text: 'Javascript', link: 'technologies/javascript.html'},
+            { text: 'Bash', link: 'technologies/bash.html'},
+            { text: 'Vim', link: 'technologies/vim.html'},
+            { text: '.bashrc', link: 'technologies/bashrc.html'},
+            { text: '.vimrc', link: 'technologies/vimrc.html'},
           ]
         },
         {
@@ -47,23 +46,21 @@ var sidebar = new Vue({
         {
           title: 'Body Building',
           content: [
-            { text: 'Workouts', link: '/bodybuilding/workouts'},
-            { text: 'Log', link: '/bodybuilding/workoutlog'},
-            { text: 'Eating', link: '/bodybuilding/eating'},
+            { text: 'Workouts', link: 'bodybuilding/workouts.html'},
+            { text: 'Log', link: 'bodybuilding/workoutlog.html'},
+            { text: 'Eating', link: 'bodybuilding/eating.html'},
           ]
         },
         {
           title: 'Inspiration',
           content: [
-            { text: 'Videos', link: '/inspiration/videos'},
-            { text: 'Quotes', link: '/inspiration/quotes'},
+            { text: 'Videos', link: 'inspiration/videos.html'},
+            { text: 'Quotes', link: 'inspiration/quotes.html'},
           ]
         },
         {
           title: 'Meetups',
           content: [
-            { text: 'Videos', link: '/inspiration/videos'},
-            { text: 'Quotes', link: '/inspiration/quotes'},
           ]
         },
         {
