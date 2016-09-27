@@ -24,41 +24,42 @@ var sidebar = new Vue({
         {
           title: 'Technologies',
           content: [
-            { text: 'Go', link: 'technologies/go.html'},
-            { text: 'Laravel', link: 'technologies/laravel.html'},
-            { text: 'SQL', link: 'technologies/sql.html'},
-            { text: 'Javascript', link: 'technologies/javascript.html'},
-            { text: 'Bash', link: 'technologies/bash.html'},
-            { text: 'Vim', link: 'technologies/vim.html'},
-            { text: 'Vue.js', link: 'technologies/vue.html'},
-            { text: '.bashrc', link: 'technologies/bashrc.html'},
-            { text: '.vimrc', link: 'technologies/vimrc.html'},
+            { text: 'Go', link: '/technologies/go.html'},
+            { text: 'Laravel', link: '/technologies/laravel.html'},
+            { text: 'SQL', link: '/technologies/sql.html'},
+            { text: 'Javascript', link: '/technologies/javascript.html'},
+            { text: 'Bash', link: '/technologies/bash.html'},
+            { text: 'Vim', link: '/technologies/vim.html'},
+            { text: 'Vue.js', link: '/technologies/vue.html'},
+            { text: '.bashrc', link: '/technologies/bashrc.html'},
+            { text: '.vimrc', link: '/technologies/vimrc.html'},
           ]
         },
         {
-          title: 'Books',
+          title: 'Learning',
           content: [
-            { text: 'index', link: 'books.html'},
+            { text: 'Books', link: '/books.html'},
           ],
         },
         {
           title: 'Body Building',
           content: [
-            { text: 'Workouts', link: 'bodybuilding/workouts.html'},
-            { text: 'Log', link: 'bodybuilding/workoutlog.html'},
-            { text: 'Eating', link: 'bodybuilding/eating.html'},
+            { text: 'Workouts', link: '/bodybuilding/workouts.html'},
+            { text: 'Log', link: '/bodybuilding/workoutlog.html'},
+            { text: 'Eating', link: '/bodybuilding/eating.html'},
           ]
         },
         {
           title: 'Inspiration',
           content: [
-            { text: 'Videos', link: 'inspiration/videos.html'},
-            { text: 'Quotes', link: 'inspiration/quotes.html'},
+            { text: 'Videos', link: '/inspiration/videos.html'},
+            { text: 'Quotes', link: '/inspiration/quotes.html'},
           ]
         },
         {
           title: 'Meetups',
           content: [
+            { text: 'Ann Arbor Gophers', link: '/meetups/gophers.html'},
           ]
         },
         {
