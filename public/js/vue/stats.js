@@ -24,7 +24,7 @@ var stats = new Vue({
         {
           title: 'Chapter 5',
           definitions: [
-            { term: 'Remember', definition: 'test'},
+            { term: 'Correlation Coefficient', definition: 'Measurement of the strength of correlation between the x and y values'},
             { term: 'Remember', definition: 'test'},
             { term: 'Remember', definition: 'test'},
             { term: 'Remember', definition: 'test'},
