@@ -67,22 +67,28 @@
     			<h3><a href="http://people.emich.edu/aross15/" style="text-decoration: none;">Professor Ross' Page</a></h3>
     		</article>
 
-        <article>
-          <h2> Chapter 4 </h2>
-        </article>
-
-				<hr />
-
 				<!-- Chapter 5 -->
 				<article>
           <h2> Chapter 5</h2>
-					<h3> Definitions </h3>
-					<ul>
-						<template v-for="">
-
+						<template v-for="chapter in chapters">
+							<template v-if="chapter.title == 'Chapter 5'">
+								<h3> Definitions </h3>
+								<ul>
+									<template v-for="definition in chapter.definitions">
+											<li><strong>{{ definition.term }}</strong>: {{definition.definition}}</li>
+									</template>
+								</ul>
+								<h3>Concepts </h3>
+								<ul>
+									<template v-for="concept in chapter.concepts">
+											<li><strong>{{ concept.title }}</strong>: {{ concept.text }}</li>
+									</template>
+								</ul>
+							</template>
 						</template>
-					</ul>
         </article>
+				<!-- Chapter 5 -->
+				
 
       </content>
       <!--Page Content-->
@@ -110,6 +116,8 @@
 
 	<!-- Small Vue Components -->
 	<script src="../public/js/vue/stats.js"></script>
+	<script src="../public/js/vue/projects.js"></script>
+
 
 	<!-- Larger Vue Components -->
 	<script src="../public/js/vue/sidebar.js"></script>
