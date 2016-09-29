@@ -35,15 +35,12 @@ var foot = Vue.extend({
   </footer>
 
   <!-- Libraries -->
-  <script src="../public/js/vue/vue.min.js"></script>
-
-  <!-- Small Vue Components -->
-  <script src="../public/js/vue/projects.js"></script>
+  <script src="/public/js/vue/vue.min.js"></script>
 
   <!-- Larger Vue Components -->
-  <script src="../public/js/vue/sidebar.js"></script>
-  <script src="../public/js/vue/topnav.js"></script>
-  <script src="../public/js/vue/footer.js"></script>
+  <script src="/public/js/vue/sidebar.js"></script>
+  <script src="/public/js/vue/topnav.js"></script>
+  <script src="/public/js/vue/footer.js"></script>
   `
 });
 
