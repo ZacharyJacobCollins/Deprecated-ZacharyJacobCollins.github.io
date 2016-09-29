@@ -15,3 +15,6 @@ Quotes: Obsessed is a word used often by the lazy, in order to describe the dedi
 
 #Social Media
   * For twitter I use the zacharyjacobcollins@gmail.com one
+
+#TODo
+  * Gotta register the tempplate html to the sidebar and topnavs locally, so on load the templates execute.
