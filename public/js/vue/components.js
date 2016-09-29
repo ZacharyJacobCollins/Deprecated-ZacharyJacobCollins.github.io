@@ -44,15 +44,9 @@ var foot = Vue.extend({
   `
 });
 
-// define
-var MyComponent = Vue.extend({
-  template: '<div>A custom component!</div>'
-})
-
 // register the components glbally to vue.js
 Vue.component('header-component', head);
 Vue.component('footer-component', foot);
-Vue.component('my-component', MyComponent)
 
 
 // create a root vue instance
@@ -60,7 +54,7 @@ window.onload = function() {
     new Vue({
       el: 'html',
       ready: function() {
-        console.log('Root component instance ready');
+        console.log('Stylesheet and footer components loaded');
       }
     });
 };
