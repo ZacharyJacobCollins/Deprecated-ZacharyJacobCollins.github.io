@@ -3,10 +3,10 @@ var projects = new Vue({
     data: {
         title: 'Projects',
         projectData: [
-            { text: 'Remember', link: '/projects/remember.html'},
-            { text: 'Go chat', link: '/projects/gochat.html'},
-            { text: 'Valet', link: '/projects/valet.html'},
-            { text: 'Cracking the coding interview', link: '/projects/cracking.html'},
+            { title: 'Remember', link: '/projects/remember.html'},
+            { title: 'Go chat', link: '/projects/gochat.html'},
+            { title: 'Valet', link: '/projects/valet.html'},
+            { title: 'Cracking the coding interview', link: '/projects/cracking.html'},
         ],
     }
 });
