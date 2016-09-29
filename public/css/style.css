@@ -7,6 +7,10 @@
 @import url(metro-bootstrap.min.css);
 @import url(sidebar.css);
 
+html, body {
+	color: red;
+}
+
 .sidebarc
 {
 	padding-left: 30px
@@ -81,5 +85,3 @@ hr
 	background-color: #000;
 	overflow: hidden;
 }
-
-
