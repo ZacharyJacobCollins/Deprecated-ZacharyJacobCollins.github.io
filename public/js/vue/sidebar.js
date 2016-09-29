@@ -68,5 +68,8 @@ var sidebar = new Vue({
           ]
         },
       ],
+    },
+    ready: function() {
+      console.log('Sidebar loaded');
     }
 });

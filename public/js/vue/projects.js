@@ -8,5 +8,8 @@ var projects = new Vue({
             { title: 'Valet', link: '/projects/valet.html'},
             { title: 'Cracking the coding interview', link: '/projects/cracking.html'},
         ],
+    },
+    ready: function() {
+      console.log('Projects loaded');
     }
 });
