@@ -56,6 +56,11 @@ Vue.component('my-component', MyComponent)
 
 
 // create a root vue instance
-new Vue({
-  el: 'body'
-});
+window.onload = function() {
+    new Vue({
+      el: 'body',
+      ready: function() {
+        console.log('root component instance ready');
+      }
+    });
+};
