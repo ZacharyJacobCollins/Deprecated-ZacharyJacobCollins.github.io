@@ -21,6 +21,7 @@ var sideNav = new Vue({
           content: [
             { text: 'Statistics 360', link: '/college/stats.html'},
             { text: 'Discrete 314', link: '/college/discrete.html'},
+            { text: 'Comp', link: '/college/comp.html'},
           ]
         },
         {
