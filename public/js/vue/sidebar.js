@@ -17,7 +17,12 @@ var sidebar = new Vue({
         {
           title: 'Projects',
           //The array of projects coming from the projects vue component
-          content: projects._data.projectData
+          content: [
+            { text: 'Remember', link: '/projects/remember.html'},
+            { text: 'Go chat', link: '/projects/gochat.html'},
+            { text: 'Valet', link: '/projects/valet.html'},
+            { text: 'Cracking the coding interview', link: '/projects/cracking.html'},
+          ]
         },
         {
           title: 'Technologies',
