@@ -9,12 +9,16 @@ var stats = new Vue({
             { term: 'SOCS', definition: 'Shape, outliers, center, and spread(variability) of a distribution.'},
             { term: 'Stem', definition: 'First part of a number and consists of beginning digits. '},
             { term: 'Leaf', definition: 'Last part of a number and consists of final digits.  '},
+            { title: 'Time series plot', text: 'simple graph of data collected over time that can be invaluable in determining trends.'},
+
           ],
           concepts: [
             { title: 'Summarizing categorical data', text: 'Categorical data can be summarized in a frequency distribution and is best displayed using a bar chart.  '},
             { title: 'Pie Charts', text: 'Awesome for categorical data when there are FEW categories to graph.'},
             { title: 'Stem and leaf plots', text: 'Just google if need to.  Pretty simple stuff.'},
-
+            { title: 'Bivariate data', text: 'Use scatterplots to graph.'},
+            { title: 'Treatments', text: 'If we randomly assign people or items to treatments, then we can draw conclusions.'},
+            { title: 'Random assign', text: 'If we randomly select our sample from the population of interest, then we can generalize to the entirety of the population from what we found in the sample.'},
           ],
         },
         {

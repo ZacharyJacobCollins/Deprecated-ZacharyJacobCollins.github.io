@@ -12,3 +12,6 @@
   * Accent hover blue: #42a5f5
 
 Quotes: Obsessed is a word used often by the lazy, in order to describe the dedicated
+
+#Social Media
+  * For twitter I use the zacharyjacobcollins@gmail.com one
