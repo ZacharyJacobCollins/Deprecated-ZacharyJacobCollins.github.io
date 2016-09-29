@@ -6,7 +6,6 @@ var sidebar = new Vue({
           title: 'College',
           content: [
             { text: 'Statistics 360', link: '/college/stats.html'},
-            { text: 'Discrete Math', link: '/college/discrete.html'},
           ]
         },
         {
