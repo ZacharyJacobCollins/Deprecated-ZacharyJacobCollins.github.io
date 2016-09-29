@@ -12,8 +12,7 @@ var sidebar = new Vue({
         {
           title: 'Acm ',
           content: [
-            { text: 'About', link: '/acm/about'},
-            { text: 'Meeting Minutes', link: '/acm/meetings/minutes'},
+            { text: 'About', link: '/acm/about.html'},
           ]
         },
         {
@@ -36,7 +35,7 @@ var sidebar = new Vue({
           ]
         },
         {
-          title: 'Learning',
+          title: 'Reading',
           content: [
             { text: 'Books', link: '/books.html'},
           ],
@@ -45,7 +44,7 @@ var sidebar = new Vue({
           title: 'Body Building',
           content: [
             { text: 'Workouts', link: '/bodybuilding/workouts.html'},
-            { text: 'Log', link: '/bodybuilding/workoutlog.html'},
+            { text: 'Log', link: '/bodybuilding/log.html'},
             { text: 'Eating', link: '/bodybuilding/eating.html'},
           ]
         },
@@ -65,7 +64,8 @@ var sidebar = new Vue({
         {
           title: 'Career',
           content: [
-            { text: 'Interviews', link: '/career/interviews' },
+            { text: 'Interview Prep', link: '/career/interviews.html' },
+            { text: 'Resume', link: '/career/resume.html' },
           ]
         },
       ],
