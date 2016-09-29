@@ -60,7 +60,8 @@ window.onload = function() {
     new Vue({
       el: 'body',
       ready: function() {
-        console.log('root component instance ready');
+        console.log('Root component instance ready');
+        console.log(sidebar);
       }
     });
 };
