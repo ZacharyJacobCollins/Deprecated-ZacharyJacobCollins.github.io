@@ -9,7 +9,7 @@ var stats = new Vue({
             { term: 'SOCS', definition: 'Shape, outliers, center, and spread(variability) of a distribution.'},
             { term: 'Stem', definition: 'First part of a number and consists of beginning digits. '},
             { term: 'Leaf', definition: 'Last part of a number and consists of final digits.  '},
-            { title: 'Time series plot', text: 'simple graph of data collected over time that can be invaluable in determining trends.'},
+            { term: 'Time series plot', definition: 'simple graph of data collected over time that can be invaluable in determining trends.'},
 
           ],
           concepts: [
