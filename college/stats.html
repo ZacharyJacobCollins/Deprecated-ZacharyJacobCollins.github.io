@@ -64,19 +64,20 @@
       <content id="stats">
     		<article>
     			<h1> Statistics 360 </h1>
-    			<h3><a href="http://people.emich.edu/aross15/" style="text-decoration: none;">Professor Ross' Page</a></h3>
+    			<h4><a href="http://people.emich.edu/aross15/" style="text-decoration: none;">Link to Professor Ross' Page</a></h4>
 					<br />
-					<!-- Chapter 5 -->
-          <h2> Chapter 5</h2>
+
+					<!-- Chapter 3 -->
+					<h2> Chapter 3</h2>
 						<template v-for="chapter in chapters">
-							<template v-if="chapter.title == 'Chapter 5'">
-								<h3> Definitions </h3>
+							<template v-if="chapter.title == 'Chapter 3'">
+								<h4> Definitions </h4>
 								<ul>
 									<template v-for="definition in chapter.definitions">
 											<li><strong>{{ definition.term }}</strong>: {{definition.definition}}</li>
 									</template>
 								</ul>
-								<h3>Concepts </h3>
+								<h4>Concepts </h4>
 								<ul>
 									<template v-for="concept in chapter.concepts">
 											<li><strong>{{ concept.title }}</strong>: {{ concept.text }}</li>
@@ -84,8 +85,37 @@
 								</ul>
 							</template>
 						</template>
-        </article>
-				<!-- Chapter 5 -->
+						<!-- Chapter 3 -->
+
+						<br />
+						<hr />
+
+						<!-- Chapter 5 -->
+	          <h2> Chapter 5</h2>
+							<template v-for="chapter in chapters">
+								<template v-if="chapter.title == 'Chapter 5'">
+									<h4> Definitions </h4>
+									<ul>
+										<template v-for="definition in chapter.definitions">
+												<li><strong>{{ definition.term }}</strong>: {{definition.definition}}</li>
+										</template>
+									</ul>
+									<h4>Concepts </h4>
+									<ul>
+										<template v-for="concept in chapter.concepts">
+												<li><strong>{{ concept.title }}</strong>: {{ concept.text }}</li>
+										</template>
+									</ul>
+								</template>
+							</template>
+							<!-- Chapter 5 -->
+
+							<br />
+							<hr />
+
+							
+
+	    	</article>
 
 
       </content>

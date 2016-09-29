@@ -3,6 +3,23 @@ var stats = new Vue({
     data: {
       chapters: [
         {
+          title: 'Chapter 3',
+          definitions: [
+            { term: 'Segmented bar graph', definition: 'Also known as a stacked bar graph, solves the shortcomings of the pie chart in that it makes it easy to compare different areas in the graph.'},
+            { term: 'SOCS', definition: 'Shape, outliers, center, and spread(variability) of a distribution.'},
+            { term: 'Stem', definition: 'First part of a number and consists of beginning digits. '},
+            { term: 'Leaf', definition: 'Last part of a number and consists of final digits.  '},
+            { term: '', definition: ''},
+            
+          ],
+          concepts: [
+            { title: 'Summarizing categorical data', text: 'Categorical data can be summarized in a frequency distribution and is best displayed using a bar chart.  '},
+            { title: 'Pie Charts', text: 'Awesome for categorical data when there are FEW categories to graph.'},
+            { title: 'Stem and leaf plots', text: 'Just google if need to.  Pretty simple stuff.'},
+
+          ],
+        },
+        {
           title: 'Chapter 5',
           definitions: [
             { term: 'Correlation Coefficient', definition: 'Measurement of the strength of correlation between the x and y values'},
