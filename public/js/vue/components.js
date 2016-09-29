@@ -61,7 +61,6 @@ window.onload = function() {
       el: 'html',
       ready: function() {
         console.log('Root component instance ready');
-        console.log(sidebar);
       }
     });
 };
