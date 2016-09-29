@@ -60,7 +60,7 @@
 		</section>
 
       <!--Page Content-->
-      <content>
+      <content id="discrete">
     		<article>
             <h1>Discrete 314</h1>
 
@@ -105,18 +105,26 @@
   		</p>
 	</footer>
 
+	<!-- Footer Scripts block -->
+
+      <!-- Vue.js library and sheet components-->
+      <script src="/public/js/vue/vue.min.js"></script>
+      <script src="/public/js/vue/components.js"></script>
 
 
-	<!-- Libraries -->
-	<script src="../public/js/vue/vue.min.js"></script>
+      <!-- Smaller vue components that may be included in large vue components -->
+      <script src="/public/js/vue/books.js"></script>
+      <script src="/public/js/vue/discrete.js"></script>
+      <script src="/public/js/vue/projects.js"></script>
+      <script src="/public/js/vue/stats.js"></script>
 
-	<!-- Small Vue Components -->
-	<script src="../public/js/vue/discrete.js"></script>
 
-	<!-- Larger Vue Components -->
-	<script src="../public/js/vue/navs.js"></script>
-	<script src="../public/js/vue/topnav.js"></script>
-	<script src="../public/js/vue/footer.js"></script>
+      <!-- Larger Vue Components -->
+      <script src="/public/js/vue/navs.js"></script>
+      <script src="/public/js/vue/topnav.js"></script>
+      <script src="/public/js/vue/footer.js"></script>
+
+  <!-- Footer Scripts Block -->
 
 </body>
 </html>
