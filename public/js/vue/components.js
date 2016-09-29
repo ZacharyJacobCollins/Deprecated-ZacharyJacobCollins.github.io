@@ -38,7 +38,7 @@ var foot = Vue.extend({
   <script src="/public/js/vue/vue.min.js"></script>
 
   <!-- Larger Vue Components -->
-  <script src="/public/js/vue/sidebar.js"></script>
+  <script src="/public/js/vue/navs.js"></script>
   <script src="/public/js/vue/topnav.js"></script>
   <script src="/public/js/vue/footer.js"></script>
   `
