@@ -37,7 +37,7 @@ var sidebar = new Vue({
         {
           title: 'Reading',
           content: [
-            { text: 'Books', link: '/books.html'},
+            { text: 'Books', link: '/reading/books.html'},
           ],
         },
         {

@@ -9,8 +9,6 @@ var stats = new Vue({
             { term: 'SOCS', definition: 'Shape, outliers, center, and spread(variability) of a distribution.'},
             { term: 'Stem', definition: 'First part of a number and consists of beginning digits. '},
             { term: 'Leaf', definition: 'Last part of a number and consists of final digits.  '},
-            { term: '', definition: ''},
-            
           ],
           concepts: [
             { title: 'Summarizing categorical data', text: 'Categorical data can be summarized in a frequency distribution and is best displayed using a bar chart.  '},

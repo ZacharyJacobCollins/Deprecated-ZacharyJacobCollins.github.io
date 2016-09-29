@@ -3,10 +3,10 @@ var topNav = new Vue({
   data: {
         buttons: [
           { text: '127.0.0.1', link: '/reference.html'},
-          { text: 'Projects', link: '/projects/index'},
-          { text: 'Body Building', link: '/bodybuilding/index'},
-          { text: 'Technologies', link: '/technologies/index'},
-          { text: 'Books', link: '/books/index'},
+          { text: 'Projects', link: '/projects/index.html'},
+          { text: 'Body Building', link: '/bodybuilding/index.html'},
+          { text: 'Technologies', link: '/technologies/index.html'},
+          { text: 'Reading', link: '/reading/index.html'},
         ],
       },
 });
