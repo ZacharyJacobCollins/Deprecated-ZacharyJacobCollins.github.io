@@ -74,6 +74,7 @@ var sideNav = new Vue({
             { text: 'Videos', link: '/inspiration/videos.html'},
             { text: 'Quotes', link: '/inspiration/quotes.html'},
             { text: 'Cool People', link: '/inspiration/people.html'},
+            { text: 'Music', link: '/inspiration/music.html'},
           ]
         },
         {
