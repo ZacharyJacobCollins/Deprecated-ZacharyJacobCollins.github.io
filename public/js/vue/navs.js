@@ -72,6 +72,7 @@ var sideNav = new Vue({
           content: [
             { text: 'Videos', link: '/inspiration/videos.html'},
             { text: 'Quotes', link: '/inspiration/quotes.html'},
+            { text: 'Cool People', link: '/inspiration/people.html'},
           ]
         },
         {

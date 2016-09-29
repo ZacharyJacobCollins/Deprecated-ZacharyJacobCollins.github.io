@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- The header component found in components.js -->
+<header-component v-cloak></header-component>
+
+<body class="docs">
+	<span class="overlay"></span>
+
+	<!-- Top nav bar -->
+	<nav class="main">
+  		<!-- Name -->
+  		<a href="/" class="brand nav-block">
+  			<span>Zachary Jacob Collins</span>
+  		</a>
+
+  		<!-- Search input -->
+  		<div class="search nav-block">
+  			<input placeholder="search" type="text" v-model="search" id="search-input" v-on:blur="reset" />
+  		</div>
+
+  		<!-- Top nav bar -->
+  		<ul id="topNav" class="main-nav" v-if="! search">
+    			<template v-for="button in buttons">
+    					<li><a href="{{ button.link }}"><strong>{{ button.text }}</strong></a></li>
+    			</template>
+      		<div class="responsive-sidebar-nav">
+      			<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+      		</div>
+  		</ul>
+      <!-- Top nav bar -->
+	</nav>
+
+	<div class="docs-wrapper container">
+		<!-- Begin Vue templating of Sidebar -->
+		<section id="sideNav" class="sidebar">
+			<ul>
+				<template v-for="section in sections">
+					<li><strong>{{ section.title }}</strong>
+						<ul>
+							<template v-for="c in section.content">
+									<li><a href="{{ c.link }}">{{ c.text }}</a></li>
+							</template>
+						</ul>
+					</li>
+				</template>
+			</ul>
+		</section>
+
+      <!--Page Content-->
+      <content>
+    		<article>
+            <h1>Cool People</h1>
+            <ul>
+              <li>
+                David DeSandro -> Codepen/Pinterest dude
+              </li>
+              <li>
+                Eric Thomas -> Motivational Speaker
+              </li>
+              <li>
+                Haseeb Qureshi -> Air b n b altruist dude ex pro poker player, really cool software engineering guy
+              </li>
+              <li>
+                Les Twins -> phenomenal dancers
+              </li>
+            </ul>
+    		</article>
+      </content>
+      <!--Page Content-->
+
+	</div>
+
+  <!-- Footer Scripts block -->
+
+
+      <!-- Vue.js library and sheet components-->
+      <script src="/public/js/vue/vue.min.js"></script>
+      <script src="/public/js/vue/components.js"></script>
+
+
+      <!-- Smaller vue components that may be included in large vue components -->
+      <script src="/public/js/vue/books.js"></script>
+      <script src="/public/js/vue/discrete.js"></script>
+      <script src="/public/js/vue/projects.js"></script>
+      <script src="/public/js/vue/stats.js"></script>
+
+
+      <!-- Larger Vue Components -->
+      <script src="/public/js/vue/navs.js"></script>
+      <script src="/public/js/vue/topnav.js"></script>
+      <script src="/public/js/vue/footer.js"></script>
+
+  <!-- Footer Scripts Block -->
+
+
+</body>
+</html>
