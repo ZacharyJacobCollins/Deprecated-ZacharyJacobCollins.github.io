@@ -61,6 +61,12 @@ var sideNav = new Vue({
           ],
         },
         {
+          title: 'Resources',
+          content: [
+            { text: 'Frontend', link: '/resources/frontend/index.html'},
+          ],
+        },
+        {
           title: 'Body Building',
           content: [
             { text: 'Workouts', link: '/bodybuilding/workouts.html'},

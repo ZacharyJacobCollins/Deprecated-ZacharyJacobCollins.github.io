@@ -18,3 +18,6 @@ Quotes: Obsessed is a word used often by the lazy, in order to describe the dedi
 
 #TODo
   * Gotta register the tempplate html to the sidebar and topnavs locally, so on load the templates execute.
+
+#Quotes
+  *“they say searching for love is like searching for yourself, when you find yourself, you find love, because they’re the same…”
