@@ -69,12 +69,13 @@ var sideNav = new Vue({
           ]
         },
         {
-          title: 'Inspiration',
+          title: 'Media',
           content: [
-            { text: 'Videos', link: '/inspiration/videos.html'},
-            { text: 'Quotes', link: '/inspiration/quotes.html'},
-            { text: 'Cool People', link: '/inspiration/people.html'},
-            { text: 'Music', link: '/inspiration/music.html'},
+            { text: 'Videos', link: '/media/videos.html'},
+            { text: 'Quotes', link: '/media/quotes.html'},
+            { text: 'Cool People', link: '/media/people.html'},
+            { text: 'Music', link: '/media/music.html'},
+            { text: 'Memes', link: '/media/memes.html'},
           ]
         },
         {
