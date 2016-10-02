@@ -62,7 +62,8 @@ var sidenav = Vue.extend({
 });
 
 var testcomponent = Vue.extend({
-    template: "<h1>@{{sections}} and test</h1>"
+    props: ['sections'],
+    template: "<h1>{{sections}} and test</h1>"
 });
 // register the components glbally to vue.js
 Vue.component('sidenav-component', sidenav);
