@@ -65,3 +65,11 @@ var sidebar = Vue.extend({
 Vue.component('sidebar-component', foot);
 Vue.component('header-component', head);
 Vue.component('footer-component', foot);
+
+// create a root vue instance
+new Vue({
+  el: 'html',
+  ready: function() {
+    console.log('Stylesheet and footer components loaded');
+  }
+});
