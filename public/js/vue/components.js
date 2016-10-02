@@ -22,7 +22,7 @@ var head = Vue.extend({
 //FOOTER COMPONENT
 var foot = Vue.extend({
   template: `
-  <footer id="footer" clrss="main">
+  <footer id="footer" class="main">
       <ul>
         <template v-for="section in sections">
               <li><a href="{{ section.link }}">{{ section.text }}</a></li>
