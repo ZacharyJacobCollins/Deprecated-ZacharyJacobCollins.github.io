@@ -62,7 +62,7 @@ var sidebar = Vue.extend({
 });
 
 // register the components glbally to vue.js
-Vue.component('sidebar-component', foot);
+Vue.component('sidebar-component', sidebar);
 Vue.component('header-component', head);
 Vue.component('footer-component', foot);
 
