@@ -44,17 +44,24 @@ var foot = Vue.extend({
   `
 });
 
+var sidebar = Vue.extend({
+  template: `
+  <section id="sideNav" class="sidebar">
+    <ul>
+      <template v-for="section in sections">
+        <li><strong>{{ section.title }}</strong>
+          <ul>
+            <template v-for="c in section.content">
+                <li><a href="{{ c.link }}">{{ c.text }}</a></li>
+            </template>
+          </ul>
+        </li>
+      </template>
+    </ul>
+  </section>`
+});
+
 // register the components glbally to vue.js
+Vue.component('sidebar-component', foot);
 Vue.component('header-component', head);
 Vue.component('footer-component', foot);
-
-
-// create a root vue instance
-window.onload = function() {
-    new Vue({
-      el: 'html',
-      ready: function() {
-        console.log('Stylesheet and footer components loaded');
-      }
-    });
-};

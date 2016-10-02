@@ -32,7 +32,8 @@
 	</nav>
 
 	<div class="docs-wrapper container">
-		<!-- Begin Vue templating of Sidebar -->
+
+		<!-- Begin Vue templating of Sidebar
 		<section id="sideNav" class="sidebar">
 			<ul>
 				<template v-for="section in sections">
@@ -46,6 +47,8 @@
 				</template>
 			</ul>
 		</section>
+		-->
+		<sidebar-component></sidebar-component>
 
       <!--Page Content-->
       <content>
@@ -59,7 +62,7 @@
 	</div>
 
   <!-- Footer Scripts block -->
-			<footer-html></footer-html>
+			<footer-component></footer-component>
 
       <!-- Vue.js library and sheet components-->
       <script src="/public/js/vue/vue.min.js"></script>
