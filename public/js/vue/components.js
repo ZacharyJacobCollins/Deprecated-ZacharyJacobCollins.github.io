@@ -21,7 +21,7 @@ var headTemplate = Vue.extend({
 });
 
 //FOOTER COMPONENT
-var footTemplate = Vue.extend({
+var foot = Vue.extend({
   template: `
   <footer id="footer" class="main">
       <ul>
@@ -34,7 +34,7 @@ var footTemplate = Vue.extend({
         <!-- Logo here.  SVG Works well .  -->
       </p>
   </footer>
-  `,
+  `
 });
 
 var sidenavTemplate = Vue.extend({
