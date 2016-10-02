@@ -21,12 +21,12 @@ var headTemplate = Vue.extend({
 });
 
 //FOOTER COMPONENT
-var foot = Vue.extend({
+var footTemplate = Vue.extend({
   template: `
   <footer id="footer" class="main">
       <ul>
-        <template v-for="section in sections">
-              <li><a href="{{ section.link }}">{{ section.text }}</a></li>
+        <template v-for="footerSection in footerSections">
+              <li><a href="{{ footerSection.link }}">{{ footerSection.text }}</a></li>
         </template>
       </ul>
       <p> MIT <a href="https://github.com/ZacharyJacobCollins">@Zachary Collins.</a></p>

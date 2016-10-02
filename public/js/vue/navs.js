@@ -1,7 +1,7 @@
 var topNav = new Vue({
   el: '#topNav',
   data: {
-        buttons: [
+        topNavSections: [
           { text: '127.0.0.1', link: '/home/reference.html'},
           { text: 'Projects', link: '/projects/index.html'},
           { text: 'Body Building', link: '/bodybuilding/index.html'},
@@ -15,7 +15,7 @@ var topNav = new Vue({
 var sideNav = new Vue({
   el: '#sideNav',
   data: {
-    sections: [
+    sideNavSections: [
         {
           title: 'College',
           content: [
