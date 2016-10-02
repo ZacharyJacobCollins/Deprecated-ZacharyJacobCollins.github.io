@@ -62,7 +62,7 @@ var sidenav = Vue.extend({
 });
 
 // register the components glbally to vue.js
-Vue.component('sidenav-component', sidenav);
+Vue.component('sidenav-component', sidenavf);
 Vue.component('header-component', head);
 Vue.component('footer-component', foot);
 
