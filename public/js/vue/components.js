@@ -34,7 +34,7 @@ var footTemplate = Vue.extend({
         <!-- Logo here.  SVG Works well .  -->
       </p>
   </footer>
-  `
+  `,
 });
 
 var sidenavTemplate = Vue.extend({
