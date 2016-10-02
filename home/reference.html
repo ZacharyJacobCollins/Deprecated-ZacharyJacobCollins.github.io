@@ -1,20 +1,8 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Zachary Jacob Collins</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="author" content="Zachary Collins">
-	<meta name="description" content="Zachary Collins personal site.">
-	<meta name="keywords" content="zac, zac collins, zachary collins, zachary jacob collins, computer science, web, blog, tech, google">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='https://fonts.googleapis.com/css?family=Miriam+Libre:400,700|Source+Sans+Pro:200,400,700,600,400italic,700italic' rel='stylesheet' type='text/css'>
-	<!--[if lte IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	<link rel="stylesheet" href="/public/css/laravel-9d78469b5d.css">
-	<link rel="apple-touch-icon" href="/favicon.png">
-</head>
+
+<!-- The header component found in components.js -->
+<header-component v-cloak></header-component>
 
 <body class="docs">
 	<span class="overlay"></span>
@@ -33,24 +21,25 @@
 
   		<!-- Top nav bar -->
   		<ul id="topNav" class="main-nav" v-if="! search">
-    			<template v-for="button in buttons">
-    					<li><a href="{{ button.link }}"><strong>{{ button.text }}</strong></a></li>
+    			<template v-for="topNavSection in topNavSections">
+    					<li><a href="{{ topNavSection.link }}"><strong>{{ topNavSection.text }}</strong></a></li>
     			</template>
       		<div class="responsive-sidebar-nav">
       			<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
       		</div>
   		</ul>
-      <!-- Top nav bar -->
+      <!-- /Top nav bar -->
 	</nav>
 
 	<div class="docs-wrapper container">
-		<!-- Begin Vue templating of Sidebar -->
+
+		<!-- Sidenav -->
 		<section id="sideNav" class="sidebar">
 			<ul>
-				<template v-for="section in sections">
-					<li><strong>{{ section.title }}</strong>
+				<template v-for="sideNavSection in sideNavSections">
+					<li><strong>{{ sideNavSection.title }}</strong>
 						<ul>
-							<template v-for="c in section.content">
+							<template v-for="c in sideNavSection.content">
 									<li><a href="{{ c.link }}">{{ c.text }}</a></li>
 							</template>
 						</ul>
@@ -58,54 +47,29 @@
 				</template>
 			</ul>
 		</section>
+		<!-- /Sidenav -->
 
-
-      <!--Page Content-->
-      <content>
-					<article>
-						<h1> Reference </h1>
-						<h3><a href="#" style="text-decoration:none;">"Greats aren't great because at birth they can paint, the greats are great because they paint a lot."</a></h3>
-					</article>
-      </content>
-      <!--Page Content-->
+    <!--Page Content-->
+    <content>
+  		<article>
+				<h4> "Greats aren't great because at birth they can paint, the greats are great because they paint a lot." </h4>
+  		</article>
+    </content>
+    <!--Page Content-->
 
 	</div>
 
-
-
-	<footer id="footer" clrss="main">
-  		<ul>
-  			<template v-for="section in sections">
-  						<li><a href="{{ section.link }}">{{ section.text }}</a></li>
-  			</template>
-  		</ul>
-  		<p> MIT <a href="https://github.com/ZacharyJacobCollins">@Zachary Collins.</a></p>
-  		<p class="less-significant">
-  			<!-- Logo here.  SVG Works well .  -->
-  		</p>
-	</footer>
-
+	<footer-component></footer-component>
 
 	<!-- Footer Scripts block -->
+  <script src="/public/js/vue/vue.min.js"></script>
 
-      <!-- Vue.js library and sheet components-->
-      <script src="/public/js/vue/vue.min.js"></script>
-      <script src="/public/js/vue/components.js"></script>
+	<!-- Larger Vue Components -->
+	<script src="/public/js/vue/navs.js"></script>
+	<script src="/public/js/vue/footer.js"></script>
 
-
-      <!-- Smaller vue components that may be included in large vue components -->
-      <script src="/public/js/vue/books.js"></script>
-      <script src="/public/js/vue/discrete.js"></script>
-      <script src="/public/js/vue/projects.js"></script>
-      <script src="/public/js/vue/stats.js"></script>
-
-
-      <!-- Larger Vue Components -->
-      <script src="/public/js/vue/navs.js"></script>
-      <script src="/public/js/vue/topnav.js"></script>
-      <script src="/public/js/vue/footer.js"></script>
-
-  <!-- Footer Scripts Block -->
+	<!-- Load in vue components LAST -->
+	<script src="/public/js/vue/components.js"></script>
 
 </body>
 </html>
