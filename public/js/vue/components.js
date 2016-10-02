@@ -1,3 +1,4 @@
+//The footer
 Vue.component('footer-component', {
   template: `
   <footer id="footer" class="main">
@@ -14,8 +15,7 @@ Vue.component('footer-component', {
   `
 });
 
-
-// register the components glbally to vue.js
+// The header
 Vue.component('header-component', {
   template: `
       <head>
@@ -35,31 +35,7 @@ Vue.component('header-component', {
       </head>`,
 });
 
-
-Vue.component('sidenav-component', {
-  // declare the props
-  props: ['sections'],
-  // the prop can be used inside templates, and will also
-  // be set as `this.msg`
-  template: `
-    <section id="sideNav" class="sidebar">
-      <ul>
-        <template v-for="sideNavSection in sections">
-          <li><strong>{{ sideNavSection.title }}</strong>
-            <ul>
-              <template v-for="c in sideNavSection.content">
-                  <li><a href="{{ c.link }}">{{ c.text }}</a></li>
-              </template>
-            </ul>
-          </li>
-        </template>
-      </ul>
-    </section>
-  `
-});
-
-
-// create a root vue instance
+//Create a root vue instance to bind the components in this file to
 new Vue({
   el: 'html',
   ready: function() {
