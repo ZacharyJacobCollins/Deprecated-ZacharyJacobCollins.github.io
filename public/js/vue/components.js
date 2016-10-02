@@ -61,10 +61,15 @@ var sidenav = Vue.extend({
   </section>`
 });
 
+var testcomponent = Vue.extend({
+    template: "<h1>@{{sections}}</h1>"
+});
 // register the components glbally to vue.js
 Vue.component('sidenav-component', sidenav);
 Vue.component('header-component', head);
 Vue.component('footer-component', foot);
+Vue.component('test-component', testcomponent);
+
 
 // create a root vue instance
 new Vue({
@@ -73,3 +78,17 @@ new Vue({
     console.log('Stylesheet and footer components loaded');
   }
 });
+
+// <section id="sideNav" class="sidebar">
+//   <ul>
+//     <template v-for="section in sections">
+//       <li><strong>{{ section.title }}</strong>
+//         <ul>
+//           <template v-for="c in section.content">
+//               <li><a href="{{ c.link }}">{{ c.text }}</a></li>
+//           </template>
+//         </ul>
+//       </li>
+//     </template>
+//   </ul>
+// </section>
