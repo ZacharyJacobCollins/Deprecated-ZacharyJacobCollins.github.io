@@ -1,20 +1,3 @@
-var sideNavTemplate = {
-  props: ['section'],
-  template: `<section id="sideNav" class="sidebar">
-    <ul>
-      <template v-for="section in sections">
-        <li><strong>{{ section.title }}</strong>
-          <ul>
-            <template v-for="c in section.content">
-                <li><a href="{{ c.link }}">{{ c.text }}</a></li>
-            </template>
-          </ul>
-        </li>
-      </template>
-    </ul>
-  </section>`,
-}
-
 var topNav = new Vue({
   el: '#topNav',
   data: {
@@ -116,10 +99,7 @@ var sideNav = new Vue({
         },
       ],
     },
-    components: {
-      'sidenav-component': sideNavTemplate
-    },
     ready: function() {
-      console.log('sideNav loaded');
+      console.log('Sidebar loaded');
     }
 });

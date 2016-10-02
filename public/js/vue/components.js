@@ -15,6 +15,13 @@ var head = Vue.extend({
       <![endif]-->
       <link rel="stylesheet" href="/public/css/laravel-9d78469b5d.css">
       <link rel="apple-touch-icon" href="/favicon.png">
+
+      <!-- Larger Vue Components -->
+      <script src="/public/js/vue/navs.js"></script>
+      <script src="/public/js/vue/topnav.js"></script>
+      <script src="/public/js/vue/footer.js"></script>
+
+      
     </head>
   `
 });
@@ -33,26 +40,41 @@ var foot = Vue.extend({
         <!-- Logo here.  SVG Works well .  -->
       </p>
   </footer>
-
-  <!-- Libraries -->
-  <script src="/public/js/vue/vue.min.js"></script>
-
-  <!-- Larger Vue Components -->
-  <script src="/public/js/vue/navs.js"></script>
-  <script src="/public/js/vue/topnav.js"></script>
-  <script src="/public/js/vue/footer.js"></script>
   `
 });
 
-var testcomponent = Vue.extend({
-    props: ['sections'],
-    template: "<h1>{{sections}} and test</h1>"
+var scripts = Vue.extend({
+  template: `
+    <!-- Larger Vue Components -->
+    <script src="/public/js/vue/navs.js"></script>
+    <script src="/public/js/vue/topnav.js"></script>
+    <script src="/public/js/vue/footer.js"></script>
+  `
 });
 
+var sidenav = Vue.extend({
+  template: `
+  <section id="sideNav" class="sidebar">
+    <ul>
+      <template v-for="section in sections">
+        <li><strong>{{ section.title }}</strong>
+          <ul>
+            <template v-for="c in section.content">
+                <li><a href="{{ c.link }}">{{ c.text }}</a></li>
+            </template>
+          </ul>
+        </li>
+      </template>
+    </ul>
+  </section>`
+});
+
+
 // register the components glbally to vue.js
+Vue.component('sidenav-component', sidenav);
 Vue.component('header-component', head);
 Vue.component('footer-component', foot);
-Vue.component('test-component', testcomponent);
+Vue.component('scripts-component', scripts);
 
 
 // create a root vue instance
