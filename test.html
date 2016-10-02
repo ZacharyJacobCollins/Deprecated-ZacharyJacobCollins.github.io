@@ -32,8 +32,21 @@
 	</nav>
 
 	<div class="docs-wrapper container">
-		<!-- The sidenav componet found in components.js -->
-		<sidenav-component v-bind: side-nav-sections="sideNavSections"></sidenav-component>
+
+		<!-- Sidenav -->
+		<section id="sideNav" class="sidebar">
+			<ul>
+				<template v-for="sideNavSection in sideNavSections">
+					<li><strong>{{ sideNavSection.title }}</strong>
+						<ul>
+							<template v-for="c in sideNavSection.content">
+									<li><a href="{{ c.link }}">{{ c.text }}</a></li>
+							</template>
+						</ul>
+					</li>
+				</template>
+			</ul>
+		</section>
 
     <!--Page Content-->
     <content>

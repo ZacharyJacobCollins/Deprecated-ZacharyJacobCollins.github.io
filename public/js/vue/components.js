@@ -14,6 +14,7 @@ Vue.component('footer-component', {
   `
 });
 
+
 // register the components glbally to vue.js
 Vue.component('header-component', {
   template: `
@@ -22,8 +23,7 @@ Vue.component('header-component', {
         <title>Zachary Jacob Collins</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="author" content="Zachary Collins">
-
-      <meta name="keywords" content="zac, zac collins, zachary collins, zachary jacob collins, computer science, web, blog, tech, google">
+        <meta name="keywords" content="zac, zac collins, zachary collins, zachary jacob collins, computer science, web, blog, tech, google">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Miriam+Libre:400,700|Source+Sans+Pro:200,400,700,600,400italic,700italic' rel='stylesheet' type='text/css'>
         <!--[if lte IE 9]>
@@ -38,23 +38,24 @@ Vue.component('header-component', {
 
 Vue.component('sidenav-component', {
   // declare the props
-  props: ['sideNavSections'],
+  props: ['sections'],
   // the prop can be used inside templates, and will also
   // be set as `this.msg`
   template: `
-  <section id="sideNav" class="sidebar">
-    <ul>
-      <template v-for="sideNavSection in sideNavSections">
-        <li><strong>{{ sideNavSection.title }}</strong>
-          <ul>
-            <template v-for="c in sideNavSection.content">
-                <li><a href="{{ c.link }}">{{ c.text }}</a></li>
-            </template>
-          </ul>
-        </li>
-      </template>
-    </ul>
-  </section>`
+    <section id="sideNav" class="sidebar">
+      <ul>
+        <template v-for="sideNavSection in sections">
+          <li><strong>{{ sideNavSection.title }}</strong>
+            <ul>
+              <template v-for="c in sideNavSection.content">
+                  <li><a href="{{ c.link }}">{{ c.text }}</a></li>
+              </template>
+            </ul>
+          </li>
+        </template>
+      </ul>
+    </section>
+  `
 });
 
 
