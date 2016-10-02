@@ -44,7 +44,7 @@ var foot = Vue.extend({
   `
 });
 
-var sidebar = Vue.extend({
+var sidenav = Vue.extend({
   template: `
   <section id="sideNav" class="sidebar">
     <ul>
@@ -62,7 +62,7 @@ var sidebar = Vue.extend({
 });
 
 // register the components glbally to vue.js
-Vue.component('sidebar-component', sidebar);
+Vue.component('sidenav-component', sidenav);
 Vue.component('header-component', head);
 Vue.component('footer-component', foot);
 

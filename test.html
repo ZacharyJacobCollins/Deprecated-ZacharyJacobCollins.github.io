@@ -47,8 +47,13 @@
 				</template>
 			</ul>
 		</section>
--->
-		<sidebar-component></sidebar-component>
+	-->
+
+		<!--The sidenav componet found in components.js-->
+		<sidenav-component
+			 v-for="section in sections"
+			 v-bind: section="section">
+		</sidenav-component>
 
       <!--Page Content-->
       <content>
