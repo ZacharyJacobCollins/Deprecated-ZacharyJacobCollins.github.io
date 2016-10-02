@@ -34,9 +34,23 @@
 	<div class="docs-wrapper container">
 		<test-component v-bind:sections="sections"></test-component>
 
-		<!--The sidenav componet found in components.js-->
+		<!--The sidenav componet found in components.js
 		<sidenav-component v-bind: sections="sections">
-		</sidenav-component>
+		</sidenav-component>-->
+
+			<section id="sideNav" class="sidebar">
+		    <ul>
+		      <template v-for="section in sections">
+		        <li><strong>{{ section.title }}</strong>
+		          <ul>
+		            <template v-for="c in section.content">
+		                <li><a href="{{ c.link }}">{{ c.text }}</a></li>
+		            </template>
+		          </ul>
+		        </li>
+		      </template>
+		    </ul>
+		  </section>
 
       <!--Page Content-->
       <content>

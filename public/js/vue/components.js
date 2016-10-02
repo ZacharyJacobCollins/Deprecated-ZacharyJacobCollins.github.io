@@ -21,7 +21,7 @@ var headTemplate = Vue.extend({
 });
 
 //FOOTER COMPONENT
-var foot = Vue.extend({
+var footTemplate = Vue.extend({
   template: `
   <footer id="footer" class="main">
       <ul>
