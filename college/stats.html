@@ -21,38 +21,38 @@
 
 	<!-- Top nav bar -->
 	<nav class="main">
-  		<!-- Name -->
-  		<a href="/" class="brand nav-block">
-  			<span>Zachary Jacob Collins</span>
-  		</a>
+			<!-- Name -->
+			<a href="/" class="brand nav-block">
+				<span>Zachary Jacob Collins</span>
+			</a>
 
-  		<!-- Search input -->
-  		<div class="search nav-block">
-  			<input placeholder="search" type="text" v-model="search" id="search-input" v-on:blur="reset" />
-  		</div>
+			<!-- Search input -->
+			<div class="search nav-block">
+				<input placeholder="search" type="text" v-model="search" id="search-input" v-on:blur="reset" />
+			</div>
 
-  		<!-- Top nav bar -->
-  		<ul id="topNav" class="main-nav" v-if="! search">
-    			<template v-for="button in buttons">
-    					<li><a href="{{ button.link }}"><strong>{{ button.text }}</strong></a></li>
-    			</template>
-      		<div class="responsive-sidebar-nav">
-      			<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
-      		</div>
-  		</ul>
-      <!-- Top nav bar -->
-			
+			<ul id="topNav" class="main-nav" v-if="! search">
+					<template v-for="topNavSection in topNavSections">
+							<li><a href="{{ topNavSection.link }}"><strong>{{ topNavSection.text }}</strong></a></li>
+					</template>
+					<div class="responsive-sidebar-nav">
+						<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+					</div>
+			</ul>
+	</nav>
+	<!-- /Top nav bar -->
+
 	</nav>
 
 	<div class="docs-wrapper container">
 
-		<!-- Begin Vue templating of Sidebar -->
+		<!-- Sidenav -->
 		<section id="sideNav" class="sidebar">
 			<ul>
-				<template v-for="section in sections">
-					<li><strong>{{ section.title }}</strong>
+				<template v-for="sideNavSection in sideNavSections">
+					<li><strong>{{ sideNavSection.title }}</strong>
 						<ul>
-							<template v-for="c in section.content">
+							<template v-for="c in sideNavSection.content">
 									<li><a href="{{ c.link }}">{{ c.text }}</a></li>
 							</template>
 						</ul>
@@ -60,12 +60,14 @@
 				</template>
 			</ul>
 		</section>
+		<!-- /Sidenav -->
 
       <!--Page Content-->
       <content id="stats">
     		<article>
     			<h1> Statistics 360 </h1>
     			<h4><a href="http://people.emich.edu/aross15/" style="text-decoration: none;">Link to Professor Ross' Page</a></h4>
+					<h4><a href="#" style="text-decoration: none;">Star next to definition or concept donotes likely to be on exam.  </a></h4>
 					<br />
 
 					<!-- Chapter 3 -->
@@ -125,33 +127,23 @@
 	</div>
 
 
-
-	<footer id="footer" clrss="main">
-  		<ul>
-  			<template v-for="section in sections">
-  						<li><a href="{{ section.link }}">{{ section.text }}</a></li>
-  			</template>
-  		</ul>
-  		<p> MIT <a href="https://github.com/ZacharyJacobCollins">@Zachary Collins.</a></p>
-  		<p class="less-significant">
-  			<!-- Logo here.  SVG Works well .  -->
-  		</p>
-	</footer>
+	<footer-component></footer-component>
 
 
+	<!-- Footer Scripts block -->
+  <script src="/public/js/vue/vue.min.js"></script>
 
-	<!-- Libraries -->
-	<script src="../public/js/vue/vue.min.js"></script>
-
-	<!-- Small Vue Components -->
-	<script src="../public/js/vue/stats.js"></script>
-	<script src="../public/js/vue/projects.js"></script>
-
+	<!-- Smaller vue components -->
+	<script src="/public/js/vue/stats.js"></script>
 
 	<!-- Larger Vue Components -->
-	<script src="../public/js/vue/navs.js"></script>
-	<script src="../public/js/vue/topnav.js"></script>
-	<script src="../public/js/vue/footer.js"></script>
+	<script src="/public/js/vue/navs.js"></script>
+	<script src="/public/js/vue/footer.js"></script>
+
+	<!-- Load in vue components LAST -->
+	<script src="/public/js/vue/components.js"></script>
+	<!-- /Footer Scripts block -->
+
 
 </body>
 </html>

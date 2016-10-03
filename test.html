@@ -19,7 +19,6 @@
   			<input placeholder="search" type="text" v-model="search" id="search-input" v-on:blur="reset" />
   		</div>
 
-  		<!-- Top nav bar -->
   		<ul id="topNav" class="main-nav" v-if="! search">
     			<template v-for="topNavSection in topNavSections">
     					<li><a href="{{ topNavSection.link }}"><strong>{{ topNavSection.text }}</strong></a></li>
@@ -28,11 +27,11 @@
       			<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
       		</div>
   		</ul>
-      <!-- /Top nav bar -->
 	</nav>
+	<!-- /Top nav bar -->
+
 
 	<div class="docs-wrapper container">
-
 		<!-- Sidenav -->
 		<section id="sideNav" class="sidebar">
 			<ul>
@@ -64,12 +63,17 @@
 	<!-- Footer Scripts block -->
   <script src="/public/js/vue/vue.min.js"></script>
 
+	<!-- Smaller vue components -->
+	<script src="/public/js/vue/stats.js"></script>
+
 	<!-- Larger Vue Components -->
 	<script src="/public/js/vue/navs.js"></script>
 	<script src="/public/js/vue/footer.js"></script>
 
 	<!-- Load in vue components LAST -->
 	<script src="/public/js/vue/components.js"></script>
+	<!-- /Footer Scripts block -->
+
 
 </body>
 </html>
