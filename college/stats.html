@@ -49,7 +49,7 @@
 		<!-- Sidenav -->
 		<section id="sideNav" class="sidebar">
 			<ul>
-				<template v-html="rawHtml" v-for="sideNavSection in sideNavSections">
+				<template v-for="sideNavSection in sideNavSections">
 					<li><strong>{{ sideNavSection.title }}</strong>
 						<ul>
 							<template v-for="c in sideNavSection.content">
@@ -99,13 +99,13 @@
 								<template v-if="chapter.title == 'Chapter 5'">
 									<h4> Definitions </h4>
 									<ul>
-										<template v-for="definition in chapter.definitions">
+										<template v-for="definition in chapter.definitions" v-html="rawHtml">
 												<li><strong>{{ definition.term }}</strong>: {{definition.definition}}</li>
 										</template>
 									</ul>
 									<h4>Concepts </h4>
 									<ul>
-										<template v-for="concept in chapter.concepts">
+										<template v-for="concept in chapter.concepts" v-html="rawHtml">
 												<li><strong>{{ concept.title }}</strong>: {{ concept.text }}</li>
 										</template>
 									</ul>
