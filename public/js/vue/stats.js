@@ -35,7 +35,7 @@ var stats = new Vue({
             { title: 'Computing Z-scores', text: 'To find the Z score of a sample, you"ll need to find the mean, variance and standard deviation of the sample. To calculate the z-score, you will find the difference between a value in the sample and the mean, and divide it by the standard deviation.  Additionally z-score equal to 0 is element equal to the mean.  Less then 0 is less than mean, greater is greater than mean. '},
             { title: 'Cumulative Relative Frequency Chart', text: 'Interested in knowing the relative Frequency up to a given value. '},
             { title: 'N vs n', text: 'Lowercase is sample, uppercase is population. '},
-            { title: 'Identifying exponential graphs for transformations', text: 'Exponential models hit a nonzero point on the y axis.'}
+            { title: 'Identifying exponential graphs for transformations', text: 'Exponential models hit a nonzero point on the y axis.'},
             { title: '*Linear', text: 'Value @ x=0: finite.  Value as x grows: infinite '},
             { title: '*Exponential', text: 'Value @ x=0: finite.  Value as x grows: 0 or infinite. '},
             { title: '*Power', text: 'Value @ x=0: 0 or infinite.  Value as x grows: infinite or 0'},
