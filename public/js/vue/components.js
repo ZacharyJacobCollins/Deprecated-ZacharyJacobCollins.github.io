@@ -1,5 +1,6 @@
 //The footer
 Vue.component('footer-component', {
+  props: ["footerSections"],
   template: `
   <footer id="footer" class="main">
       <ul>

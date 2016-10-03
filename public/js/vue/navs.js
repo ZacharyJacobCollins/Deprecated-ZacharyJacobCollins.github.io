@@ -82,6 +82,7 @@ var sideNav = new Vue({
             { text: 'Cool People', link: '/media/people.html'},
             { text: 'Music', link: '/media/music.html'},
             { text: 'Memes', link: '/media/memes.html'},
+            { text: 'Ted Talks', link: '/media/tedtalks.html'},
           ]
         },
         {
