@@ -1,22 +1,4 @@
-//The footer
-Vue.component('footer-component', {
-  props: ["footerSections"],
-  template: `
-  <footer id="footer" class="main">
-      <ul>
-        <template v-for="footerSection in footerSections">
-              <li><a href="{{ footerSection.link }}">{{ footerSection.text }}</a></li>
-        </template>
-      </ul>
-      <p> MIT <a href="https://github.com/ZacharyJacobCollins">@Zachary Collins.</a></p>
-      <p class="less-significant">
-        <!-- Logo here.  SVG Works well .  -->
-      </p>
-  </footer>
-  `
-});
-
-// The header
+// The header component
 Vue.component('header-component', {
   template: `
       <head>
@@ -32,7 +14,6 @@ Vue.component('header-component', {
         <![endif]-->
         <link rel="stylesheet" href="/public/css/laravel-9d78469b5d.css">
         <link rel="apple-touch-icon" href="/favicon.png">
-
       </head>`,
 });
 
@@ -40,6 +21,6 @@ Vue.component('header-component', {
 new Vue({
   el: 'html',
   ready: function() {
-    console.log('Stylesheet and footer components loaded');
+    console.log('Header component loaded');
   }
 });
