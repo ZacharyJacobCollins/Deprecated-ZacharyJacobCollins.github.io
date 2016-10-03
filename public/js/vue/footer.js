@@ -7,6 +7,6 @@ var footer = new Vue({
             { text: 'Twitter', link: 'twitter.com'},
       ],
       signature: {},
-      logo: { license: 'MIT', link: 'https://github.com/ZacharyJacobCollins', text: '@Zachary Collins.' }
+      logo: { license: 'MIT', link: 'https://github.com/ZacharyJacobCollins', text: '@Zacharay Collins.' }
     },
 });
