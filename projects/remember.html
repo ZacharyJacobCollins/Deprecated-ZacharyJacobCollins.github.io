@@ -97,32 +97,32 @@
 
 	</div>
 
+	<footer id="footer" class="main">
+      <ul>
+        <template v-for="footerSection in footerSections">
+              <li><a href="{{ footerSection.link }}">{{ footerSection.text }}</a></li>
+        </template>
+      </ul>
+      <p> MIT <a href="https://github.com/ZacharyJacobCollins">@Zachary Collins</a></p>
+      <p class="less-significant">
+        <!-- Logo here.  SVG Works well .  -->
+      </p>
+  </footer>
 
 
-	<footer id="footer" clrss="main">
-  		<ul>
-  			<template v-for="section in sections">
-  						<li><a href="{{ section.link }}">{{ section.text }}</a></li>
-  			</template>
-  		</ul>
-  		<p> MIT <a href="https://github.com/ZacharyJacobCollins">@Zachary Collins.</a></p>
-  		<p class="less-significant">
-  			<!-- Logo here.  SVG Works well .  -->
-  		</p>
-	</footer>
+	<!-- Scripts block -->
+		  <script src="/public/js/vue/vue.min.js"></script>
 
+			<!-- Smaller vue components -->
+			<script src="/public/js/vue/stats.js"></script>
 
+			<!-- Larger Vue Components -->
+			<script src="/public/js/vue/navs.js"></script>
+			<script src="/public/js/vue/footer.js"></script>
 
-	<!-- Libraries -->
-	<script src="../public/js/vue/vue.min.js"></script>
-
-	<!-- Small Vue Components -->
-	<script src="../public/js/vue/projects.js"></script>
-
-	<!-- Larger Vue Components -->
-	<script src="../public/js/vue/navs.js"></script>
-	<script src="../public/js/vue/topnav.js"></script>
-	<script src="../public/js/vue/footer.js"></script>
+			<!-- Load in vue components -->
+			<script src="/public/js/vue/components.js"></script>
+	<!-- /Scripts block -->
 
 </body>
 </html>
