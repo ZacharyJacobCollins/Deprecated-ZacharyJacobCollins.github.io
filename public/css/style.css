@@ -11,8 +11,8 @@ html, body {
 	color: red;
 }
 
-[v-cloak] .v-cloak--hidden{
-  display: none;
+[v-cloak] {
+  display: none !important;
 }
 
 .sidebarc
