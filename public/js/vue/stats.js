@@ -42,6 +42,8 @@ var stats = new Vue({
             { title: '*Log', text: 'Value @ x=0: neg. infinity.  Value as x grows: infinite but slowly '},
             { title: '*1/x', text: 'Value @ x=0: infinite.  Value as x grows: 0. '},
             { title: '*Transforming graphical data to fit to a trendline', text: 'Checkout prework 5b for example practice problems'},
+            { title: 'V-lookups', text: 'Vertical lookup in a table.  For more info checkout <a href="https://support.office.com/en-us/article/VLOOKUP-What-it-is-and-when-to-use-it-5984e27b-4f0d-431e-83b1-7ab062c75493?CorrelationId=07b897d3-f9a5-4ab7-a864-a4d6c58a0e45&ui=en-US&rs=en-US&ad=US&ocmsassetID=RZ101862716">Documentation</a>'},
+            { title: 'H-lookups', text: 'Horizontal lookup in a table'},
           ],
         },
       ]
