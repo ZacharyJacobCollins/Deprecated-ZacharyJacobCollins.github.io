@@ -99,13 +99,13 @@
 								<template v-if="chapter.title == 'Chapter 5'">
 									<h4> Definitions </h4>
 									<ul>
-										<template v-for="definition in chapter.definitions" v-html="rawHtml">
+										<template v-for="definition in chapter.definitions">
 												<li><strong>{{ definition.term }}</strong>: {{definition.definition}}</li>
 										</template>
 									</ul>
 									<h4>Concepts </h4>
 									<ul>
-										<template v-for="concept in chapter.concepts" v-html="rawHtml">
+										<template v-for="concept in chapter.concepts">
 												<li><strong>{{ concept.title }}</strong>: {{ concept.text }}</li>
 										</template>
 									</ul>
