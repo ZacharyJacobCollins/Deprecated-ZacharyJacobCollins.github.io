@@ -31,6 +31,9 @@ var stats = new Vue({
             { term: 'Influential Point', definition: 'Pull or skew the graph'},
             { term: 'Empirical Rule', definition: '68% of data within 1 standar deviation, 95% within 2 standard deviations, 99.7% within 3 standard deviations of the respective means* '},
             { term: 'Influential', definition: 'Pull or skew the graph'},
+            { term: 'Population correlation coefficient', definition: 'Denoted by p.  1) between +1 and -1 2) if +1 or -1 all points on exact straight line.  '},
+            { term: '', definition: ''},
+
           ],
           concepts: [
             { title: 'Computing Z-scores', text: 'To find the Z score of a sample, you"ll need to find the mean, variance and standard deviation of the sample. To calculate the z-score, you will find the difference between a value in the sample and the mean, and divide it by the standard deviation.  Additionally z-score equal to 0 is element equal to the mean.  Less then 0 is less than mean, greater is greater than mean. '},
@@ -46,7 +49,12 @@ var stats = new Vue({
             { title: 'V-lookups', text: 'Vertical lookup in a table.  For more info checkout <https://support.office.com/en-us/article/VLOOKUP-What-it-is-and-when-to-use-it-5984e27b-4f0d-431e-83b1-7ab062c75493?CorrelationId=07b897d3-f9a5-4ab7-a864-a4d6c58a0e45&ui=en-US&rs=en-US&ad=US&ocmsassetID=RZ101862716>Documentation</a>'},
             { title: 'Pearson\'s Sampel Correlation Coefficient', text: 'Measures the strength of any linear relationship between two numerical variables.'},
             { title: 'Properties of r (the correlation coefficient.)', text: '1) Value of r is independent of any measurement.  (unitless, can\'t do kg^2).  2) The value of r does not depend on which of the two variables is considered x.  3) Value of r is between -1 and +1.  +1 is string upper limit correlation.   4) correlation of r=1 only occurs when all data points on scatter on the same line.  5) the measure of r is the extent to which the x and y values are linearly related.  '},
-            { title: '', text: ''},
+            { title: 'Correlation is not causation', text: 'r can be large, but does not mean that either of the two variables caused another.  They are just associated.  '},
+            { title: 'Positive vs. Negative correlation', text: 'Negative is when variables move in opposite directions, when one goes up other goes down.  Positive is in same direction.'},
+            { title: 'Correlation coefficient of 0.', text: 'Means there is a weak or no correlation between two variables.'},
+            { title: 'r = 1', text: 'slope of 1/1.'},
+            { title: 'r = -1', text: 'slope of -1/1.'},
+            { title: 'R^2', text: 'R-squared is a statistical measure of how close the data are to the fitted regression line. It is also known as the coefficient of determination, or the coefficient of multiple determination for multiple regression. ... 0% indicates that the model explains none of the variability of the response data around its mean'},
 
           ],
         },
