@@ -24,7 +24,8 @@ var stats = new Vue({
         {
           title: 'Chapter 5',
           definitions: [
-            { term: 'Correlation Coefficient', definition: 'Measurement of the strength of correlation between the x and y values'},
+            { term: 'Z-score', definition: 'Measure of how many standard deviation below or above the population mean, a raw score is.  Typically paced on a normal/bell curve.'},
+            { term: 'Correlation Coefficient', definition: 'Measurement of the strength of correlation between the x and y values.  Often represented as an \'r\''},
             { term: 'Influential Points', definition: 'Pull or skew the graph'},
             { term: 'IQR vs Std Deviation', definition: 'IQR is often reported using the "five-number summary," which includes: minimum, first quartile, median, third quartile and maximum. Like mean and standard deviation, median and IQR measure the central tendency and spread, respectively, but are robust against outliers and non-normal data'},
             { term: 'Influential Point', definition: 'Pull or skew the graph'},
@@ -43,7 +44,10 @@ var stats = new Vue({
             { title: '*1/x', text: 'Value @ x=0: infinite.  Value as x grows: 0. '},
             { title: '*Transforming graphical data to fit to a trendline', text: 'Checkout prework 5b for example practice problems'},
             { title: 'V-lookups', text: 'Vertical lookup in a table.  For more info checkout <https://support.office.com/en-us/article/VLOOKUP-What-it-is-and-when-to-use-it-5984e27b-4f0d-431e-83b1-7ab062c75493?CorrelationId=07b897d3-f9a5-4ab7-a864-a4d6c58a0e45&ui=en-US&rs=en-US&ad=US&ocmsassetID=RZ101862716>Documentation</a>'},
-            { title: 'H-lookups', text: 'Horizontal lookup in a table'},
+            { title: 'Pearson\'s Sampel Correlation Coefficient', text: 'Measures the strength of any linear relationship between two numerical variables.'},
+            { title: 'Properties of r (the correlation coefficient.)', text: '1) Value of r is independent of any measurement.  (unitless, can\'t do kg^2).  2) The value of r does not depend on which of the two variables is considered x.  3) Value of r is between -1 and +1.  +1 is string upper limit correlation.   4) correlation of r=1 only occurs when all data points on scatter on the same line.  5) the measure of r is the extent to which the x and y values are linearly related.  '},
+            { title: '', text: ''},
+
           ],
         },
       ]
