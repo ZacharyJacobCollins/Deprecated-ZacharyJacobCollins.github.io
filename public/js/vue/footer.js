@@ -4,7 +4,7 @@ var footer = new Vue({
     data: {
       footerSections: [
             { text: 'Github', link: 'https://github.com/ZacharyJacobCollins'},
-            { text: 'ZacharyJacobCollins@gmail.com', link: 'https://gmail.com'},
+            { text: 'Email', link: 'https://ZacharyJacobCollins@gmail.com'},
             { text: 'Twitter', link: 'twitter.com'},
       ],
       signature: {},
