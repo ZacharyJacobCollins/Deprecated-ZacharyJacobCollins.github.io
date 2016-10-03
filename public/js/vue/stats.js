@@ -38,9 +38,10 @@ var stats = new Vue({
             { title: 'Identifying exponential graphs for transformations', text: 'Exponential models hit a nonzero point on the y axis.'},
             { title: '*Linear', text: 'Value @ x=0: finite.  Value as x grows: infinite '},
             { title: '*Exponential', text: 'Value @ x=0: finite.  Value as x grows: 0 or infinite. '},
-            { title: '*Power', text: 'Value @ x=0: 0 or infinite.  Value as x grows: infinite or 0'},
+            { title: '*Power', text: 'Value @ x=0: 0 or infinite.  Value as x grows: infinite or 0.  Example growing is like 1/x, 1^2, 10^2, 100^2, 1000^2, 10000^2'},
             { title: '*Log', text: 'Value @ x=0: neg. infinity.  Value as x grows: infinite but slowly '},
             { title: '*1/x', text: 'Value @ x=0: infinite.  Value as x grows: 0. '},
+            { title: '*Transforming graphical data to fit to a trendline', text: 'Checkout prework 5b for example practice problems'},
           ],
         },
       ]
