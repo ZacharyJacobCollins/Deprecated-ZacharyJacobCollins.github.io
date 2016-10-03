@@ -19,7 +19,7 @@
   			<input placeholder="search" type="text" v-model="search" id="search-input" v-on:blur="reset" />
   		</div>
 
-  		<ul id="topNav" class="main-nav" v-if="! search">
+  		<ul id="topNav" class="main-nav" v-if="! search" v-cloak>
     			<template v-for="topNavSection in topNavSections">
     					<li><a href="{{ topNavSection.link }}"><strong>{{ topNavSection.text }}</strong></a></li>
     			</template>
@@ -33,7 +33,7 @@
 
 	<div class="docs-wrapper container">
 		<!-- Sidenav -->
-		<section id="sideNav" class="sidebar">
+		<section id="sideNav" class="sidebar" v-cloak>
 			<ul>
 				<template v-for="sideNavSection in sideNavSections">
 					<li><strong>{{ sideNavSection.title }}</strong>
@@ -51,14 +51,17 @@
     <!--Page Content-->
     <content>
   		<article>
-				<h4> "Greats aren't great because at birth they can paint, the greats are great because they paint a lot." </h4>
+				<h2>"Greats aren't great because at birth they can paint, the greats are great because they paint a lot." </h2>
+				<br />
+				<br />
+				<h2>"My life isn't about what I can get, or what I can have.  I've made my life about who I become.  And what I can give because I become more."</h2>
   		</article>
     </content>
     <!--Page Content-->
 
 	</div>
 
-	<footer id="footer" class="main">
+	<footer id="footer" class="main" v-cloak>
       <ul>
         <template v-for="footerSection in footerSections">
               <li><a href="{{ footerSection.link }}">{{ footerSection.text }}</a></li>
@@ -70,9 +73,8 @@
       </p>
   </footer>
 
-	<!-- Footer Scripts block -->
 
-
+	<!-- Scripts block -->
 		  <script src="/public/js/vue/vue.min.js"></script>
 
 			<!-- Smaller vue components -->
@@ -84,9 +86,7 @@
 
 			<!-- Load in vue components -->
 			<script src="/public/js/vue/components.js"></script>
-
-
-	<!-- /Footer Scripts block -->
+	<!-- /Scripts block -->
 
 
 </body>

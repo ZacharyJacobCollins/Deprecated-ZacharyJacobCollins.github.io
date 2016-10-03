@@ -11,6 +11,10 @@ html, body {
 	color: red;
 }
 
+[v-cloak] {
+  display: none !important;
+}
+
 .sidebarc
 {
 	padding-left: 30px
