@@ -36,13 +36,6 @@ var stats = new Vue({
             { term: 'Refresher on equation of a line', definition: 'y = ax + b'},
             { term: 'Regression analysis', definition: 'the collection of methods involving the fitting of lines, curves, etc. to bivariate and multivariate data '},
             { term: '', definition: ''},
-            { term: '', definition: ''},
-            { term: '', definition: ''},
-            { term: '', definition: ''},
-            { term: '', definition: ''},
-            { term: '', definition: ''},
-
-
           ],
           concepts: [
             { title: 'Computing Z-scores', text: 'To find the Z score of a sample, you"ll need to find the mean, variance and standard deviation of the sample. To calculate the z-score, you will find the difference between a value in the sample and the mean, and divide it by the standard deviation.  Additionally z-score equal to 0 is element equal to the mean.  Less then 0 is less than mean, greater is greater than mean. '},
@@ -68,10 +61,6 @@ var stats = new Vue({
             { title: 'Danger of extrapolation', text: 'Make sure when using equation of least squares to only fit inside the the set. '},
             { title: 'Sample regression line', text: 'the resulting line from the equation of least squares'},
             { title: '', text: ''},
-            { title: '', text: ''},
-            { title: '', text: ''},
-            { title: '', text: ''},
-
           ],
         },
       ]
