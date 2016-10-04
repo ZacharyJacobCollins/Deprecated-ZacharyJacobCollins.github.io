@@ -34,7 +34,7 @@ var stats = new Vue({
             { term: 'Population correlation coefficient', definition: 'Denoted by p.  1) between +1 and -1 2) if +1 or -1 all points on exact straight line.  '},
             { term: 'Regression analysis', definition: 'use information regarding one variable (x) to draw conclusions about a second variable(y)'},
             { term: 'Refresher on equation of a line', definition: 'y = ax + b'},
-            { term: 'Regression analysis', definition: 'the collection of methods involving the fitting of lines, curves, etc. to bivariate and multivariate data'},
+            { term: 'Regression analysis', definition: 'the collection of methods involving the fitting of lines, curves, etc. to bivariate and multivariate data '},
             { term: '', definition: ''},
             { term: '', definition: ''},
             { term: '', definition: ''},
