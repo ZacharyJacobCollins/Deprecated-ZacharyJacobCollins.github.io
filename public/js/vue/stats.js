@@ -32,7 +32,16 @@ var stats = new Vue({
             { term: 'Empirical Rule', definition: '68% of data within 1 standar deviation, 95% within 2 standard deviations, 99.7% within 3 standard deviations of the respective means* '},
             { term: 'Influential', definition: 'Pull or skew the graph'},
             { term: 'Population correlation coefficient', definition: 'Denoted by p.  1) between +1 and -1 2) if +1 or -1 all points on exact straight line.  '},
+            { term: 'Regression analysis', definition: 'use information regarding one variable (x) to draw conclusions about a second variable(y)'},
+            { term: 'Refresher on equation of a line', definition: 'y = ax + b'},
+            { term: 'Regression analysis', definition: 'the collection of methods involving the fitting of lines, curves, etc. to bivariate and multivariate data'},
             { term: '', definition: ''},
+            { term: '', definition: ''},
+            { term: '', definition: ''},
+            { term: '', definition: ''},
+            { term: '', definition: ''},
+            { term: '', definition: ''},
+
 
           ],
           concepts: [
@@ -55,6 +64,13 @@ var stats = new Vue({
             { title: 'r = 1', text: 'slope of 1/1.'},
             { title: 'r = -1', text: 'slope of -1/1.'},
             { title: 'R^2', text: 'R-squared is a statistical measure of how close the data are to the fitted regression line. It is also known as the coefficient of determination, or the coefficient of multiple determination for multiple regression. ... 0% indicates that the model explains none of the variability of the response data around its mean'},
+            { title: 'Equation of least squares', text: 'it\'s an equation, be sure to lookup'},
+            { title: 'Danger of extrapolation', text: 'Make sure when using equation of least squares to only fit inside the the set. '},
+            { title: 'Sample regression line', text: 'the resulting line from the equation of least squares'},
+            { title: '', text: ''},
+            { title: '', text: ''},
+            { title: '', text: ''},
+            { title: '', text: ''},
 
           ],
         },
