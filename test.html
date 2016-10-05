@@ -2,15 +2,18 @@
 <html>
 <body>
 
-		<div id="toReplace">
-			 <div :is="currentComponent"></div>
-			 <div v-show="!currentComponent" v-for="component in componentsArray">
-				 <button @click="swapComponent(component)">{{component}}</button>
-			 </div>
-		 </div>
-			 <button @click="swapComponent(null)">Close</button>
+		<div id="componentSwapper">
+				<!-- The current component as a div -->
+			 	<div :is="currentComponent" :sections="sections" ></div>
+				<!-- if current component is null show list of components -->
+			 	<div v-show="!currentComponent" v-for="component in componentsArray">
+				 	<button @click="swapComponent(component)">{{ component }}</button>
+			 	</div>
+				<!-- /current component -->
+			 	<div>
+				 	<button @click="swapComponent(null)">Close</button>
+				</div>
 		</div>
-
 
 	<!-- Scripts block -->
 		<script src="public/js/vue/vue.min.js"></script>
@@ -21,7 +24,6 @@
 		<!-- Load in vue components -->
 		<script src="public/js/vue/testcomponents.js"></script>
 	<!-- /Scripts block -->
-
 
 </body>
 </html>

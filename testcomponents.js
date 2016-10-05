@@ -1,16 +1,25 @@
 // The header component
-Vue.component('foo', {
+Vue.component('stats', {
+  props: ['sections'],
   template:
   `
-    <h1>Foo component</h1>
+    <h1>Stats</h1>
+    <template v-for="section in sections">
+      f
+    </template>
   `,
 });
 
+//Component swapper vue instance
 new Vue({
-  el: 'body',
+  el: '#componentSwapper',
   data: {
     currentComponent: null,
-    componentsArray: ['foo', 'bar']
+    componentsArray: ['stats', 'bar'],
+    sections: [
+      {},
+      {},
+    ]
   },
   components: {
     'bar': {
