@@ -63,6 +63,20 @@ var stats = new Vue({
             { title: '', text: ''},
           ],
         },
+        {
+          title: 'Chapter 6',
+          definitions: [
+            { term: 'Multichoose', definition: 'Not part of course, but does order matter?'},
+            { term: '', definition: ''},
+
+          ],
+          concepts: [
+            { title: 'How many ways to put a list in order', text: 'Where list size is n, n! (factorial)'},
+            { title: 'Conditional probability', text: 'Do umbrellas cause rain? No.  Rain causes umbrella use.  '},
+            { title: '', text: ''},
+          ],
+        }
+
       ]
     }
 });

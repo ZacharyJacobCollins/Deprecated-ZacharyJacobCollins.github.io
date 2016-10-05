@@ -1,98 +1,26 @@
 <!DOCTYPE HTML>
 <html>
+<body>
 
-<!-- The header component found in components.js -->
-<header-component></header-component>
-
-<body class="docs">
-	<span class="overlay"></span>
-
-	<!-- Top nav bar -->
-	<nav class="main">
-  		<!-- Name -->
-  		<a href="/" class="brand nav-block">
-  			<span>Zachary Jacob Collins</span>
-  		</a>
-
-  		<!-- Search input -->
-  		<div class="search nav-block">
-  			<input placeholder="search" type="text" v-model="search" id="search-input" v-on:blur="reset" />
-  		</div>
-
-  		<ul id="topNav" class="main-nav" v-if="! search">
-    			<template v-for="topNavSection in topNavSections">
-    					<li><a href="{{ topNavSection.link }}"><strong>{{ topNavSection.text }}</strong></a></li>
-    			</template>
-      		<div class="responsive-sidebar-nav">
-      			<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
-      		</div>
-  		</ul>
-	</nav>
-	<!-- /Top nav bar -->
-
-
-	<div class="docs-wrapper container">
-		<!-- Sidenav -->
-		<section id="sideNav" class="sidebar">
-			<ul>
-				<template v-for="sideNavSection in sideNavSections">
-					<li><strong>{{ sideNavSection.title }}</strong>
-						<ul>
-							<template v-for="c in sideNavSection.content">
-									<li><a href="{{ c.link }}">{{ c.text }}</a></li>
-							</template>
-						</ul>
-					</li>
-				</template>
-			</ul>
-		</section>
-		<!-- /Sidenav -->
-
-    <!--Page Content-->
-    <content>
-  		<article>
-				<h2>"Greats aren't great because at birth they can paint, the greats are great because they paint a lot." </h2>
-				<br />
-				<br />
-				<h2>"My life isn't about what I can get, or what I can have.  I've made my life about who I become.  And what I can give because I become more."</h2>
-  		</article>
-    </content>
-    <!--Page Content-->
-
-	</div>
-
-	<!-- Footer block -->
-		<footer id="footer" class="main">
-				<ul>
-					<template v-for="footerSection in footerSections">
-								<li><a href="{{ footerSection.link }}">{{ footerSection.text }}</a></li>
-					</template>
-				</ul>
-				<p> MIT <a href="https://github.com/ZacharyJacobCollins">@Zachary Collins</a></p>
-				<p class="less-significant">
-					<!-- Logo here.  SVG Works well .  -->
-				</p>
-		</footer>
-	<!-- /Footer block -->
+		<div id="toReplace">
+			 <div :is="currentComponent"></div>
+			 <div v-show="!currentComponent" v-for="component in componentsArray">
+				 <button @click="swapComponent(component)">{{component}}</button>
+			 </div>
+		 </div>
+			 <button @click="swapComponent(null)">Close</button>
+		</div>
 
 
 	<!-- Scripts block -->
-		<script src="/public/js/vue/vue.min.js"></script>
+		<script src="public/js/vue/vue.min.js"></script>
 
 		<!-- Smaller vue components -->
-		<script src="/public/js/vue/stats.js"></script>
-		<script src="/public/js/vue/projects.js"></script>
-		<script src="/public/js/vue/books.js"></script>
-		<script src="/public/js/vue/discrete.js"></script>
-
-		<!-- Larger Vue Components -->
-		<script src="/public/js/vue/navs.js"></script>
-		<script src="/public/js/vue/footer.js"></script>
+		<script src="testcomponents.js"></script>
 
 		<!-- Load in vue components -->
-		<script src="/public/js/vue/components.js"></script>
+		<script src="public/js/vue/testcomponents.js"></script>
 	<!-- /Scripts block -->
-
 
 
 </body>
