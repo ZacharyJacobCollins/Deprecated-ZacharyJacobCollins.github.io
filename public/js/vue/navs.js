@@ -11,7 +11,6 @@ var topNav = new Vue({
       },
 });
 
-
 var sideNav = new Vue({
   el: '#sideNav',
   data: {
