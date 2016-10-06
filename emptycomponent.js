@@ -1,5 +1,5 @@
 //Side nav component
-Vue.component('discrete-component', {
+Vue.component('home-component', {
   template:
   `
   `,
