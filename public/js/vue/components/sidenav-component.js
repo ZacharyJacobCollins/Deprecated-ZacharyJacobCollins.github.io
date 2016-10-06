@@ -1,12 +1,10 @@
 //Side nav component
 Vue.component('sidenav-component', {
   methods: {
-    swapComponent: function(component) {
-      eventHub.$emit('swapComponent', component) {
-        return component;
-      })
+    sidebarclick: function(component) {
+      // console.log(component);
+      this.$emit('sidebarclick', component);
     }
-  }
   },
   template:
   `
@@ -17,7 +15,8 @@ Vue.component('sidenav-component', {
           <li><strong>{{ sideNavSection.title }}</strong>
             <ul>
               <template v-for="c in sideNavSection.content">
-                  <li><a href="#" @click="swapComponent(c.component)">{{ c.text }}</a></li>
+                  <!-- Where sidebarclick found in the vue component -->
+                  <li><a href="#" @click="sidebarclick(c.component)">{{ c.text }}</a></li>
               </template>
             </ul>
           </li>

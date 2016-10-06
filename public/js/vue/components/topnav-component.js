@@ -1,4 +1,10 @@
 Vue.component('topnav-component', {
+  methods: {
+    sidebarclick: function(component) {
+      // console.log(component);
+      this.$emit('topnavclick', component);
+    }
+  },
   template:
   `
     <nav class="main">
@@ -14,7 +20,7 @@ Vue.component('topnav-component', {
 
         <ul id="topNav" class="main-nav" v-if="! search">
             <template v-for="topNavSection in topNavSections">
-                <li><a href="{{ topNavSection.link }}"><strong>{{ topNavSection.button }}</strong></a></li>
+                <li><a href="#" @click="topnavclick(topNavSection.component)"><strong>{{ topNavSection.button }}</strong></a></li>
             </template>
             <div class="responsive-sidebar-nav">
               <a href="#" class="toggle-slide menu-link btn">&#9776;</a>
@@ -26,11 +32,11 @@ Vue.component('topnav-component', {
       return {
         topNavSections:
         [
-          { button: '127.0.0.1', link: '/home/reference.html'},
-          { button: 'Projects', link: '/projects/index.html'},
-          { button: 'Body Building', link: '/bodybuilding/index.html'},
-          { button: 'Technologies', link: '/technologies/index.html'},
-          { button: 'Reading', link: '/reading/index.html'},
+          { button: '127.0.0.1', component: 'home-component'},
+          { button: 'Projects', component: 'projects-component'},
+          { button: 'Body Building', component: 'bodybuilding-component'},
+          { button: 'Technologies', component: 'technologies-component'},
+          { button: 'Reading', component: 'technologies-component'},
         ],
       }
   }

@@ -1,90 +1,47 @@
 <!DOCTYPE HTML>
 <html>
-
-<!-- The header component found in components.js -->
 <header-component></header-component>
-
 <body class="docs">
-	<span class="overlay"></span>
+		<topnav-component></topnav-component>
 
-	<!-- Top nav bar -->
-	<nav class="main">
-  		<!-- Name -->
-  		<a href="/" class="brand nav-block">
-  			<span>Zachary Jacob Collins</span>
-  		</a>
+		<!-- Document container -->
+		<div class="docs-wrapper container">
+				<sidenav-component v-on:sidebarclick="swapComponent"></sidenav-component>
 
-  		<!-- Search input -->
-  		<div class="search nav-block">
-  			<input placeholder="search" type="text" v-model="search" id="search-input" v-on:blur="reset" />
-  		</div>
+				<!--Page Content-->
+				<content>
+					<article>
+							<!-- the component templated  here -->
 
-  		<ul id="topNav" class="main-nav" v-if="! search">
-    			<template v-for="topNavSection in topNavSections">
-    					<li><a href="{{ topNavSection.link }}"><strong>{{ topNavSection.text }}</strong></a></li>
-    			</template>
-      		<div class="responsive-sidebar-nav">
-      			<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
-      		</div>
-  		</ul>
-	</nav>
-	<!-- /Top nav bar -->
+									<!-- The current component as a div -->
+									<div :is="currentComponent" :sections="sections"></div>
+
+							<!-- /the component templated here -->
+					</article>
+				</content>
+				<!--Page Content-->
+
+		</div>
+		<!-- /Document container -->
 
 
-	<div class="docs-wrapper container">
-		<!-- Sidenav -->
-		<section id="sideNav" class="sidebar">
-			<ul>
-				<template v-for="sideNavSection in sideNavSections">
-					<li><strong>{{ sideNavSection.title }}</strong>
-						<ul>
-							<template v-for="c in sideNavSection.content">
-									<li><a href="{{ c.link }}">{{ c.text }}</a></li>
-							</template>
-						</ul>
-					</li>
-				</template>
-			</ul>
-		</section>
-		<!-- /Sidenav -->
+		<footer-component></footer-component>
 
-    <!--Page Content-->
-    <content>
-  		<article>
-				<h2>"Greats aren't great because at birth they can paint, the greats are great because they paint a lot." </h2>
-  		</article>
-    </content>
-    <!--Page Content-->
-
-	</div>
-
-	<!-- Footer block -->
-		<footer id="footer" class="main">
-				<ul>
-					<template v-for="footerSection in footerSections">
-								<li><a href="{{ footerSection.link }}">{{ footerSection.text }}</a></li>
-					</template>
-				</ul>
-				<p> MIT <a href="https://github.com/ZacharyJacobCollins">@Zachary Collins</a></p>
-				<p class="less-significant">
-					<!-- Logo here.  SVG Works well .  -->
-				</p>
-		</footer>
-	<!-- /Footer block -->
-
-
-	<!-- Scripts block -->
+		<!-- Scripts block -->
 		<script src="/public/js/vue/vue.min.js"></script>
+		<script src="/public/js/vue/eventHub.js"></script>
+		<script src="/public/js/vue/components/statistics-component.js"></script>
+		<script src="/public/js/vue/components/footer-component.js"></script>
+		<script src="/public/js/vue/components/topnav-component.js"></script>
+		<script src="/public/js/vue/components/header-component.js"></script>
+		<script src="/public/js/vue/components/sidenav-component.js"></script>
+		<script src="/public/js/vue/components/home-component.js"></script>
+
 
 		<!-- Smaller vue components -->
+		<script src="testcomponents.js"></script>
 
-		<!-- Larger Vue Components -->
-		<script src="/public/js/vue/navs.js"></script>
-		<script src="/public/js/vue/footer.js"></script>
-
-		<!-- Load in vue components -->
-		<script src="/public/js/vue/components.js"></script>
-	<!-- /Scripts block -->
+		<!-- /Scripts block -->
 
 </body>
 </html>

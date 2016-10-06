@@ -6,23 +6,17 @@
 
 		<!-- Document container -->
 		<div class="docs-wrapper container">
-				<sidenav-component></sidenav-component>
+				<sidenav-component v-on:sidebarclick="swapComponent"></sidenav-component>
 
 				<!--Page Content-->
 				<content>
 					<article>
-							<!-- content here -->
+							<!-- the component templated  here -->
+
 									<!-- The current component as a div -->
-									<div :is="currentComponent" :sections="sections" ></div>
-									<!-- if current component is null show list of components -->
-									<div v-show="!currentComponent" v-for="component in componentsArray">
-										<button @click="swapComponent(component)">{{ component }}</button>
-									</div>
-									<!-- /current component -->
-									<div>
-										<button @click="swapComponent(null)">Close</button>
-									</div>
-							<!-- content here -->
+									<div :is="currentComponent" :sections="sections"></div>
+
+							<!-- /the component templated here -->
 					</article>
 				</content>
 				<!--Page Content-->
@@ -41,6 +35,7 @@
 		<script src="public/js/vue/components/topnav-component.js"></script>
 		<script src="public/js/vue/components/header-component.js"></script>
 		<script src="public/js/vue/components/sidenav-component.js"></script>
+		<script src="public/js/vue/components/home-component.js"></script>
 
 
 		<!-- Smaller vue components -->
