@@ -2,6 +2,7 @@
 Vue.component('discrete-component', {
   template:
   `
+  test
   `,
   data: function() {
     return {
