@@ -1,29 +1,52 @@
 <!DOCTYPE HTML>
 <html>
-<body>
+<header-component></header-component>
+<body class="docs">
+		<topnav-component></topnav-component>
 
-		<div id="componentSwapper">
-				<!-- The current component as a div -->
-			 	<div :is="currentComponent" :sections="sections" ></div>
-				<!-- if current component is null show list of components -->
-			 	<div v-show="!currentComponent" v-for="component in componentsArray">
-				 	<button @click="swapComponent(component)">{{ component }}</button>
-			 	</div>
-				<!-- /current component -->
-			 	<div>
-				 	<button @click="swapComponent(null)">Close</button>
-				</div>
+		<!-- Document container -->
+		<div class="docs-wrapper container">
+				<sidenav-component></sidenav-component>
+
+				<!--Page Content-->
+				<content>
+					<article>
+							<!-- content here -->
+									<!-- The current component as a div -->
+									<div :is="currentComponent" :sections="sections" ></div>
+									<!-- if current component is null show list of components -->
+									<div v-show="!currentComponent" v-for="component in componentsArray">
+										<button @click="swapComponent(component)">{{ component }}</button>
+									</div>
+									<!-- /current component -->
+									<div>
+										<button @click="swapComponent(null)">Close</button>
+									</div>
+							<!-- content here -->
+					</article>
+				</content>
+				<!--Page Content-->
+
 		</div>
+		<!-- /Document container -->
 
-	<!-- Scripts block -->
+
+		<footer-component></footer-component>
+
+		<!-- Scripts block -->
 		<script src="public/js/vue/vue.min.js"></script>
+		<script src="public/js/vue/eventHub.js"></script>
+		<script src="public/js/vue/components/statistics-component.js"></script>
+		<script src="public/js/vue/components/footer-component.js"></script>
+		<script src="public/js/vue/components/topnav-component.js"></script>
+		<script src="public/js/vue/components/header-component.js"></script>
+		<script src="public/js/vue/components/sidenav-component.js"></script>
+
 
 		<!-- Smaller vue components -->
 		<script src="testcomponents.js"></script>
 
-		<!-- Load in vue components -->
-		<script src="public/js/vue/testcomponents.js"></script>
-	<!-- /Scripts block -->
+		<!-- /Scripts block -->
 
 </body>
 </html>

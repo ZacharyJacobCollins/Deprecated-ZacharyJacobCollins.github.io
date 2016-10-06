@@ -1,35 +1,23 @@
-// The header component
-Vue.component('stats', {
-  props: ['sections'],
-  template:
-  `
-    <h1>Stats</h1>
-    <template v-for="section in sections">
-      f
-    </template>
-  `,
-});
-
 //Component swapper vue instance
 new Vue({
-  el: '#componentSwapper',
+  el: 'html',
   data: {
     currentComponent: null,
-    componentsArray: ['stats', 'bar'],
-    sections: [
-      {},
-      {},
-    ]
+    componentsArray: ['statistics-component', 'bar'],
   },
   components: {
     'bar': {
       template: '<h1>Bar component</h1>'
     }
   },
+  created: function() {
+    eventHub.$on('swapComponent', function (component) {
+      console.log(component);
+    });
+  },
   methods: {
-    swapComponent: function(component)
-    {
+    swapComponent: function(component) {
       this.currentComponent = component;
     }
   }
-})
+});
