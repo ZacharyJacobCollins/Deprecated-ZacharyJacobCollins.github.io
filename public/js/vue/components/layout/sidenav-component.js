@@ -46,7 +46,7 @@ Vue.component('sidenav-component', {
           title: 'Projects',
           //The array of projects coming from the projects vue component
           content: [
-            { text: 'Remember', component: '/projects/remember.html'},
+            { text: 'Remember', component: 'remember-component'},
             { text: 'Go chat', component: '/projects/gochat.html'},
             { text: 'Valet', component: '/projects/valet.html'},
             { text: 'Cracking the coding interview', component: '/projects/cracking.html'},
