@@ -1,4 +1,3 @@
-//Side nav component
 Vue.component('home-component', {
   template:
   `
@@ -8,4 +7,10 @@ Vue.component('home-component', {
 
     }
   }
+});
+
+Vue.component('home-component', {
+  template:
+  `
+  `,
 });

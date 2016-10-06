@@ -2,7 +2,7 @@
 Vue.component('comp-component', {
   template:
   `
-    Test
+    Empty
   `,
   data: function() {
     return {

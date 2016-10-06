@@ -1,11 +1,6 @@
-//Side nav component
 Vue.component('go-component', {
   template:
   `
+    <h1> Go </h1>
   `,
-  data: function() {
-    return {
-
-    }
-  }
 });
