@@ -1,4 +1,4 @@
-//Statistics
+''//Statistics
 Vue.component('statistics-component', {
   template:
   `
