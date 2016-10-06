@@ -32,8 +32,8 @@ Vue.component('sidenav-component', {
           title: 'College',
           content: [
             { text: 'Statistics 360', component: 'statistics-component'},
-            { text: 'Discrete 314', component: '/college/discrete.html'},
-            { text: 'Comp II', component: '/college/comp.html'},
+            { text: 'Discrete 314', component: 'discrete-component'},
+            { text: 'Comp II', component: 'comp-component'},
           ]
         },
         {

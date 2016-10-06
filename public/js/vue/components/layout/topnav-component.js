@@ -15,7 +15,7 @@ Vue.component('topnav-component', {
 
         <!-- Search input -->
         <div class="search nav-block">
-          <input placeholder="search" type="button" v-model="search" id="search-input" v-on:blur="reset" />
+          <input placeholder="search" type="button" id="search-input" v-on:blur="reset" />
         </div>
 
         <ul id="topNav" class="main-nav" v-if="! search">
