@@ -23,7 +23,7 @@ Vue.component('excel-component', {
         {
             title: 'Excel Concepts',
             individualConcepts: [
-              { term: '', definition: '' },
+              { term: 'Office excel vs Google excel', definition: 'Office Excel has better graphs, google excel has better functions' },
               { term: '', definition: '' },
             ]
         },
