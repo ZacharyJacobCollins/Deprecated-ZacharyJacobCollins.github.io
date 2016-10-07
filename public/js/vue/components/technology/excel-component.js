@@ -24,6 +24,7 @@ Vue.component('excel-component', {
             title: 'Excel Concepts',
             individualConcepts: [
               { term: 'Office excel vs Google excel', definition: 'Office Excel has better graphs, google excel has better functions' },
+              { term: 'Element alignment', definition: 'If values are aligned to the right excel is seeing the element as a number.  If aligned left it\'s seeing them as a string' },
               { term: '', definition: '' },
             ]
         },
