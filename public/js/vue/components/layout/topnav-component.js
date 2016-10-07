@@ -1,6 +1,6 @@
 Vue.component('topnav-component', {
   methods: {
-    sidebarclick: function(component) {
+    topnavclick: function(component) {
       console.log(component);
       this.$emit('topnavclick', component);
     }
