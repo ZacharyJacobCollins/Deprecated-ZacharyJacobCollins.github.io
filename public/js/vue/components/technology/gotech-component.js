@@ -1,4 +1,4 @@
-Vue.component('go-component', {
+Vue.component('gotech-component', {
   template:
   `
     <h1> Go </h1>

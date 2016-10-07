@@ -6,7 +6,6 @@ new Vue({
   },
   methods: {
     swapComponent: function(component) {
-      console.log(component);
       this.currentComponent = component;
     }
   }

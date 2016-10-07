@@ -2,7 +2,6 @@
 Vue.component('sidenav-component', {
   methods: {
     sidebarclick: function(component) {
-      // console.log(component);
       this.$emit('sidebarclick', component);
     }
   },
@@ -39,7 +38,7 @@ Vue.component('sidenav-component', {
         {
           title: 'Acm ',
           content: [
-            { text: 'About', component: '/acm/about.html'},
+            { text: 'About', component: 'acm-component'},
           ]
         },
         {
@@ -47,67 +46,67 @@ Vue.component('sidenav-component', {
           //The array of projects coming from the projects vue component
           content: [
             { text: 'Remember', component: 'remember-component'},
-            { text: 'Go chat', component: '/projects/gochat.html'},
-            { text: 'Valet', component: '/projects/valet.html'},
-            { text: 'Cracking the coding interview', component: '/projects/cracking.html'},
+            { text: 'Go chat', component: 'gochat-component'},
+            { text: 'Valet', component: 'valet-component'},
+            { text: 'Cracking the coding interview', component: 'cracking-component'},
           ]
         },
         {
           title: 'Technologies',
           content: [
-            { text: 'Go', component: '/technologies/go.html'},
-            { text: 'Laravel', component: '/technologies/laravel.html'},
-            { text: 'SQL', component: '/technologies/sql.html'},
-            { text: 'Javascript', component: '/technologies/javascript.html'},
-            { text: 'Bash', component: '/technologies/bash.html'},
-            { text: 'Vim', component: '/technologies/vim.html'},
-            { text: 'Vue.js', component: '/technologies/vue.html'},
-            { text: '.bashrc', component: '/technologies/bashrc.html'},
-            { text: '.vimrc', component: '/technologies/vimrc.html'},
+            { text: 'Go', component: 'gotech-component'},
+            { text: 'Laravel', component: 'laraveltech-component'},
+            { text: 'SQL', component: 'sqltech-component'},
+            { text: 'Javascript', component: 'jstech-component'},
+            { text: 'Bash', component: 'bashtech-component'},
+            { text: 'Vim', component: 'vimtech-component'},
+            { text: 'Vue.js', component: 'vuetech-component'},
+            { text: '.bashrc', component: 'bashrctech-component'},
+            { text: '.vimrc', component: 'vimrctech-component'},
           ]
         },
         {
           title: 'Reading',
           content: [
-            { text: 'Books', component: '/reading/books.html'},
+            { text: 'Books', component: 'books-component'},
           ],
         },
         {
           title: 'Resources',
           content: [
-            { text: 'Frontend', component: '/resources/frontend/index.html'},
+            { text: 'Frontend', component: 'frontendresources-component'},
           ],
         },
         {
           title: 'Body Building',
           content: [
-            { text: 'Workouts', component: '/bodybuilding/workouts.html'},
-            { text: 'Log', component: '/bodybuilding/log.html'},
-            { text: 'Eating', component: '/bodybuilding/eating.html'},
+            { text: 'Workouts', component: 'bbworkouts-component'},
+            { text: 'Log', component: 'bblog-component'},
+            { text: 'Eating', component: 'bbeating-component'},
           ]
         },
         {
           title: 'Media',
           content: [
-            { text: 'Videos', component: '/media/videos.html'},
-            { text: 'Quotes', component: '/media/quotes.html'},
-            { text: 'Cool People', component: '/media/people.html'},
-            { text: 'Music', component: '/media/music.html'},
-            { text: 'Memes', component: '/media/memes.html'},
-            { text: 'Ted Talks', component: '/media/tedtalks.html'},
+            { text: 'Videos', component: 'videosmedia-component'},
+            { text: 'Quotes', component: 'quotesmedia-component'},
+            { text: 'Cool People', component: 'peoplemedia-component'},
+            { text: 'Music', component: 'musicmedia-component'},
+            { text: 'Memes', component: 'memesmedia-component'},
+            { text: 'Ted Talks', component: 'tedtalksmedia-component'},
           ]
         },
         {
           title: 'Meetups',
           content: [
-            { text: 'Ann Arbor Gophers', component: '/meetups/gophers.html'},
+            { text: 'Ann Arbor Gophers', component: 'gophersmeetup-component'},
           ]
         },
         {
           title: 'Career',
           content: [
-            { text: 'Interview Prep', component: '/career/interviews.html' },
-            { text: 'Resume', component: '/career/resume.html' },
+            { text: 'Interview Prep', component: 'inteviews-component' },
+            { text: 'Resume', component: 'resume-component' },
           ]
         },
       ],

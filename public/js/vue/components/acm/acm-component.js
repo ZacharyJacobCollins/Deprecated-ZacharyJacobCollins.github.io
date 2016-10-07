@@ -1,5 +1,5 @@
 //Side nav component
-Vue.component('acm-about-component', {
+Vue.component('acm-component', {
   template:
   `
     <h2>Assocation for Computing Machinery</h2>
