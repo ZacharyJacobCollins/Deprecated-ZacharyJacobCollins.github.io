@@ -26,5 +26,4 @@ Vue.component('sql-component', {
         ],
       }
     }
-  }
-});
+  });
