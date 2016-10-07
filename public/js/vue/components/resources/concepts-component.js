@@ -14,14 +14,14 @@ Vue.component('concepts-component', {
   data: function() {
     return {
       concepts: [
-        {
-            title: 'Devops',
-            individualConcepts: [
-                { term: 'Greenfield deployment', definition: 'installation and configuration of a network where none existed before.  ie. a new office.' }
-                { term: 'Brownfield deployment', definition: 'an upgrade or addition to an existing network and uses some legacy components' }
-                { term: '', definition: '' }
-            ]
-        },
+      {
+          title: 'Devops',
+          individualConcepts: [
+              { term: 'Greenfield deployment', definition: 'installation and configuration of a network where none existed before.  ie. a new office.' },
+              { term: 'Brownfield deployment', definition: 'an upgrade or addition to an existing network and uses some legacy components' },
+              { term: '', definition: '' },
+          ]
+      },
 
       ]
     }
