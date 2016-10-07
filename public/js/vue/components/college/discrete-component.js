@@ -2,7 +2,7 @@
 Vue.component('discrete-component', {
   template:
   `
-    Lab One
+    Discrete Mathematical Structures
     <!-- Lab one gist -->
     <script src="https://gist.github.com/ZacharyJacobCollins/06ad43ed99e8b2d0be66cf29fab7cafc.js"></script>
   `,
