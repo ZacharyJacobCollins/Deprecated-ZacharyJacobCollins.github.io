@@ -1,7 +1,7 @@
 Vue.component('topnav-component', {
   methods: {
     sidebarclick: function(component) {
-      // console.log(component);
+      console.log(component);
       this.$emit('topnavclick', component);
     }
   },
