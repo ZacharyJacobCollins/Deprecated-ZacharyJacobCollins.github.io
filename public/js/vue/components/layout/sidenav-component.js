@@ -89,12 +89,6 @@ Vue.component('sidenav-component', {
           ]
         },
         {
-          title: 'Meetups',
-          content: [
-            { text: 'Ann Arbor Gophers', component: 'a2gophers-component'},
-          ]
-        },
-        {
           title: 'Career',
           content: [
             { text: 'Interview Prep', component: 'interviews-component' },

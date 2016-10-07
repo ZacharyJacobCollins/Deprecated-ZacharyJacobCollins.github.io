@@ -1,6 +1,6 @@
-Vue.component('frontendresources-component-component', {
+Vue.component('frontendresources-component', {
   template:
   `
-    <h1> Test </h1>
+    <h1> Frontend resources </h1>
   `,
 });
