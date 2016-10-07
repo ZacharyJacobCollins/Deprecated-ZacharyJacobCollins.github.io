@@ -32,7 +32,6 @@ Vue.component('sidenav-component', {
           content: [
             { text: 'Statistics 360', component: 'statistics-component'},
             { text: 'Discrete 314', component: 'discrete-component'},
-            { text: 'Comp II', component: 'comp-component'},
           ]
         },
         {
@@ -54,15 +53,15 @@ Vue.component('sidenav-component', {
         {
           title: 'Technologies',
           content: [
-            { text: 'Go', component: 'gotech-component'},
-            { text: 'Laravel', component: 'laraveltech-component'},
-            { text: 'SQL', component: 'sqltech-component'},
-            { text: 'Javascript', component: 'jstech-component'},
-            { text: 'Bash', component: 'bashtech-component'},
-            { text: 'Vim', component: 'vimtech-component'},
-            { text: 'Vue.js', component: 'vuetech-component'},
-            { text: '.bashrc', component: 'bashrctech-component'},
-            { text: '.vimrc', component: 'vimrctech-component'},
+            { text: 'Go', component: 'go-component'},
+            { text: 'Laravel', component: 'laravel-component'},
+            { text: 'SQL', component: 'sql-component'},
+            { text: 'Javascript', component: 'js-component'},
+            { text: 'Bash', component: 'bash-component'},
+            { text: 'Vim', component: 'vim-component'},
+            { text: 'Vue.js', component: 'vue-component'},
+            { text: '.bashrc', component: 'bashrc-component'},
+            { text: '.vimrc', component: 'vimrc-component'},
           ]
         },
         {
