@@ -60,8 +60,6 @@ Vue.component('sidenav-component', {
             { text: 'Bash', component: 'bash-component'},
             { text: 'Vim', component: 'vim-component'},
             { text: 'Vue.js', component: 'vue-component'},
-            { text: '.bashrc', component: 'bashrc-component'},
-            { text: '.vimrc', component: 'vimrc-component'},
           ]
         },
         {
