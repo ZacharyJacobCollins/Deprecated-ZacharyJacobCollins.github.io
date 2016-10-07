@@ -1,8 +1,8 @@
 //Side nav component
 Vue.component('sidenav-component', {
   methods: {
-    sidebarclick: function(component) {
-      this.$emit('sidebarclick', component);
+    componentclick: function(component) {
+      this.$emit('componentclick', component);
     }
   },
   template:
@@ -14,8 +14,8 @@ Vue.component('sidenav-component', {
           <li><strong>{{ sideNavSection.title }}</strong>
             <ul>
               <template v-for="c in sideNavSection.content">
-                  <!-- Where sidebarclick found in the vue component -->
-                  <li><a href="#" @click="sidebarclick(c.component)">{{ c.text }}</a></li>
+                  <!-- Where componentclick found in the vue component -->
+                  <li><a href="#" @click="componentclick(c.component)">{{ c.text }}</a></li>
               </template>
             </ul>
           </li>
