@@ -65,12 +65,6 @@ Vue.component('sidenav-component', {
           ]
         },
         {
-          title: 'Reading',
-          content: [
-            { text: 'Books', component: 'books-component'},
-          ],
-        },
-        {
           title: 'Resources',
           content: [
             { text: 'Frontend', component: 'frontendresources-component'},
@@ -79,32 +73,33 @@ Vue.component('sidenav-component', {
         {
           title: 'Body Building',
           content: [
-            { text: 'Workouts', component: 'bbworkouts-component'},
-            { text: 'Log', component: 'bblog-component'},
-            { text: 'Eating', component: 'bbeating-component'},
+            { text: 'Workouts', component: 'workouts-component'},
+            { text: 'Log', component: 'log-component'},
+            { text: 'Eating', component: 'eating-component'},
           ]
         },
         {
           title: 'Media',
           content: [
-            { text: 'Videos', component: 'videosmedia-component'},
-            { text: 'Quotes', component: 'quotesmedia-component'},
-            { text: 'Cool People', component: 'peoplemedia-component'},
-            { text: 'Music', component: 'musicmedia-component'},
-            { text: 'Memes', component: 'memesmedia-component'},
-            { text: 'Ted Talks', component: 'tedtalksmedia-component'},
+            { text: 'Books', component: 'books-component'},
+            { text: 'Videos', component: 'videos-component'},
+            { text: 'Quotes', component: 'quotes-component'},
+            { text: 'Cool People', component: 'people-component'},
+            { text: 'Music', component: 'music-component'},
+            { text: 'Memes', component: 'memes-component'},
+            { text: 'Ted Talks', component: 'tedtalks-component'},
           ]
         },
         {
           title: 'Meetups',
           content: [
-            { text: 'Ann Arbor Gophers', component: 'gophersmeetup-component'},
+            { text: 'Ann Arbor Gophers', component: 'a2gophers-component'},
           ]
         },
         {
           title: 'Career',
           content: [
-            { text: 'Interview Prep', component: 'inteviews-component' },
+            { text: 'Interview Prep', component: 'interviews-component' },
             { text: 'Resume', component: 'resume-component' },
           ]
         },
