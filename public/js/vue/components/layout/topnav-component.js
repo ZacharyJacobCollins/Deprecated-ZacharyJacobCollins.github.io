@@ -1,7 +1,6 @@
 Vue.component('topnav-component', {
   methods: {
     componentclick: function(component) {
-      console.log(component);
       this.$emit('componentclick', component);
     }
   },
