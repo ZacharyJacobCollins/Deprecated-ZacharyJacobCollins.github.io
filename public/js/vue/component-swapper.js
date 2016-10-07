@@ -6,6 +6,7 @@ new Vue({
   },
   methods: {
     swapComponent: function(component) {
+      console.log('recieved');
       this.currentComponent = component;
     }
   }
