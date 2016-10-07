@@ -1,7 +1,7 @@
 Vue.component('projects-component', {
   template:
   `
-    </h1>Projects</h1>
+    <h1>Projects</h1>
   `,
   data: function() {
     return {
