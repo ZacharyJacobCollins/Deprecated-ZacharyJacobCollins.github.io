@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<header-component></header-component>
+<body class="docs">
+		<topnav-component v-on:componentclick="swapComponent"></topnav-component>
+
+		<!-- Document container -->
+		<div class="docs-wrapper container">
+				<sidenav-component v-on:componentclick="swapComponent"></sidenav-component>
+
+				<!--Page Content-->
+				<content>
+					<article>
+							<!-- the component templated  here -->
+
+									<!-- The current component as a div -->
+									<div :is="currentComponent" :sections="sections"></div>
+
+							<!-- /the component templated here -->
+					</article>
+				</content>
+				<!--Page Content-->
+
+		</div>
+		<!-- /Document container -->
+
+
+		<footer-component></footer-component>
+
+		<!-- Javascript Libraries -->
+		<script src="public/js/vue/vue.min.js"></script>
+
+		<!-- Vue Components -->
+
+			<!-- College Components -->
+			<script src="public/js/vue/components/college/statistics-component.js"></script>
+			<script src="public/js/vue/components/college/discrete-component.js"></script>
+
+			<!-- Layout Components -->
+			<script src="public/js/vue/components/layout/footer-component.js"></script>
+			<script src="public/js/vue/components/layout/header-component.js"></script>
+			<script src="public/js/vue/components/layout/topnav-component.js"></script>
+			<script src="public/js/vue/components/layout/sidenav-component.js"></script>
+
+			<!-- Index Components -->
+			<script src="public/js/vue/components/index/home-component.js"></script>
+
+			<!-- Technology Components -->
+			<script src="public/js/vue/components/technology/go-component.js"></script>
+			<script src="public/js/vue/components/technology/bash-component.js"></script>
+			<script src="public/js/vue/components/technology/js-component.js"></script>
+			<script src="public/js/vue/components/technology/laravel-component.js"></script>
+			<script src="public/js/vue/components/technology/sql-component.js"></script>
+			<script src="public/js/vue/components/technology/vim-component.js"></script>
+			<script src="public/js/vue/components/technology/vue-component.js"></script>
+			<script src="public/js/vue/components/technology/technology-component.js"></script>
+
+			<!-- Project Components -->
+			<script src="public/js/vue/components/projects/remember-component.js"></script>
+			<script src="public/js/vue/components/projects/cracking-component.js"></script>
+			<script src="public/js/vue/components/projects/projects-component.js"></script>
+			<script src="public/js/vue/components/projects/valet-component.js"></script>
+			<script src="public/js/vue/components/projects/gochat-component.js"></script>
+
+			<!-- Acm Components -->
+			<script src="public/js/vue/components/acm/acm-component.js"></script>
+
+			<!-- Media Components -->
+			<script src="public/js/vue/components/media/books-component.js"></script>
+			<script src="public/js/vue/components/media/memes-component.js"></script>
+			<script src="public/js/vue/components/media/music-component.js"></script>
+			<script src="public/js/vue/components/media/people-component.js"></script>
+			<script src="public/js/vue/components/media/quotes-component.js"></script>
+			<script src="public/js/vue/components/media/books-component.js"></script>
+			<script src="public/js/vue/components/media/videos-component.js"></script>
+
+			<!-- Bodybuilding Components -->
+			<script src="public/js/vue/components/bodybuilding/bodybuilding-component.js"></script>
+			<script src="public/js/vue/components/bodybuilding/eating-component.js"></script>
+			<script src="public/js/vue/components/bodybuilding/workouts-component.js"></script>
+
+			<!-- Career Components -->
+			<script src="public/js/vue/components/career/interviews-component.js"></script>
+			<script src="public/js/vue/components/career/resume-component.js"></script>
+
+			<!-- Resources Components -->
+			<script src="public/js/vue/components/resources/frontendresources-component.js"></script>
+			<script src="public/js/vue/components/resources/concepts-component.js"></script>
+
+
+		<!-- /Vue Components -->
+
+
+		<!-- Vue instances -->
+		<script src="public/js/vue/component-swapper.js"></script>
+
+</body>
+</html>

@@ -1,9 +1,8 @@
 Vue.component('concepts-component', {
   template:
   `
-  <h1> Concepts </h1>
   <template v-for="concept in concepts">
-    <h1>{{ concept.title }}</h1>
+    <h2>{{ concept.title }}</h2>
     <ul>
         <template v-for="individual in concept.individualConcepts">
             <li><strong>{{ individual.term }}</strong>: {{ individual.definition }}</li>
