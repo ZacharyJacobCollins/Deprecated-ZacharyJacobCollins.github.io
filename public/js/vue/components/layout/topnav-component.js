@@ -35,7 +35,7 @@ Vue.component('topnav-component', {
           { button: 'Projects', component: 'projects-component'},
           { button: 'Body Building', component: 'bodybuilding-component'},
           { button: 'Technologies', component: 'technologies-component'},
-          { button: 'Reading', component: 'technologies-component'},
+          { button: 'Reading', component: 'books-component'},
         ],
       }
   }
