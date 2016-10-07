@@ -2,7 +2,6 @@ Vue.component('concepts-component', {
   template:
   `
   <h1> Concepts </h1>
-
   <template v-for="concept in concepts">
     <h1>{{ concept.title }}</h1>
     <ul>
