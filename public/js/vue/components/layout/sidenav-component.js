@@ -72,7 +72,6 @@ Vue.component('sidenav-component', {
           title: 'Body Building',
           content: [
             { text: 'Workouts', component: 'workouts-component'},
-            { text: 'Log', component: 'log-component'},
             { text: 'Eating', component: 'eating-component'},
           ]
         },
