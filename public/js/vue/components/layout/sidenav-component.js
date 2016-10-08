@@ -60,7 +60,7 @@ Vue.component('sidenav-component', {
             { text: 'Bash', component: 'bash-component'},
             { text: 'Vim', component: 'vim-component'},
             { text: 'Vue.js', component: 'vue-component'},
-            { text: 'Vue.js', component: 'excel-component'},
+            { text: 'Excel', component: 'excel-component'},
           ]
         },
         {
