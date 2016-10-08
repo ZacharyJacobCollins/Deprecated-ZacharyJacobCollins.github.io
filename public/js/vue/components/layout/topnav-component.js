@@ -33,9 +33,9 @@ Vue.component('topnav-component', {
         [
           { button: '127.0.0.1', component: 'home-component'},
           { button: 'Projects', component: 'projects-component'},
-          { button: 'Body Building', component: 'bodybuilding-component'},
           { button: 'Technologies', component: 'technologies-component'},
-          { button: 'Reading', component: 'books-component'},
+          { button: 'Media', component: 'media-component'},
+          { button: 'Body Building', component: 'bodybuilding-component'},
         ],
       }
   }
