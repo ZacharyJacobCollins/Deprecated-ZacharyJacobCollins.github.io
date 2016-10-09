@@ -86,6 +86,7 @@ Vue.component('sidenav-component', {
             { text: 'Cool People', component: 'people-component'},
             { text: 'Music', component: 'music-component'},
             { text: 'Memes', component: 'memes-component'},
+            { text: 'Purchases', component: 'purchases-component'},
           ]
         },
         {
