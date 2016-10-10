@@ -129,7 +129,7 @@ Vue.component('statistics-component', {
             concepts: [
               { term: 'How many ways to put a list in order', definition: 'Where list size is n, n! (factorial)'},
               { term: 'Conditional probability', definition: 'Do umbrellas cause rain? No.  Rain causes umbrella use.  '},
-              { term: '', definition: ''},
+              { term: '*Bayes Theorem', definition: 'How to divide a table with new data.  How ew update our data with new data.'},
             ],
           }
         ]
