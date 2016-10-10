@@ -129,7 +129,11 @@ Vue.component('statistics-component', {
             concepts: [
               { term: 'How many ways to put a list in order', definition: 'Where list size is n, n! (factorial)'},
               { term: 'Conditional probability', definition: 'Do umbrellas cause rain? No.  Rain causes umbrella use.  '},
-              { term: '*Bayes Theorem', definition: 'How to divide a table with new data.  How ew update our data with new data.'},
+              { term: '*Bayes Theorem', definition: 'How to divide a table with new data.  How we update our data with new data.  The plane fire update process thing.  '},
+              { term: 'AND vs OR boolean operations', definition: 'And is multiplication, Or is ..  '},
+              { term: 'Probability Mass Function = PMF', definition: 'p(x) = Pr(X = x)'},
+              { term: 'Pascall\s triangle:', definition: 'can be computeed using twos coefficients'},
+
             ],
           }
         ]
