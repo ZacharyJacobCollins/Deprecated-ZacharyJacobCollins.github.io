@@ -53,6 +53,54 @@ Vue.component('statistics-component', {
 
               <br />
               <hr />
+
+              <!-- Chapter 6 -->
+              <h2> Chapter 6</h2>
+                <template v-for="chapter in chapters">
+                  <template v-if="chapter.term == 'Chapter 6'">
+                    <h4> Definitions </h4>
+                    <ul>
+                      <template v-for="definition in chapter.definitions">
+                          <li><strong>{{ definition.term }}</strong>: {{definition.definition}}</li>
+                      </template>
+                    </ul>
+                    <h4>Concepts </h4>
+                    <ul>
+                      <template v-for="concept in chapter.concepts">
+                          <li><strong>{{ concept.term }}</strong>: {{ concept.definition }}</li>
+                      </template>
+                    </ul>
+                  </template>
+                </template>
+                <!-- Chapter 6 -->
+
+                <br />
+                <hr />
+
+                <!-- Chapter 7 -->
+                <h2> Chapter 7</h2>
+                  <template v-for="chapter in chapters">
+                    <template v-if="chapter.term == 'Chapter 7'">
+                      <h4> Definitions </h4>
+                      <ul>
+                        <template v-for="definition in chapter.definitions">
+                            <li><strong>{{ definition.term }}</strong>: {{definition.definition}}</li>
+                        </template>
+                      </ul>
+                      <h4>Concepts </h4>
+                      <ul>
+                        <template v-for="concept in chapter.concepts">
+                            <li><strong>{{ concept.term }}</strong>: {{ concept.definition }}</li>
+                        </template>
+                      </ul>
+                    </template>
+                  </template>
+                  <!-- Chapter 7 -->
+
+                  <br />
+                  <hr />
+
+
       <!--Page Content-->
   `,
   data: function () {
@@ -133,9 +181,20 @@ Vue.component('statistics-component', {
               { term: 'AND vs OR boolean operations', definition: 'And is multiplication, Or is ..  '},
               { term: 'Probability Mass Function = PMF', definition: 'p(x) = Pr(X = x)'},
               { term: 'Pascall\s triangle:', definition: 'can be computeed using twos coefficients'},
+              { term: '', definition: ''},
 
             ],
-          }
+          },
+          {
+            term: 'Chapter 7',
+            definitions: [
+              { term: '', definition: ''},
+
+            ],
+            concepts: [
+              { term: '', definition: ''},
+            ],
+          },
         ]
     };
   },
