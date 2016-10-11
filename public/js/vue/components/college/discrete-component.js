@@ -7,14 +7,14 @@ Vue.component('discrete-component', {
     <template v-for="chapter in chapters">
 
       <h3> Definitions </h3>
-      <template v-for="definition in definitions">
+      <template v-for="definition in chapter.definitions">
           <strong>{{ definition.term }}</strong>: {{definition.definition}}
       </template>
 
       </br>
 
       <h3> Concepts </h3>
-      <template v-for="concept in concepts">
+      <template v-for="concept in chapter.concepts">
           <strong>{{ concept.title }}</strong>: {{ concept.text }}
       </template>
 
