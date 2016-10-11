@@ -17,7 +17,7 @@ Vue.component('topnav-component', {
           <input placeholder="search" type="" id="search-input" v-on:blur="reset" />
 
           <!-- Youtube player (script and settings are in youtubeplayer.js the bottom of reference.html) -->
-          <div id="ytplayer"></div>
+          <div id="ytplayer" class="music-player"></div>
         </div>
 
 
