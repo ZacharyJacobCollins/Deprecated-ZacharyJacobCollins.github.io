@@ -15,8 +15,11 @@ Vue.component('topnav-component', {
         <!-- Search input -->
         <div class="search nav-block">
           <input placeholder="search" type="" id="search-input" v-on:blur="reset" />
-          <iframe class="music-player" src="https://www.youtube.com/embed/PTF5xgT-pm8" allowfullscreen></iframe>
+
+          <!-- Youtube player (script and settings are in youtubeplayer.js the bottom of reference.html) -->
+          <div id="ytplayer"></div>
         </div>
+
 
         <ul id="topNav" class="main-nav" v-if="! search">
             <template v-for="topNavSection in topNavSections">
