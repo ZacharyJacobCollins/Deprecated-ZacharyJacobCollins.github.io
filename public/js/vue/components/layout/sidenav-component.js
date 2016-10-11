@@ -47,6 +47,12 @@ Vue.component('sidenav-component', {
           ]
         },
         {
+          title: 'Tools',
+          content: [
+            { text: 'Unclosed tag finder', component: 'unclosedtagfinderc-component' },
+          ]
+        },
+        {
           title: 'Projects',
           //The array of projects coming from the projects vue component
           content: [
