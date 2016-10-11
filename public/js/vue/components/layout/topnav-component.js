@@ -18,7 +18,7 @@ Vue.component('topnav-component', {
         </div>
 
         <div class="nav-block">
-          <iframe style="position: absolute; height: 90px; width: 200px; border: none" src="https://www.youtube.com/embed/PTF5xgT-pm8" allowfullscreen></iframe>
+          <iframe style="position: absolute; height: 70px; width: 200px; border: none" src="https://www.youtube.com/embed/PTF5xgT-pm8" allowfullscreen></iframe>
         </div>
 
         <ul id="topNav" class="main-nav" v-if="! search">
