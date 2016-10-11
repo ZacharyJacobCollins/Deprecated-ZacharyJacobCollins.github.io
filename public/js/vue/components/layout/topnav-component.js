@@ -17,7 +17,7 @@ Vue.component('topnav-component', {
           <input placeholder="search" type="" id="search-input" v-on:blur="reset" />
         </div>
 
-        <div class="nav-block music-player">
+        <div class="nav-block">
           <iframe style="position: absolute; height: 90px; width: 200px; border: none" src="https://www.youtube.com/embed/PTF5xgT-pm8" allowfullscreen></iframe>
         </div>
 
