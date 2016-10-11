@@ -17,7 +17,7 @@ Vue.component('topnav-component', {
           <input placeholder="search" type="" id="search-input" v-on:blur="reset" />
 
           <!-- Youtube player (script and settings are in youtubeplayer.js the bottom of reference.html) -->
-          <div id="ytplayer" class="music-player"></div>
+          <iframe id="ytplayer" class="music-player" type="text/html" width="425" height="50" src="https://www.youtube.com/embed/?playlist=atY2Z0J6zX8&showinfo=0" frameborder="0" allowfullscreen>
         </div>
 
 
