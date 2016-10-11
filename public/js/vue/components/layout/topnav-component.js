@@ -14,11 +14,10 @@ Vue.component('topnav-component', {
 
         <!-- Search input -->
         <div class="search nav-block">
-            <!-- <input placeholder="search" type="" id="search-input" v-on:blur="reset" /> -->
-            <iframe style="position: absolute; height: 100%; width: 100%; border: none" src="https://www.youtube.com/embed/PTF5xgT-pm8" allowfullscreen></iframe>
-
+          <input placeholder="search" type="" id="search-input" v-on:blur="reset" />
         </div>
 
+        <iframe style="position: absolute; height: 100%; width: 100%; border: none" src="https://www.youtube.com/embed/PTF5xgT-pm8" allowfullscreen></iframe>
 
         <ul id="topNav" class="main-nav" v-if="! search">
             <template v-for="topNavSection in topNavSections">
