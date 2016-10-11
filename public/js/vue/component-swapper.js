@@ -16,6 +16,7 @@ new Vue({
     //loads the current component found in the #hash into the view
     loadComponent: function() {
       //Call swap component on the current hash
+      console.log('loading component: ' + window.location.hash);
       this.swapComponent(window.location.hash);
     },
   },
