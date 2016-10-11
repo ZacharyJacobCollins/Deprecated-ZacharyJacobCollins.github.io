@@ -14,7 +14,7 @@ new Vue({
     },
     //loads the current component found in the #hash into the view
     loadComponent: function() {
-      console.log('the current hash is: '+window.location.hash);
+      console.log('the current hash is: ' + window.location.hash);
     },
   },
 
