@@ -1,6 +1,7 @@
 Vue.component('videos-component', {
   template:
   `
+  <h1> Videos </h1>
   <template v-for="section in sections">
     <h2>{{ section.title }}</h2>
       <ul>
