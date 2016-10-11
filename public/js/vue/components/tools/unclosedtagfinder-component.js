@@ -1,6 +1,7 @@
 Vue.component('unclosedtagfinder-component', {
   template:
   `
+    <h1> Unclosed tag findrer </h1>
     <textarea id="unclosed-tag-finder-input" style="width:100%;height:300px">
     </textarea>
     <div><input type="button" id="unclosed-tag-finder-button" value="Submit" ></input></div>
