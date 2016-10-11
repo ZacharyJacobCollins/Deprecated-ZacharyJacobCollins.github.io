@@ -5,9 +5,19 @@ Vue.component('discrete-component', {
     <h1>Discrete Structures</h1>
     <!-- Chapters -->
     <template v-for="chapter in chapters">
-      <template v-for="concept in concepts">
 
+      <h3> Definitions </h3>
+      <template v-for="definition in definitions">
+          <strong>{{ definition.term }}</strong>: {{definition.definition}}
       </template>
+
+      </br>
+
+      <h3> Concepts </h3>
+      <template v-for="concept in concepts">
+          <strong>{{ concept.title }}</strong>: {{ concept.text }}
+      </template>
+
     </template>
 
     <br />
@@ -25,6 +35,7 @@ Vue.component('discrete-component', {
         {
           title: 'Chapter 9',
           definitions: [
+
           ],
           concepts: [
             { title: 'Warshal\'s Algorithm', text: ' '},
