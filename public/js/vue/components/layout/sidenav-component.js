@@ -43,7 +43,7 @@ Vue.component('sidenav-component', {
         {
           title: 'Algorithms',
           content: [
-            { text: 'Binary Tree Implementation', component: 'algorithms-bintree' },
+            { text: 'Binary Tree Implementation', component: 'binarytree-component' },
           ]
         },
         {
