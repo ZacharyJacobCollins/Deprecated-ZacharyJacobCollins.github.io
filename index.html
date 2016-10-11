@@ -36,7 +36,7 @@
 					<footer id="footer">
 						<ul class="copyright">
 							<li>Zachary Jacob Collins</li>
-							<li>&copy; 2016</li>
+							<li id="copyrightYear">&copy; 2016</li>
 						</ul>
 					</footer>
 
@@ -50,5 +50,10 @@
 					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 				}
+			</script>
+
+			<!-- Script to change the copyright to current year -->
+			<script>
+					document.getElementById('copyright').innerHTML = new Date().getFullYear();
 			</script>
 </html>
