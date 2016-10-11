@@ -5,6 +5,7 @@ new Vue({
     currentComponent: 'home-component',
   },
   ready: function() {
+    //load a component based on the current hash
     this.loadComponent();
   },
   methods: {
@@ -14,7 +15,8 @@ new Vue({
     },
     //loads the current component found in the #hash into the view
     loadComponent: function() {
-      console.log('the current hash is: ' + window.location.hash);
+      //Call swap component on the current hash
+      this.swapComponent(window.location.hash);
     },
   },
 

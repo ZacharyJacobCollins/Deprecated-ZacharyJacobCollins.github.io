@@ -15,7 +15,7 @@ Vue.component('sidenav-component', {
             <ul>
               <template v-for="c in sideNavSection.content">
                   <!-- Where componentclick found in the vue component -->
-                  <li><a href="#" @click="componentclick(c.component)">{{ c.text }}</a></li>
+                  <li><a href="#{{ c.component }}" @click="componentclick(c.component)">{{ c.text }}</a></li>
               </template>
             </ul>
           </li>
