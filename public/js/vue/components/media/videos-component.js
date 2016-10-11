@@ -5,7 +5,9 @@ Vue.component('videos-component', {
     <h2>{{ section.title }}</h2>
       <ul>
         <template v-for="video in section.videos">
-            <li><strong>{{ video.title }}</strong>: {{ video.link}}</li>
+            <li>
+              <strong>{{ video.title }}</strong>: <a href="{{ video.link}}">link</a>
+            </li>
         </template>
       </ul>
   </template>
@@ -16,7 +18,7 @@ Vue.component('videos-component', {
         {
             title: 'Inspirational',
             videos: [
-                { title: 'CT Fletcher bodybuilding', link: 'https://www.youtube.com/watch?v=DHTN3oXNDOA' },
+                { title: 'CT Fletcher, Life is hard. ', link: 'https://www.youtube.com/watch?v=Fh-rCrREEgA' },
             ],
         },
       ]
