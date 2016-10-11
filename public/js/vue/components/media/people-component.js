@@ -1,7 +1,7 @@
 Vue.component('people-component', {
   template:
   `
-  <h1> Influential or inspirational people that have affected my life </h1>
+  <h1> People </h1>
   <template v-for="person in people">
     <h2>{{ person.name }}</h2>
     <ul>
