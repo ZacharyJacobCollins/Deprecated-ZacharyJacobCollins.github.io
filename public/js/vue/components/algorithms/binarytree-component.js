@@ -3,8 +3,7 @@ Vue.component('binarytree-component', {
   `
     <h1>Binary Tree Implementation </h1>
     <script>
-      
+
     </script>
   `,
-  }
 });
