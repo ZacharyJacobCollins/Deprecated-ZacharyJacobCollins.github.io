@@ -35,9 +35,15 @@ Vue.component('sidenav-component', {
           ]
         },
         {
-          title: 'Acm ',
+          title: 'Acm',
           content: [
             { text: 'About', component: 'acm-component'},
+          ]
+        },
+        {
+          title: 'Algorithms',
+          content: [
+            { text: 'Binary Tree Implementation', component: 'algorithms-bintree' },
           ]
         },
         {
