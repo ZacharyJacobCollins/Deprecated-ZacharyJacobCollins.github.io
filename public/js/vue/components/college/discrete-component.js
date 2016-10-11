@@ -26,7 +26,7 @@ Vue.component('discrete-component', {
     <!-- Labs -->
     <h2> Labs </h2>
     <template v-for="lab in labs">
-      <strong> {{ lab.title }}: </strong> <a href="lab.code">code</a>
+      <strong> {{ lab.title }}: </strong> <a href="{{ lab.code }}">code</a>
     </template>
   `,
   data: function() {
