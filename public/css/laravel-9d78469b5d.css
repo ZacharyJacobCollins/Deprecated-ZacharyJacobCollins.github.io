@@ -1427,10 +1427,7 @@ nav.main .nav-block {
 }
 
 nav.main .music-player {
-    padding: 0px;
-    margin: 0px;
-    height: 100%;
-    width: 100%;
+    margin-left: 100px;
 }
 
 nav.main a.brand {
