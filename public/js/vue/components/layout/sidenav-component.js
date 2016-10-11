@@ -49,7 +49,7 @@ Vue.component('sidenav-component', {
         {
           title: 'Tools',
           content: [
-            { text: 'Unclosed tag finder', component: 'unclosedtagfinderc-component' },
+            { text: 'Unclosed tag finder', component: 'unclosedtagfinder-component' },
           ]
         },
         {
