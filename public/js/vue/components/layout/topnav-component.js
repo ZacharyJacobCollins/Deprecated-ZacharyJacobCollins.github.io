@@ -18,9 +18,9 @@ Vue.component('topnav-component', {
         </div>
 
         <div class="nav-block music-player">
-          <iframe style="position: absolute; height: 100%; width: 100%; border: none" src="https://www.youtube.com/embed/PTF5xgT-pm8" allowfullscreen></iframe>
+          <iframe style="position: absolute; border: none" src="https://www.youtube.com/embed/PTF5xgT-pm8" allowfullscreen></iframe>
         </div>
-        
+
         <ul id="topNav" class="main-nav" v-if="! search">
             <template v-for="topNavSection in topNavSections">
                 <li><a href="#" @click="componentclick(topNavSection.component)"><strong>{{ topNavSection.button }}</strong></a></li>
