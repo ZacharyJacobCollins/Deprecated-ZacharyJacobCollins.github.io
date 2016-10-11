@@ -23,8 +23,8 @@ Vue.component('devops-component', {
     <h2>{{ concept.title }}</h2>
     <ul>
         <template v-for="individual in concept.individualConcepts">
-            <li><strong>{{ individual.term }}</strong>: {{ individual.definition }}</li>
         </template>
+        <li><strong>{{ individual.term }}</strong>: {{ individual.definition }}</li>
     </ul>
   </template>
   `,
