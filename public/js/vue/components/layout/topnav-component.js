@@ -17,6 +17,8 @@ Vue.component('topnav-component', {
           <input placeholder="search" type="" id="search-input" v-on:blur="reset" />
         </div>
 
+        <iframe width="200" height="40" src="https://www.youtube.com/embed/PTF5xgT-pm8" frameborder="0" allowfullscreen></iframe>
+        
         <ul id="topNav" class="main-nav" v-if="! search">
             <template v-for="topNavSection in topNavSections">
                 <li><a href="#" @click="componentclick(topNavSection.component)"><strong>{{ topNavSection.button }}</strong></a></li>
