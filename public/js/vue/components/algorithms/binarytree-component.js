@@ -14,8 +14,67 @@ Vue.component('binarytree-component', {
         <li> </li>
     </ul>
 
-    <script>
+    <br />
 
+    <div id="tree">Tree
+
+    </div>
+
+    <script>
+      new Vue({
+        el: 'tree',
+        data: {
+          root: null,
+
+        },
+        ready: function() {
+          this.generate();
+        },
+        methods: {
+          generate: function() {
+            document.getElementById('tree').innerHTML = 'test';
+          },
+          //Add a node to the binary tree
+          add: function(value) {
+            current;
+            node: { value: value, left: null, right: null }
+
+            //If the root of the tree is null, then the root is set to the added node.
+            if (this.root === null) {
+              this.root = node;
+            } else {
+              current = this.root;
+
+              while(true) {
+                //If the to be added value is less than the current value, then go left.
+                if( value < current.value) {
+
+                }
+
+                  //if there is no left value then the node should be placed here
+
+              };
+
+            }
+
+          },
+          contains: function(value) {
+
+          },
+          remove: function(value) {
+
+          },
+          size: function() {
+
+          },
+          toArray: function() {
+
+          },
+          toString: function() {
+
+          },
+        }
+      });
     </script>
   `,
 });
