@@ -1,3 +1,5 @@
-[v-cloak] {
-  display: none !important;
+@media (max-width: 1650px) {
+  #title {
+    display: none;
+  }
 }
