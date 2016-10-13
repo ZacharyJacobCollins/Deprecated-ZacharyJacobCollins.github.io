@@ -2,7 +2,7 @@ Vue.component('binarytree-component', {
   template:
   `
     <h1>Binary Tree Implementation </h1>
-    <a href="https://www.nczonline.net/blog/2009/06/09/computer-science-in-javascript-binary-search-tree-part-1/">Link</a>
+    <a href="https://www.nczonline.net/blog/2009/06/09/computer-science-in-javascript-binary-search-tree-part-1/">Link to gist</a>
     <h3>Notable Features </h3>
     <ul>
         <li>The number of nodes in a binary tree of depth n is precisely 2^n - 1.</li>
