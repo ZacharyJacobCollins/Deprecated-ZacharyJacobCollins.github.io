@@ -8,7 +8,12 @@ Vue.component('home-component', {
     <br />
     <br />
     <br />
-    <h3>"My life isn't about what I have, or where I go.  It's about who I become.  And what I can give because I can become more. " </h3>
+    <h2>My life isn't about what I have, or where I go.</h2>
+    <br />
+    <h2>It's about who I become.</h2>
+    <br />
+    <h2>And what I can give because I can become more.</h2>
+    <br />
     <br />
     <br />
 
