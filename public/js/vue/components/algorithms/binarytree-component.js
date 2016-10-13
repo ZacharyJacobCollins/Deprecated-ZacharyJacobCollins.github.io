@@ -17,7 +17,7 @@ Vue.component('binarytree-component', {
 
     <br />
 
-    <div id="tree">Tree
+    <div id="tree">
 
     </div>
 
