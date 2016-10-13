@@ -12,8 +12,8 @@ Vue.component('header-component', {
         <!--[if lte IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <link rel="stylesheet" href="/public/css/laravel-9d78469b5d.css">
-        <link rel="stylesheet" href="/public/css/style.css">
+        <link rel="stylesheet" href="/public/css/custom/laravel-9d78469b5d.css">
+        <link rel="stylesheet" href="/public/css/customstyle.css">
         <link rel="apple-touch-icon" href="/favicon.png">
       </head>`,
 });

@@ -27,7 +27,7 @@
 							<ul class="icons">
 								<li><a href="https://github.com/ZacharyJacobCollins" class="fa-github">Github</a></li>
 								<li><a href="#" class="fa fa-envelope">Resume</a></li>
-								<li><a href="/home/reference.html" class="fa-pencil-square-o">Reference</a></li>
+								<li><a href="/home/reference.html#home-component" class="fa-pencil-square-o">Reference</a></li>
 							</ul>
 						</footer>
 					</section>
@@ -36,7 +36,8 @@
 					<footer id="footer">
 						<ul class="copyright">
 							<li>Zachary Jacob Collins</li>
-							<li>&copy; 2016</li>
+							<li>&copy; MIT </li>
+							<li id="copyrightYear">2016</li>
 						</ul>
 					</footer>
 
@@ -50,5 +51,10 @@
 					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 				}
+			</script>
+
+			<!-- Change copyright year to current year -->
+			<script>
+				document.getElementById('copyrightYear').innerHTML = new Date().getFullYear();
 			</script>
 </html>

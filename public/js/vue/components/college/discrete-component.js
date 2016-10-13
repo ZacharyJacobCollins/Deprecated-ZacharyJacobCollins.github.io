@@ -2,9 +2,32 @@
 Vue.component('discrete-component', {
   template:
   `
-    <h1>Discrete Mathematical Structures</h1>
-    <!-- Lab one gist -->
-    <script src="https://gist.github.com/ZacharyJacobCollins/06ad43ed99e8b2d0be66cf29fab7cafc.js"></script>
+    <h1>Discrete Structures</h1>
+    <!-- Chapters -->
+    <template v-for="chapter in chapters">
+
+      <h3> Definitions </h3>
+      <template v-for="definition in chapter.definitions">
+          <strong>{{ definition.term }}</strong>: {{definition.definition}}
+      </template>
+
+      </br>
+
+      <h3> Concepts </h3>
+      <template v-for="concept in chapter.concepts">
+          <strong>{{ concept.title }}</strong>: {{ concept.text }}
+      </template>
+
+    </template>
+
+    <br />
+    <br />
+
+    <!-- Labs -->
+    <h2> Labs </h2>
+    <template v-for="lab in labs">
+      <strong> {{ lab.title }}: </strong> <a href="{{ lab.code }}">code</a>
+    </template>
   `,
   data: function() {
     return {
@@ -12,6 +35,7 @@ Vue.component('discrete-component', {
         {
           title: 'Chapter 9',
           definitions: [
+
           ],
           concepts: [
             { title: 'Warshal\'s Algorithm', text: ' '},
@@ -20,10 +44,15 @@ Vue.component('discrete-component', {
             { title: 'Practice Problems\'s', text: 'Pg 615, #1,3,5,9,11,13,15,21,233,24,25,35,41'},
             { title: 'Equivalence relations', text: ''},
             { title: 'next time partial orders', text: ''},
-
           ],
         },
+      ],
+      labs: [
+        {
+          title: 'Lab 1',
+          code: 'https://gist.github.com/ZacharyJacobCollins/c05b4dce4a85f9f46bed9d6558607139',
+        },
       ]
-    }
+    };
   }
 });

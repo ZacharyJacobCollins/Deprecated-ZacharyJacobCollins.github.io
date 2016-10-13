@@ -15,7 +15,7 @@ Vue.component('sidenav-component', {
             <ul>
               <template v-for="c in sideNavSection.content">
                   <!-- Where componentclick found in the vue component -->
-                  <li><a href="#" @click="componentclick(c.component)">{{ c.text }}</a></li>
+                  <li><a href="#{{ c.component }}" @click="componentclick(c.component)">{{ c.text }}</a></li>
               </template>
             </ul>
           </li>
@@ -35,9 +35,22 @@ Vue.component('sidenav-component', {
           ]
         },
         {
-          title: 'Acm ',
+          title: 'Acm',
           content: [
             { text: 'About', component: 'acm-component'},
+          ]
+        },
+        {
+          title: 'Algorithms',
+          content: [
+            { text: 'Binary Tree Implementation', component: 'binarytree-component' },
+            { text: 'Binary Tree Implementation', component: 'linkedlist-component' },
+          ]
+        },
+        {
+          title: 'Tools',
+          content: [
+            { text: 'Unclosed tag finder', component: 'unclosedtagfinder-component' },
           ]
         },
         {
@@ -86,6 +99,7 @@ Vue.component('sidenav-component', {
             { text: 'Cool People', component: 'people-component'},
             { text: 'Music', component: 'music-component'},
             { text: 'Memes', component: 'memes-component'},
+            { text: 'Purchases', component: 'purchases-component'},
           ]
         },
         {

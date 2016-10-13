@@ -1,6 +1,11 @@
 Open hook has no end
+https://www.cs.umd.edu/class/sum2003/cmsc311/Notes/BitOp/bitshift.html
 
+<<<<<<< HEAD
 
+=======
+Greats aren't great because at birth they can paint, the greats are great because they paint a lot."
+>>>>>>> 4c731efccb6d6ea4c99a82174d2416057c7add9f
 
 #Overview
   * Uses vue.js to parse json objects and generate reference
