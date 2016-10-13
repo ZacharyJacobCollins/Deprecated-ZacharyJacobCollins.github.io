@@ -2,9 +2,16 @@
 Vue.component('home-component', {
   template:
   `
-    <h3>"Greats aren't great because at birth they can paint, the greats are great because they paint a lot." </h3>
     <br />
     <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h3>"Life isn't about what you have, or where you go.  It's about who you become.  And what you can give because you become more. " </h3>
+    <br />
+    <br />
+
   `,
   data: function() {
     return {
