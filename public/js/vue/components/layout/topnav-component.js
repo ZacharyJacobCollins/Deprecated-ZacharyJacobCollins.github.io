@@ -31,7 +31,7 @@ Vue.component('topnav-component', {
 
         <ul id="topNav" class="main-nav" v-if="! search">
             <template v-for="topNavSection in topNavSections">
-                <li><a href="#" @click="componentclick(topNavSection.component)"><strong>{{ topNavSection.button }}</strong></a></li>
+                <li><a href="#{{ topNavSection.component }}" @click="componentclick(topNavSection.component)"><strong>{{ topNavSection.button }}</strong></a></li>
             </template>
             <div class="responsive-sidebar-nav">
               <a href="#" class="toggle-slide menu-link btn">&#9776;</a>
