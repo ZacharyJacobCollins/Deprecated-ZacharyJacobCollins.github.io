@@ -1,4 +1,4 @@
-Vue.component('home-component', {
+Vue.component('linkedlist-component', {
   template:
   `
     <h1> Linked List in Java </h1>
