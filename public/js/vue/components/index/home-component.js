@@ -8,7 +8,7 @@ Vue.component('home-component', {
     <br />
     <br />
     <br />
-    <h2>My life isn't about what I have, or where I go.</h2>
+    <h2>My life isn't about what I have, or where I go. </h2>
     <br />
     <h2>It's about who I become.</h2>
     <br />

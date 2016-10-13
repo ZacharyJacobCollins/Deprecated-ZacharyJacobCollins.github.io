@@ -22,7 +22,7 @@ Vue.component('topnav-component', {
               type="text/html"
               width="425"
               height="50"
-              src="https://www.youtube.com/embed/?playlist=atY2Z0J6zX8&showinfo=0"
+              src="https://www.youtube.com/embed/?playlist=chLZQtCold8&showinfo=0"
               frameborder="0"
               allowfullscreen>
           </iframe>
