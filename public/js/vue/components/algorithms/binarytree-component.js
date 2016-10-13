@@ -29,7 +29,11 @@ Vue.component('binarytree-component', {
 
         },
         ready: function() {
-          this.generate();
+          // this.generate();
+          this.add(10);
+          this.add(8);
+          console.log(this.root);
+          console.log(this.left);
         },
         methods: {
           generate: function() {
@@ -47,15 +51,29 @@ Vue.component('binarytree-component', {
               current = this.root;
 
               while(true) {
-                //If the to be added value is less than the current value, then go left.
-                if( value < current.value) {
+                  //If the to be added value is less than the current value, then go left.
+                  if( value < current.value) {
 
-                }
-
-                  //if there is no left value then the node should be placed here
-
+                      //if there is no left value then the node should be placed here
+                      if(current.left === null) {
+                          current.left = node;
+                          break;
+                      } else {
+                        current = current.left;
+                      }
+                  //if the new value is greater than the current node go right
+                  } else if ( value > current.value ) {
+                    //if there's no right, then the new node belongs there
+                       if (current.right === null){
+                           current.right = node;
+                           break;
+                       } else {
+                           current = current.right;
+                       }
+                  } else {
+                    break;
+                  }
               };
-
             }
 
           },
