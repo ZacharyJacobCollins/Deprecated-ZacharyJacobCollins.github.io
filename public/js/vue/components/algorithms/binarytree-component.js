@@ -10,9 +10,6 @@ Vue.component('binarytree-component', {
         <li>Average runtime is somewhere between those two.</li>
         <li>Left of node is lesser than parent.  Right is greater.</li>
         <li>To find element that is less than a parent go left, greater than, go right.</li>
-        <li> </li>
-        <li> </li>
-        <li> </li>
     </ul>
 
     <br />
