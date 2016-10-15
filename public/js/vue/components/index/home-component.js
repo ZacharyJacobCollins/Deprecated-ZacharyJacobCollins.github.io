@@ -16,9 +16,6 @@ Vue.component('home-component', {
     <h2>And what I can give because I can become more.</h2>
     <br />
     <br />
-    <br />
-    <h3>"Girls are rare, keep that one" - Khalob Cognata </h3>
-    <br />
     <h3>"Greats aren't great because at birth they can paint, the greats are great because they paint a lot." </h3>
 
   `,
