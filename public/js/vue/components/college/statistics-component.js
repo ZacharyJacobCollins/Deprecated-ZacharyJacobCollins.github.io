@@ -109,7 +109,7 @@ Vue.component('statistics-component', {
           {
             term: 'Independent research',
             definitions: [
-              { term: '', definition: '' },
+              { term: 'Standard Deviation', definition: 'The measurement of how close the data surrounds the mean.' },
             ],
             concepts: [
               { term: 'Yes or no questions on a survey are generally bad.', definition: 'Thinking about myself when answering survey questions, generally on a yes or no question there is a \'but\' involved.  Yes but bleh.  It eliminates halfways in questions.' },
