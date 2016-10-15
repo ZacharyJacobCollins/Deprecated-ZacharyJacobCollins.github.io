@@ -107,6 +107,16 @@ Vue.component('statistics-component', {
       return {
         chapters: [
           {
+            term: 'Independent research',
+            definitions: [
+              { term: '', definition: '' },
+            ],
+            concepts: [
+              { term: 'Yes or no questions on a survey are generally bad.', definition: 'Thinking about myself when answering survey questions, generally on a yes or no question there is a \'but\' involved.  Yes but bleh.  It eliminates halfways in questions.' },
+              { term: '', definition: ''},
+            ],
+          },
+          {
             term: 'Chapter 3',
             definitions: [
               { term: 'Segmented bar graph', definition: 'Also known as a stacked bar graph, solves the shortcomings of the pie chart in that it makes it easy to compare different areas in the graph.'},
@@ -182,7 +192,6 @@ Vue.component('statistics-component', {
               { term: 'Causality', definition: 'Causality is VERY difficult to prove'},
               { term: 'Sum of Squares', definition: 'Tells you how much variance is in the dependent variable.  To calculate.  Step 1: Find the mean by adding the numbers together and dividing by the number of items in the set.  Step 2: Subtract the mean from each of your data items.  Step 3: Square your results from Step 3. Step 4: Sum (add up) all of your numbers.'},
               { term: 'X-bar', definition: 'The sample mean'},
-              { term: '', definition: ''},
               { term: '', definition: ''},
               { term: '', definition: ''},
               { term: '', definition: ''},
