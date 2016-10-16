@@ -192,7 +192,11 @@ Vue.component('statistics-component', {
             term: 'Chapter 6',
             definitions: [
               { term: 'Multichoose', definition: 'Not part of course, but does order matter?'},
-              { term: 'chance experiment', definition: ''},
+              { term: 'Chance experiment', definition: 'any activity or situation in which there is uncertainty about which of two or more possible outcomes will result'},
+              { term: 'Sample space', definition: 'The collection of all possible outcomes for a chance experiment.  Can be shown as an ordered pair or a tree diagram.'},
+              { term: 'Event', definition: 'Is any colletion of outcomes from the sample space of a chance experiment.'},
+              { term: 'Simple event', definition: 'Event consisting of exactly one outcome'},
+              { term: 'Event hybrids', definition: 'https://drive.google.com/open?id=0B275NCmWW8z1dGxRRDE4QjMzRlU'},
               { term: '', definition: ''},
               { term: '', definition: ''},
             ],
