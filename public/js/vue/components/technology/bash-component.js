@@ -16,6 +16,7 @@ Vue.component('bash-component', {
   alias pushd='git pull origin dev && git push origin dev'
   alias apushm='git add -A && git commit -m "Updates to personal project using alias" && git pull origin master && git push origin master'
   alias apushd='git add -A && git commit -m "Updates to personal project using alias" && git pull origin dev && git push origin dev'
+  alias goabyss='cd $GOPATH/src/github.com/ZacharyJacobCollins/abyss && go install && $GOPATH/bin/./abyss.exe'
         </pre>
   `,
 });

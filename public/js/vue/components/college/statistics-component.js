@@ -155,13 +155,6 @@ Vue.component('statistics-component', {
               { term: '', definition: ''},
               { term: '', definition: ''},
               { term: '', definition: ''},
-              { term: '', definition: ''},
-              { term: '', definition: ''},
-              { term: '', definition: ''},
-              { term: '', definition: ''},
-              { term: '', definition: ''},
-              { term: '', definition: ''},
-              { term: '', definition: ''},
             ],
             concepts: [
               { term: 'Computing Z-scores', definition: 'To find the Z score of a sample, you"ll need to find the mean, variance and standard deviation of the sample. To calculate the z-score, you will find the difference between a value in the sample and the mean, and divide it by the standard deviation.  Additionally z-score equal to 0 is element equal to the mean.  Less then 0 is less than mean, greater is greater than mean. '},
