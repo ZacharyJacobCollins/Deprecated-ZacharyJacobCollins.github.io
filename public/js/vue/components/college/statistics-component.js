@@ -214,10 +214,13 @@ Vue.component('statistics-component', {
           {
             term: 'Chapter 7',
             definitions: [
-              { term: '', definition: ''},
 
+              { term: '', definition: ''},
+              { term: '', definition: ''},
             ],
             concepts: [
+              { term: 'How many samples to take in etc. ', definition: 'Sample SIZE varies, but you always just take a single sample.  '},
+              { term: '', definition: ''},
               { term: '', definition: ''},
             ],
           },
