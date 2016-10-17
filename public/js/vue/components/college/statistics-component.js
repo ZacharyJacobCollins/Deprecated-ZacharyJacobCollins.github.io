@@ -208,19 +208,23 @@ Vue.component('statistics-component', {
               { term: 'Probability Mass Function = PMF', definition: 'p(x) = Pr(X = x)'},
               { term: 'Pascall\s triangle:', definition: 'can be computeed using twos coefficients'},
               { term: '', definition: ''},
-
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
             ],
           },
           {
             term: 'Chapter 7',
             definitions: [
-
+              { term: 'Random variable', definition: 'numerical variable whose value depends on the outcome of a chance experiment. Associates a numerical value with each outcome of a chance experiment'},
+              { term: 'Discrete random variable', definition: 'Random variable is discrete if its set of possible values is a collection of isolated points along the number line'},
+              { term: 'Continuous random variable', definition: 'Random variable is continuous if its set of posbile values includes an entire interval on the number line'},
               { term: '', definition: ''},
               { term: '', definition: ''},
             ],
             concepts: [
               { term: 'How many samples to take in etc. ', definition: 'Sample SIZE varies, but you always just take a single sample.  '},
-              { term: '', definition: ''},
+              { term: 'We use lowecase letters like, \'x\' to represent random variables', definition: ''},
               { term: '', definition: ''},
             ],
           },
