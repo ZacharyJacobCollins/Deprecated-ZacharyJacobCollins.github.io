@@ -1,6 +1,6 @@
 #Overview
-  * Uses vue.js to parse json objects and generate reference
-  * Each json object contains a title, code technologies array, resources array, id/link
+  * Completely data driven site, generated from vue data objects/json
+
 
 
 #Quotes
