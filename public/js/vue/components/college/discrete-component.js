@@ -3,6 +3,10 @@ Vue.component('discrete-component', {
   template:
   `
     <h1>Discrete Structures</h1>
+    <br />
+    <h3> Exam thursday up to and including 10.5</h3>
+    <br />
+    
     <!-- Chapters -->
     <template v-for="chapter in chapters">
 
