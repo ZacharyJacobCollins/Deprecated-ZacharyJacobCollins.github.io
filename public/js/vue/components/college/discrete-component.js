@@ -6,7 +6,7 @@ Vue.component('discrete-component', {
     <br />
     <h3> Exam thursday up to and including 10.5</h3>
     <br />
-    
+
     <!-- Chapters -->
     <template v-for="chapter in chapters">
 
@@ -48,6 +48,8 @@ Vue.component('discrete-component', {
             { title: 'Practice Problems\'s', text: 'Pg 615, #1,3,5,9,11,13,15,21,233,24,25,35,41'},
             { title: 'Equivalence relations', text: ''},
             { title: 'next time partial orders', text: ''},
+            { title: 'n! is worse than any exponential n', text: ''},
+
           ],
         },
       ],
