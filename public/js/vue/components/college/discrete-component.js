@@ -49,6 +49,7 @@ Vue.component('discrete-component', {
             { title: 'Equivalence relations', text: ''},
             { title: 'next time partial orders', text: ''},
             { title: 'n! is worse than any exponential n', text: ''},
+            { title: 'Determin if a graph is isomorphic', text: 'http://www.ms.uky.edu/~csima/ma111/GraphsLecture2.pdf'},
 
           ],
         },
