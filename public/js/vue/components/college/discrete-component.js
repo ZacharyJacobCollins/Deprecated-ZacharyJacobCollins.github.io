@@ -4,7 +4,7 @@ Vue.component('discrete-component', {
   `
     <h1>Discrete Structures</h1>
     <br />
-    <h3> Exam thursday up to and including 10.5</h3>
+    <h3> Exam thursday on 9 to 10.5</h3>
     <br />
 
     <!-- Chapters -->
