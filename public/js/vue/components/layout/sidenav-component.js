@@ -80,7 +80,7 @@ Vue.component('sidenav-component', {
           title: 'Resources',
           content: [
             { text: 'Frontend', component: 'frontendresources-component'},
-            { text: 'Concepts', component: 'concepts-component'},
+            { text: 'Testing', component: 'testing-component'},
           ],
         },
         {
