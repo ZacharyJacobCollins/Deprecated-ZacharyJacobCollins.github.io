@@ -9,5 +9,5 @@
   * "Obsessed is a word used often by the lazy, in order to describe the dedicated"
 
 #Evolution of the project
-  * Removed the <footer-component>
-  * Commented out the docs-wrapper container 
+  * Removed the < footer-component >
+  * Commented out the docs-wrapper container
