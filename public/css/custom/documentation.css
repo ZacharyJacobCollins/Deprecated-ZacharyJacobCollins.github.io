@@ -1615,6 +1615,18 @@ nav.main .switcher .dropdown-menu>li>a {
     }
 }
 
+@media (max-width: 1510px) {
+  .brand {
+    display: none
+  }
+  .brand > span {
+    display: none
+  }
+  .brand > nav-block {
+    display: none
+  }
+}
+
 .panel p, .panel p.intro {
     color: #aeaeae;
     font-size: 21px
@@ -1634,12 +1646,7 @@ nav.main .switcher .dropdown-menu>li>a {
     .docs nav.main .switcher {
         border: none
     }
-    .brand {
-        display: none
-    }
-    .brand > span {
-        display: none
-    }
+
 }
 
 @media (max-width:660px) {
