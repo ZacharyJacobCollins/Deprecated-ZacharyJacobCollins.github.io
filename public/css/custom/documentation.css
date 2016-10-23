@@ -1634,13 +1634,16 @@ nav.main .switcher .dropdown-menu>li>a {
     .docs nav.main .switcher {
         border: none
     }
+    .brand {
+        display: none
+    }
 }
 
 @media (max-width:660px) {
-    nav.main .brand {
+    nav.main {
         padding-right: 15px!important
     }
-    nav.main .brand span, nav.main .search svg {
+    nav.main span, nav.main .search svg {
         display: none
     }
     nav.main .search input {
