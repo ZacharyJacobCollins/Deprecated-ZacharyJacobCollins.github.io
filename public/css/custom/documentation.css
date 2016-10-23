@@ -1616,13 +1616,7 @@ nav.main .switcher .dropdown-menu>li>a {
 }
 
 @media (max-width: 1510px) {
-  .brand {
-    display: none
-  }
-  .brand > span {
-    display: none
-  }
-  .nav-block {
+  #name-title {
     display: none
   }
 }
