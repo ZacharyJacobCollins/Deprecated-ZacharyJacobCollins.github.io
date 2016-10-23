@@ -16,7 +16,7 @@ Vue.component('home-component', {
     <h2>And what I can give because I can become more.</h2>
     <br />
     <br />
-    <h3>"Greats aren't great because at birth they can paint, the greats are great because they paint a lot." </h3>
+    <!-- <h3>"Greats aren't great because at birth they can paint, the greats are great because they paint a lot." </h3> -->
 
   `,
   data: function() {
