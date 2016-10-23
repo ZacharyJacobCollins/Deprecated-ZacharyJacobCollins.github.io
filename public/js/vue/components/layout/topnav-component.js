@@ -9,7 +9,7 @@ Vue.component('topnav-component', {
     <nav class="main">
         <!-- Name -->
         <a href="/" id="name-title" class="brand nav-block">
-          <span>Zachary Jacob Collins</span>
+          <span> Zachary Jacob Collins </span>
         </a>
 
         <!-- Search input -->
