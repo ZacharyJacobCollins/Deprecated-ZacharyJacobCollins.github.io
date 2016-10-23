@@ -1592,7 +1592,7 @@ nav.main .switcher .dropdown-menu>li>a {
 }
 
 @media (max-width:1160px) {
-    nav.main .brand, nav.main ul.main-nav {
+    nav.main ul.main-nav {
         padding: 0 15px!important
     }
     nav.main ul.main-nav>li {
@@ -1635,6 +1635,9 @@ nav.main .switcher .dropdown-menu>li>a {
         border: none
     }
     .brand {
+        display: none
+    }
+    .brand > span {
         display: none
     }
 }
