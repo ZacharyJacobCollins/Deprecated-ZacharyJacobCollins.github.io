@@ -1622,7 +1622,7 @@ nav.main .switcher .dropdown-menu>li>a {
   .brand > span {
     display: none
   }
-  .brand > nav-block {
+  .nav-block {
     display: none
   }
 }
