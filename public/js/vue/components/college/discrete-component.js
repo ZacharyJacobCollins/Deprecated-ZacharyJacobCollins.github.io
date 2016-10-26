@@ -51,6 +51,7 @@ Vue.component('discrete-component', {
             { title: 'n! is worse than any exponential n', text: ''},
             { title: 'Determin if a graph is isomorphic', text: 'http://www.ms.uky.edu/~csima/ma111/GraphsLecture2.pdf'},
             { title: 'Create different types of closures.jpg', text: 'https://www.cs.sfu.ca/~ggbaker/zju/math/closures.html'},
+            { title: 'Detect if a graph has a hamiltonian circuit', text: 'http://www.ctl.ua.edu/math103/hamilton/analyzin.htm'},
           ],
         },
       ],
