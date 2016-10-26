@@ -16,6 +16,17 @@ Vue.component('go-component', {
         { term: "undeclared variables are initialized to 0 or false etc.  ", text: "Ex.  var python when printed fmt.print(python) comes out 'false'" },
         { term: "Can initialize with initialize sequence ex.  ", text: "var i, j int = 1, 2" },
         { term: "", text: "" },
+        { term: "", text: "" },
+        { term: "", text: "" },
+        { term: "", text: "" },
+        { term: "", text: "" },
+        { term: "", text: "" },
+        { term: "", text: "" },
+        { term: "", text: "" },
+        { term: "", text: "" },
+        { term: "", text: "" },
+        { term: "", text: "" },
+        { term: "", text: "" },
       ]
     };
   }
