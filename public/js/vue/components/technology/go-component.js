@@ -3,7 +3,7 @@ Vue.component('go-component', {
   `
     <h1> Go </h1>
     <ul>
-      <template v-for="concept in concepts.">
+      <template v-for="concept in concepts">
           <li><strong>{{ concept.term }}</strong>: {{ concept.text }}</li>
       </template>
     </ul>
