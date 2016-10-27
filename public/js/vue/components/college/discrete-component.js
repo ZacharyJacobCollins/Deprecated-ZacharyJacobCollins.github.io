@@ -46,7 +46,7 @@ Vue.component('discrete-component', {
             { title: 'Practice Problems\'s', text: 'Pg 606 #1,3,5,19,25,27,29'},
             { title: 'Lab 1', text: '2^n is number of subsets'},
             { title: 'Practice Problems\'s', text: 'Pg 615, #1,3,5,9,11,13,15,21,233,24,25,35,41'},
-            { title: 'Equivalence relations', text: ''},
+            { title: 'Equivalence relations', text: 'https://www.youtube.com/watch?v=yAGhqmTu6Iw and https://www.youtube.com/watch?v=UH6DMBMaBMk'},
             { title: 'next time partial orders', text: ''},
             { title: 'n! is worse than any exponential n', text: ''},
             { title: 'Determin if a graph is isomorphic', text: 'http://www.ms.uky.edu/~csima/ma111/GraphsLecture2.pdf'},
