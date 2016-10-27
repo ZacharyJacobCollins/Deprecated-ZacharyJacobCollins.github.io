@@ -14,7 +14,7 @@ Vue.component('topnav-component', {
 
         <!-- Search input -->
         <div class="search nav-block">
-          <input placeholder="search" type="" id="search-input" v-on:blur="reset" />
+          <!-- <input placeholder="search" type="" id="search-input" v-on:blur="reset" /> -->
 
           <!-- Youtube player (script and settings are in youtubeplayer.js the bottom of reference.html) -->
           <iframe id="ytplayer"
