@@ -48,12 +48,12 @@ Vue.component('sidenav-component', {
             { text: 'Heap sort', component: 'heapsort-component' },
           ]
         },
-        {
-          title: 'Tools',
-          content: [
-            { text: 'Unclosed tag finder', component: 'unclosedtagfinder-component' },
-          ]
-        },
+        // {
+        //   title: 'Tools',
+        //   content: [
+        //     { text: 'Unclosed tag finder', component: 'unclosedtagfinder-component' },
+        //   ]
+        // },
         {
           title: 'Projects',
           //The array of projects coming from the projects vue component
