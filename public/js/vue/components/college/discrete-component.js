@@ -4,23 +4,26 @@ Vue.component('discrete-component', {
   `
     <h1>Discrete Structures</h1>
     <br />
-    <h3> Exam thursday on 9 to 10.5</h3>
     <br />
 
     <!-- Chapters -->
     <template v-for="chapter in chapters">
 
       <h3> Definitions </h3>
-      <template v-for="definition in chapter.definitions">
-          <strong>{{ definition.term }}</strong>: {{definition.definition}}
-      </template>
+      <ul>
+        <template v-for="definition in chapter.definitions">
+            <li><strong>{{ definition.term }}</strong>: {{definition.definition}}</li>
+        </template>
+      </ul>
 
       </br>
 
       <h3> Concepts </h3>
-      <template v-for="concept in chapter.concepts">
-          <strong>{{ concept.title }}</strong>: {{ concept.text }}
-      </template>
+      <ul>
+        <template v-for="concept in chapter.concepts">
+            <li><strong>{{ concept.title }}</strong>: {{ concept.text }}</li>
+        </template>
+      </ul>
 
     </template>
 
@@ -29,9 +32,11 @@ Vue.component('discrete-component', {
 
     <!-- Labs -->
     <h2> Labs </h2>
-    <template v-for="lab in labs">
-      <strong> {{ lab.title }}: </strong> <a href="{{ lab.code }}">code</a>
-    </template>
+    <ul>
+      <template v-for="lab in labs">
+        <li><strong> {{ lab.title }}: </strong> <a href="{{ lab.code }}">Github gist</a></li>
+      </template>
+    </ul>
   `,
   data: function() {
     return {
@@ -49,7 +54,7 @@ Vue.component('discrete-component', {
             { title: 'Equivalence relations', text: 'https://www.youtube.com/watch?v=yAGhqmTu6Iw and https://www.youtube.com/watch?v=UH6DMBMaBMk'},
             { title: 'next time partial orders', text: ''},
             { title: 'n! is worse than any exponential n', text: ''},
-            { title: 'Determin if a graph is isomorphic', text: 'http://www.ms.uky.edu/~csima/ma111/GraphsLecture2.pdf'},
+            { title: 'Determine if two graphs are isomorphic', text: 'http://www.ms.uky.edu/~csima/ma111/GraphsLecture2.pdf'},
             { title: 'Create different types of closures.jpg', text: 'https://www.cs.sfu.ca/~ggbaker/zju/math/closures.html'},
             { title: 'Detect if a graph has a hamiltonian circuit', text: 'http://www.ctl.ua.edu/math103/hamilton/analyzin.htm'},
             { title: 'Detect if a graph has a euler circuit', text: 'http://www.ctl.ua.edu/math103/hamilton/analyzin.htm'},
@@ -59,6 +64,10 @@ Vue.component('discrete-component', {
       labs: [
         {
           title: 'Lab 1',
+          code: 'https://gist.github.com/ZacharyJacobCollins/c05b4dce4a85f9f46bed9d6558607139',
+        },
+        {
+          title: 'Lab 2',
           code: 'https://gist.github.com/ZacharyJacobCollins/c05b4dce4a85f9f46bed9d6558607139',
         },
       ]
