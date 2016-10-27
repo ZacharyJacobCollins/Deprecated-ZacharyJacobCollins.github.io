@@ -21,7 +21,7 @@ Vue.component('topnav-component', {
           <iframe id="ytplayer"
               class="music-player"
               type="text/html"
-              width="500"
+              width="450"
               height="50"
               src="https://www.youtube.com/embed/?playlist=Pn-6eOxnEMI&showinfo=0"
               frameborder="0"
