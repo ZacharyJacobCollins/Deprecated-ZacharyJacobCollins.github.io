@@ -12,10 +12,11 @@ Vue.component('topnav-component', {
           <span> Zachary Collins </span>
         </a>
 
-        <!-- Search input -->
+        <!-- Search input bar -->
         <div class="search nav-block">
           <!-- <input placeholder="search" type="" id="search-input" v-on:blur="reset" /> -->
 
+          Youtube Music Player
           <!-- Youtube player (script and settings are in youtubeplayer.js the bottom of reference.html) -->
           <iframe id="ytplayer"
               class="music-player"
