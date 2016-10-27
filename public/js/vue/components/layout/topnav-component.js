@@ -16,12 +16,12 @@ Vue.component('topnav-component', {
         <div class="search nav-block">
           <!-- <input placeholder="search" type="" id="search-input" v-on:blur="reset" /> -->
 
-          Youtube Music Player
+          Youtube Player
           <!-- Youtube player (script and settings are in youtubeplayer.js the bottom of reference.html) -->
           <iframe id="ytplayer"
               class="music-player"
               type="text/html"
-              width="425"
+              width="550"
               height="50"
               src="https://www.youtube.com/embed/?playlist=Pn-6eOxnEMI&showinfo=0"
               frameborder="0"
