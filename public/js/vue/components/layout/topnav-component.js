@@ -9,23 +9,25 @@ Vue.component('topnav-component', {
     <nav class="main">
         <!-- Name -->
         <a href="/" id="name-title" class="brand nav-block">
-          <span>Zachary Jacob Collins</span>
+          <span> Zachary Collins </span>
         </a>
 
-        <!-- Search input -->
+        <!-- Search input bar -->
         <div class="search nav-block">
-          <input placeholder="search" type="" id="search-input" v-on:blur="reset" />
+          <!-- <input placeholder="search" type="" id="search-input" v-on:blur="reset" /> -->
 
+          Youtube Player
           <!-- Youtube player (script and settings are in youtubeplayer.js the bottom of reference.html) -->
           <iframe id="ytplayer"
               class="music-player"
               type="text/html"
-              width="425"
+              width="450"
               height="50"
-              src="https://www.youtube.com/embed/?playlist=chLZQtCold8&showinfo=0"
+              src="https://www.youtube.com/embed/?playlist=Pn-6eOxnEMI&showinfo=0"
               frameborder="0"
               allowfullscreen>
           </iframe>
+
         </div>
 
 

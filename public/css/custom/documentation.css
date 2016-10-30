@@ -1,4 +1,4 @@
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400|Quicksand:500');
 
 img, legend {
     border: 0
@@ -29,7 +29,7 @@ blockquote, blockquote a {
 }
 
 html {
-    font-family: sans-serif;
+    font-family: 'Oxygen', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -192,7 +192,7 @@ table {
 body {
     margin: 0;
     color: #525252;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Oxygen', "Source Sans Pro", sans-serif;
     font-size: 16px;
     background: url(/assets/img/cloud-bar.png) repeat-x #fff;
     padding-top: 10px
@@ -900,7 +900,7 @@ pre.line-numbers {
 }
 
 .callout.rule, .home .hero .content p, .panel p.intro, footer.main p, footer.main>ul>li>a, nav.main a.brand, nav.main ul.main-nav {
-    font-family: "Miriam Libre", "Source Sans Pro", sans-serif
+    font-family: 'Quicksand', "Source Sans Pro", sans-serif;
 }
 
 .dark-code pre[class*=language-] {
@@ -1517,28 +1517,28 @@ nav.main .search .twitter-typeahead input:focus {
 }
 
 nav.main .search .twitter-typeahead input::-webkit-input-placeholder {
-    font-family: "Miriam Libre", "Source Sans Pro", sans-serif;
+    font-family: 'Quicksand', "Source Sans Pro", sans-serif;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 3px
 }
 
 nav.main .search .twitter-typeahead input::-moz-placeholder {
-    font-family: "Miriam Libre", "Source Sans Pro", sans-serif;
+    font-family: 'Quicksand', "Source Sans Pro", sans-serif;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 3px
 }
 
 nav.main .search .twitter-typeahead input:-ms-input-placeholder {
-    font-family: "Miriam Libre", "Source Sans Pro", sans-serif;
+    font-family: 'Quicksand', "Source Sans Pro", sans-serif;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 3px
 }
 
 nav.main .search .twitter-typeahead input::placeholder {
-    font-family: "Miriam Libre", "Source Sans Pro", sans-serif;
+    font-family: 'Quicksand', "Source Sans Pro", sans-serif;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 3px
@@ -1592,7 +1592,7 @@ nav.main .switcher .dropdown-menu>li>a {
 }
 
 @media (max-width:1160px) {
-    nav.main .brand, nav.main ul.main-nav {
+    nav.main ul.main-nav {
         padding: 0 15px!important
     }
     nav.main ul.main-nav>li {
@@ -1615,6 +1615,12 @@ nav.main .switcher .dropdown-menu>li>a {
     }
 }
 
+@media (max-width: 1510px) {
+  #name-title {
+    display: none
+  }
+}
+
 .panel p, .panel p.intro {
     color: #aeaeae;
     font-size: 21px
@@ -1634,13 +1640,14 @@ nav.main .switcher .dropdown-menu>li>a {
     .docs nav.main .switcher {
         border: none
     }
+
 }
 
 @media (max-width:660px) {
-    nav.main .brand {
+    nav.main {
         padding-right: 15px!important
     }
-    nav.main .brand span, nav.main .search svg {
+    nav.main span, nav.main .search svg {
         display: none
     }
     nav.main .search input {

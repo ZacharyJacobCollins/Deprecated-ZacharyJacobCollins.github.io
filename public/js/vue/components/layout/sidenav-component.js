@@ -45,14 +45,15 @@ Vue.component('sidenav-component', {
           content: [
             { text: 'Binary Tree Implementation', component: 'binarytree-component' },
             { text: 'Linked List Implementation', component: 'linkedlist-component' },
+            { text: 'Heap sort', component: 'heapsort-component' },
           ]
         },
-        {
-          title: 'Tools',
-          content: [
-            { text: 'Unclosed tag finder', component: 'unclosedtagfinder-component' },
-          ]
-        },
+        // {
+        //   title: 'Tools',
+        //   content: [
+        //     { text: 'Unclosed tag finder', component: 'unclosedtagfinder-component' },
+        //   ]
+        // },
         {
           title: 'Projects',
           //The array of projects coming from the projects vue component

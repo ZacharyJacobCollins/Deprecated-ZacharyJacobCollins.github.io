@@ -4,27 +4,21 @@
 <body class="docs">
 		<topnav-component v-on:componentclick="swapComponent"></topnav-component>
 
-		<!-- Document container -->
-		<div class="docs-wrapper container">
-				<sidenav-component v-on:componentclick="swapComponent"></sidenav-component>
+		<sidenav-component v-on:componentclick="swapComponent"></sidenav-component>
 
-				<!--Page Content-->
-				<content>
-					<article>
-							<!-- the component templated  here -->
+		<!--Page Content-->
+		<content>
+			<article>
+					<!-- the component templated  here -->
 
-									<!-- The current component as a div -->
-									<div :is="currentComponent" :sections="sections"></div>
+							<!-- The current component as a div -->
+							<div :is="currentComponent" :sections="sections"></div>
 
-							<!-- /the component templated here -->
-					</article>
-				</content>
-				<!--Page Content-->
+					<!-- /the component templated here -->
+			</article>
+		</content>
+		<!--Page Content-->
 
-		</div>
-		<!-- /Document container -->
-
-		<footer-component></footer-component>
 
 		<!-- Javascript Libraries -->
 		<script src="/public/js/vue/vue.min.js"></script>
