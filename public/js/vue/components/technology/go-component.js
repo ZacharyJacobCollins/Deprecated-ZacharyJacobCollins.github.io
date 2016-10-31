@@ -51,7 +51,7 @@ Vue.component('go-component', {
         { term: "", text: "" },
         { term: "", text: "" },
         { term: "sqlite", text: "https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/05.3.html" },
-        { term: "Bookmark", text: "https://tour.golang.org/moretypes/1" },
+        { term: "Bookmark", text: "https://tour.golang.org/moretypes/18" },
       ]
     };
   }
