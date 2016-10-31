@@ -33,6 +33,13 @@ Vue.component('go-component', {
         { term: "", text: "" },
         { term: "", text: "" },
         { term: "", text: "" },
+        { term: "", text: "" },
+        { term: "", text: "" },
+        { term: "", text: "" },
+        { term: "", text: "" },
+        { term: "", text: "" },
+        { term: "", text: "" },
+        { term: "", text: "" },
         { term: "Bookmark", text: "https://tour.golang.org/moretypes/1" },
       ]
     };

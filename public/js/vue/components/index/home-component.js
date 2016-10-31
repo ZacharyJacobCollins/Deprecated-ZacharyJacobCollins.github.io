@@ -13,7 +13,7 @@ Vue.component('home-component', {
     <br />
     <h2>It's about <strong>who I become.</strong></h2>
     <br />
-    <h2><strong>And what I can give</strong> because I can become more.</h2>
+    <h2>And what I can <strong>give</strong> because I can become more.</h2>
     <br />
     <br />
     <!-- <h3>"Greats aren't great because at birth they can paint, the greats are great because they paint a lot." </h3> -->
