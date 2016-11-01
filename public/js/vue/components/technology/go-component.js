@@ -39,7 +39,7 @@ Vue.component('go-component', {
         { term: "Zero value of a slice", text: "The zero value of a slice is nil." },
         { term: "slices and make", text: "you can use the make notation for slices to create an empty slice with pre-allocated capacity and length.  ex. b := make([]int, 0, 5) // len(b)=0, cap(b)=5" },
         { term: "for range", text: "example https://tour.golang.org/moretypes/16" },
-        { term: "", text: "" },
+        { term: "maps, or go's version of dictionaries", text: "use make to do like a 'new map' java equivalent.  full instantiation looks like var m map[string]string = make(map[string]string);  and then to use do m['Bell Labs'] = 'dat boi'  fmt.Print(m['Bell Labs']) which will give dat boi" },
         { term: "", text: "" },
         { term: "", text: "" },
         { term: "", text: "" },

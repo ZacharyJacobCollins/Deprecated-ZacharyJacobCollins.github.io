@@ -45,7 +45,8 @@ Vue.component('sidenav-component', {
           content: [
             { text: 'Binary Tree Implementation', component: 'binarytree-component' },
             { text: 'Linked List Implementation', component: 'linkedlist-component' },
-            { text: 'Heap sort', component: 'heapsort-component' },
+            { text: 'Heap sorts', component: 'heapsort-component' },
+            { text: "Djikstra's Algorithm", component: 'djikstras-component' },
           ]
         },
         // {
