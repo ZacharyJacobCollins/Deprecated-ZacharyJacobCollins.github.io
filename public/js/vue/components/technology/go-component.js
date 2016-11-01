@@ -44,14 +44,14 @@ Vue.component('go-component', {
         { term: "map manipulations", text: "possible mutations; delete, retrieval, insertions, 'test if key is in map by elem, ok = m[key]' If key is in m, ok is true. If not, ok is false. https://tour.golang.org/moretypes/22" },
         { term: "first class functions", text: "https://tour.golang.org/moretypes/25  function closures" },
         { term: "methods", text: "method is a func with a reciever argument. https://tour.golang.org/methods/2" },
-        { term: "", text: "" },
-        { term: "", text: "" },
+        { term: "methods with pointer recievers", text: "https://tour.golang.org/methods/4" },
+        { term: "Pointer indirection", text: "you can just pass a Vertex v type to a method with a pointer reciever and it is interpreted as &v which is nice https://tour.golang.org/methods/6" },
         { term: "", text: "" },
         { term: "", text: "" },
         { term: "", text: "" },
         { term: "", text: "" },
         { term: "sqlite", text: "https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/05.3.html" },
-        { term: "Bookmark", text: "https://tour.golang.org/moretypes/18" },
+        { term: "Bookmark", text: "https://tour.golang.org/methods/8" },
       ]
     };
   }
