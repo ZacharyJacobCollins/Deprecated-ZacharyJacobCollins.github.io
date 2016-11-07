@@ -4,6 +4,7 @@
 #TODO
   * Add in menu for responsiveness http://tympanus.net/Development/ResponsiveMultiLevelMenu/index5.html
   * Ad in search functionality.   
+  * Segue into using github books
 
 #Quotes
   * “they say searching for love is like searching for yourself, when you find yourself, you find love, because they’re the same…”
@@ -15,4 +16,3 @@
 #Evolution of the project
   * Removed the < footer-component  >
   * Commented out the docs-wrapper container
-  
