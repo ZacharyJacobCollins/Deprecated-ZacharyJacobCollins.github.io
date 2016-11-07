@@ -100,6 +100,28 @@ Vue.component('statistics-component', {
                   <br />
                   <hr />
 
+                  <!-- Chapter 10 -->
+                  <h2> Chapter 10</h2>
+                    <template v-for="chapter in chapters">
+                      <template v-if="chapter.term == 'Chapter 10'">
+                        <h4> Definitions </h4>
+                        <ul>
+                          <template v-for="definition in chapter.definitions">
+                              <li><strong>{{ definition.term }}</strong>: {{definition.definition}}</li>
+                          </template>
+                        </ul>
+                        <h4>Concepts </h4>
+                        <ul>
+                          <template v-for="concept in chapter.concepts">
+                              <li><strong>{{ concept.term }}</strong>: {{ concept.definition }}</li>
+                          </template>
+                        </ul>
+                      </template>
+                    </template>
+                    <!-- Chapter 10 -->
+
+                    <br />
+                    <hr />
 
       <!--Page Content-->
   `,
