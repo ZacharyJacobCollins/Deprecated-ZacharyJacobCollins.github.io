@@ -76,6 +76,7 @@ Vue.component('sidenav-component', {
             { text: 'Vim', component: 'vim-component'},
             { text: 'Vue.js', component: 'vue-component'},
             { text: 'Excel', component: 'excel-component'},
+            { text: 'CSS', component: 'css-component'},
           ]
         },
         {
