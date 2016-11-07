@@ -1,4 +1,4 @@
-''//Statistics
+//Statistics
 Vue.component('statistics-component', {
   template:
   `
@@ -234,6 +234,20 @@ Vue.component('statistics-component', {
             concepts: [
               { term: 'How many samples to take in etc. ', definition: 'Sample SIZE varies, but you always just take a single sample.  '},
               { term: 'We use lowecase letters like, \'x\' to represent random variables', definition: ''},
+              { term: '', definition: ''},
+            ],
+          },
+          {
+            term: 'Chapter 10',
+            definitions: [
+              { term: 'What is Power', definition: 'Probability of not making a mistake'},
+              { term: 'What is Beta', definition: 'Probability of making an error, shoot for only 20% in social sciences '},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+            ],
+            concepts: [
+              { term: '', definition: ''},
+              { term: '', definition: ''},
               { term: '', definition: ''},
             ],
           },
