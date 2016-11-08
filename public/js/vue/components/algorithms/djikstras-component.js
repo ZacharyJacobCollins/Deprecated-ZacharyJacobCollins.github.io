@@ -5,7 +5,7 @@ Vue.component('djikstras-component', {
     <a href="#">Link to gist</a>
     <h3>Notable Features </h3>
     <ul>
-        <li>It's a pretty standard djikstras </li>
+        <li>It's djikstras </li>
     </ul>
   `,
 });
