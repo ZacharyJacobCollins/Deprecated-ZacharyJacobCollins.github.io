@@ -272,7 +272,7 @@ Vue.component('statistics-component', {
               { term: 'Generic confidence interval (CI): ', definition: 'estimater +- critical value times the standard error of estimater'},
               { term: 'Generic Hypothesis test (HT) ', definition: '(estimater - null hypothesis)/(standard error of estimator).  So this asks could the difference be plausibly due to chance?'},
               { term: 'Non-generic HT', definition: 'SE(xbarA - xbarB) = SE(xbarA) - SE(xbarB)'},
-              { term: '', definition: ''},
+              { term: 'Standard error is basically ', definition: 'the standard deviation'},
               { term: '', definition: ''},
               { term: '', definition: ''},
             ],
