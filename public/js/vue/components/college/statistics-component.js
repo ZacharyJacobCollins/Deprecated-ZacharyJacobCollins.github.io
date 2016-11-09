@@ -123,6 +123,30 @@ Vue.component('statistics-component', {
                     <br />
                     <hr />
 
+
+                    <!-- Chapter 11 -->
+                    <h2> Chapter 11</h2>
+                      <template v-for="chapter in chapters">
+                        <template v-if="chapter.term == 'Chapter 10'">
+                          <h4> Definitions </h4>
+                          <ul>
+                            <template v-for="definition in chapter.definitions">
+                                <li><strong>{{ definition.term }}</strong>: {{definition.definition}}</li>
+                            </template>
+                          </ul>
+                          <h4>Concepts </h4>
+                          <ul>
+                            <template v-for="concept in chapter.concepts">
+                                <li><strong>{{ concept.term }}</strong>: {{ concept.definition }}</li>
+                            </template>
+                          </ul>
+                        </template>
+                      </template>
+                      <!-- Chapter 11 -->
+
+                      <br />
+                      <hr />
+
       <!--Page Content-->
   `,
   data: function () {
@@ -277,7 +301,13 @@ Vue.component('statistics-component', {
               { term: 'Different spreads: ', definition: 'heteroskedastics'},
               { term: 'Since the pvalue of .53 in the given equation in notes, is above alpha = .05, we fail to reject h0.  We don\'t have strong evidence that the means are not equal.', definition: ''},
               { term: 'For C, same idea: estimator +- the crit value. * SE.  ', definition: ''},
-              { term: 'Assumptions that are made for both CI and HT: ', definition: 'There were simple random samples, independent samples, '},
+              { term: 'Assumptions that are made for both CI and HT: ', definition: 'There were simple random samples, independent samples, within groups as usual and between groups now too'},
+              { term: 'Indep samples ! within groups as usual and between groups now too, otherwise the SE formula is wrong', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
               { term: '', definition: ''},
               { term: '', definition: ''},
               { term: '', definition: ''},
@@ -291,6 +321,24 @@ Vue.component('statistics-component', {
               { term: 'hypothesis test: ', definition: ' used to determine whether there is enough evidence in a sample of data to infer that a certain condition is true for an entire population.'},
               { term: 'confidence interval: ', definition: 'khan link: https://www.khanacademy.org/math/statistics-probability/confidence-intervals-one-sample/estimating-population-mean/v/confidence-interval-1'},
               { term: 'Two types of hypothesis tests - t tests or z tests.  Practice both: ', definition: 'Khan video: https://www.khanacademy.org/math/statistics-probability/significance-tests-one-sample/tests-about-population-mean/v/hypothesis-testing-and-p-values'},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+            ],
+          },
+          {
+            term: 'Chapter 11',
+            definitions: [
+              { term: 'Paired t-test', definition: 'Commonly used with small sample sizes'},
+              { term: 't-test', definition: 'Commonly used to determine whether the mean of a population significantly differes from a specific value (hypothesized mean) or from the mean of another population.  analysis of two populations through he use of statistical examination.  '},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+            ],
+            concepts: [
+              { term: 'Paired t-test', definition: ''},
               { term: '', definition: ''},
               { term: '', definition: ''},
               { term: '', definition: ''},
