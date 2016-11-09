@@ -271,7 +271,7 @@ Vue.component('statistics-component', {
               { term: 'Skipping the 2 - sample "pooled" t-test.', definition: 'aka homoskedastic'},
               { term: 'Generic confidence interval (CI): ', definition: 'estimater +- critical value times the standard error of estimater'},
               { term: 'Generic Hypothesis test (HT) ', definition: '(estimater - null hypothesis)/(standard error of estimator).  So this asks could the difference be plausibly due to chance?'},
-              { term: 'Non-generic HT', definition: 'SE(xbarA - xbarB) = SE(xbarA) - SE(xbarB)'},
+              { term: 'Pythagorean theorm of stats', definition: 'var(xbarA-xbarB) = var(xbarA) + var(-xbarB) if independent or uncorrelated.  '},
               { term: 'Standard error is basically ', definition: 'the standard deviation'},
               { term: '', definition: ''},
               { term: '', definition: ''},
