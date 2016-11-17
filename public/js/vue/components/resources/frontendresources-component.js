@@ -10,7 +10,7 @@ Vue.component('frontendresources-component', {
       </li>
     </ul>
   `,
-  data: function() {
+  data: function() {  
     return {
       fonts: [
           { title: 'Catamaran', link: 'https://fonts.google.com/specimen/Catamaran'},
