@@ -16,6 +16,6 @@ Vue.component('frontendresources-component', {
           { title: 'Catamaran', link: 'https://fonts.google.com/specimen/Catamaran'},
 
         ],
-      },
+    }
   }
 });
