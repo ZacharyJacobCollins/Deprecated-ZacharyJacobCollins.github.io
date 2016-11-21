@@ -10,6 +10,7 @@ Vue.component('laravel-component', {
     <ul>
       <template v-for="snippet in snippets">
         <li><strong>{{ snippet.title }}</strong>: {{ snippet.code }}</li>
+        <br />
       </template>
     </ul>
   `,
@@ -21,9 +22,24 @@ Vue.component('laravel-component', {
           code: "public function edit(Note $note) { return view('notes.edit', compact('note')); }",
         },
         {
-          title: 'Lab 2',
-          code: 'https://gist.github.com/ZacharyJacobCollins/c05b4dce4a85f9f46bed9d6558607139',
+          title: 'Dump Composer stuff to reset migrations.  Run from cli.  ',
+          code: 'composer dump-autoload',
         },
+      ],
+      //Notes on routes
+      routes: [
+
+      ],
+      //Notes on forms
+      forms: [
+          {
+              title: 'The update http request',
+              info: '{{ method_field(\'PATCH\') }}'
+          },
+          {
+              title: 'The delete http request',
+              info: '{{ method_field(\'DELETE\') }}'
+          },
       ]
     };
   }
