@@ -1,4 +1,4 @@
-''//Statistics
+//Statistics
 Vue.component('statistics-component', {
   template:
   `
@@ -100,6 +100,52 @@ Vue.component('statistics-component', {
                   <br />
                   <hr />
 
+                  <!-- Chapter 10 -->
+                  <h2> Chapter 10</h2>
+                    <template v-for="chapter in chapters">
+                      <template v-if="chapter.term == 'Chapter 10'">
+                        <h4> Definitions </h4>
+                        <ul>
+                          <template v-for="definition in chapter.definitions">
+                              <li><strong>{{ definition.term }}</strong>: {{definition.definition}}</li>
+                          </template>
+                        </ul>
+                        <h4>Concepts </h4>
+                        <ul>
+                          <template v-for="concept in chapter.concepts">
+                              <li><strong>{{ concept.term }}</strong>: {{ concept.definition }}</li>
+                          </template>
+                        </ul>
+                      </template>
+                    </template>
+                    <!-- Chapter 10 -->
+
+                    <br />
+                    <hr />
+
+
+                    <!-- Chapter 11 -->
+                    <h2> Chapter 11</h2>
+                      <template v-for="chapter in chapters">
+                        <template v-if="chapter.term == 'Chapter 10'">
+                          <h4> Definitions </h4>
+                          <ul>
+                            <template v-for="definition in chapter.definitions">
+                                <li><strong>{{ definition.term }}</strong>: {{definition.definition}}</li>
+                            </template>
+                          </ul>
+                          <h4>Concepts </h4>
+                          <ul>
+                            <template v-for="concept in chapter.concepts">
+                                <li><strong>{{ concept.term }}</strong>: {{ concept.definition }}</li>
+                            </template>
+                          </ul>
+                        </template>
+                      </template>
+                      <!-- Chapter 11 -->
+
+                      <br />
+                      <hr />
 
       <!--Page Content-->
   `,
@@ -204,10 +250,6 @@ Vue.component('statistics-component', {
               { term: 'Subjective probability', definition: 'Based on a person\'s beliefs'},
               { term: '', definition: ''},
               { term: '', definition: ''},
-              { term: '', definition: ''},
-              { term: '', definition: ''},
-              { term: '', definition: ''},
-              { term: '', definition: ''},
             ],
             concepts: [
               { term: 'How many ways to put a list in order', definition: 'Where list size is n, n! (factorial)'},
@@ -218,8 +260,6 @@ Vue.component('statistics-component', {
               { term: 'Pascall\s triangle:', definition: 'can be computeed using twos coefficients'},
               { term: '', definition: ''},
               { term: '', definition: ''},
-              { term: '', definition: ''},
-              { term: '', definition: ''},
             ],
           },
           {
@@ -228,12 +268,81 @@ Vue.component('statistics-component', {
               { term: 'Random variable', definition: 'numerical variable whose value depends on the outcome of a chance experiment. Associates a numerical value with each outcome of a chance experiment'},
               { term: 'Discrete random variable', definition: 'Random variable is discrete if its set of possible values is a collection of isolated points along the number line'},
               { term: 'Continuous random variable', definition: 'Random variable is continuous if its set of posbile values includes an entire interval on the number line'},
-              { term: '', definition: ''},
-              { term: '', definition: ''},
             ],
             concepts: [
               { term: 'How many samples to take in etc. ', definition: 'Sample SIZE varies, but you always just take a single sample.  '},
               { term: 'We use lowecase letters like, \'x\' to represent random variables', definition: ''},
+            ],
+          },
+          {
+            term: 'Chapter 10',
+            definitions: [
+              { term: 'Power', definition: 'Probability of not making a mistake'},
+              { term: 'Beta', definition: 'Probability of making an error, shoot for only 20% in social sciences '},
+              { term: 'T-test', definition: 'An analysis of two populations means through the use of statistical examination; a t-test with two samples is commonly used with small sample sizes, testing the difference between the samples when the variances of two normal distros are not known.'},
+              { term: 'Type 2 error: ', definition: ''},
+              { term: 'Type 1 error: ', definition: ''},
+              { term: 'H0', definition: 'null hypothesis.  Sample observations result purely from chance.'},
+              { term: 'HA', definition: 'alternative hypothesis.  hypothesis that sample observations are influenced by some non-random cause. '},
+              { term: 'Hypothesis', definition: 'A claim aboutt he value of a population characteristic'},
+              { term: 'Null hypothesis, H0', definition: 'The hypothesis initially assumed to be true.  It has the form H0: population characteristic = hypothesized value.'},
+              { term: 'Alternative hypothesis', definition: 'A hypothesis that specifies a claim that is contradictory to H0 and is judged the more plausible claim when H0 is rejected.'},
+              { term: ' A B testing ', definition: ' Send different things to different people and see which one works better'},
+              { term: 'Type I error', definition: 'Rejecting H0 when H0 is true; the probability of a Type I error is denoted by alpha and is referrred to as the significance level for the test. '},
+              { term: 'Type II error', definition: 'Not rejecting H0 when H0 is false;  the probability of a Type II error is denoted by Beta'},
+              { term: 'Test statistic', definition: 'A value computer from sample data that is then used as the basis for making a decision between H0 and H1'},
+              { term: 'Page 628', definition: 'All of the formulas and stuff'},
+              { term: 'Skipping the 2 - sample "pooled" t-test.', definition: 'aka homoskedastic'},
+              { term: 'Generic confidence interval (CI): ', definition: 'estimater +- critical value times the standard error of estimater'},
+              { term: 'Generic Hypothesis test (HT) ', definition: '(estimater - null hypothesis)/(standard error of estimator).  So this asks could the difference be plausibly due to chance?'},
+              { term: 'Pythagorean theorm of stats', definition: 'var(xbarA-xbarB) = var(xbarA) + var(-xbarB) if independent or uncorrelated.  '},
+              { term: 'Standard error is basically ', definition: 'the standard deviation'},
+              { term: 'SE(xbarA - xbarB) = sqrt(sa^2 + ', definition: ''},
+              { term: 'Different spreads: ', definition: 'heteroskedastics'},
+              { term: 'Since the pvalue of .53 in the given equation in notes, is above alpha = .05, we fail to reject h0.  We don\'t have strong evidence that the means are not equal.', definition: ''},
+              { term: 'For C, same idea: estimator +- the crit value. * SE.  ', definition: ''},
+              { term: 'Assumptions that are made for both CI and HT: ', definition: 'There were simple random samples, independent samples, within groups as usual and between groups now too'},
+              { term: 'Indep samples ! within groups as usual and between groups now too, otherwise the SE formula is wrong', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+            ],
+            concepts: [
+              { term: 'You can do stuff to graphs to make stuff work better but not always irl.  F. ', definition: ''},
+              { term: 'Moving Ha away from H0 ', definition: 'Beta- got small, power got bigger, alpha didn\'t change.  '},
+              { term: 'Changing the cutoff', definition: 'if Beta got smaller alpha got bigger.'},
+              { term: '"rejecting the null: "', definition: ' means rejecting the null hypothesis'},
+              { term: 'what can\'t hypothesis test prove: ', definition: ' can never prove that things are equal.  even if xbar is very close to mew. '},
+              { term: 'hypothesis test: ', definition: ' used to determine whether there is enough evidence in a sample of data to infer that a certain condition is true for an entire population.'},
+              { term: 'confidence interval: ', definition: 'khan link: https://www.khanacademy.org/math/statistics-probability/confidence-intervals-one-sample/estimating-population-mean/v/confidence-interval-1'},
+              { term: 'Two types of hypothesis tests - t tests or z tests.  Practice both: ', definition: 'Khan video: https://www.khanacademy.org/math/statistics-probability/significance-tests-one-sample/tests-about-population-mean/v/hypothesis-testing-and-p-values'},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+            ],
+          },
+          {
+            term: 'Chapter 11',
+            definitions: [
+              { term: 'Paired t-test', definition: 'Commonly used with small sample sizes'},
+              { term: 't-test', definition: 'Commonly used to determine whether the mean of a population significantly differes from a specific value (hypothesized mean) or from the mean of another population.  analysis of two populations through he use of statistical examination.  '},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+            ],
+            concepts: [
+              { term: 'Paired t-test', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
+              { term: '', definition: ''},
               { term: '', definition: ''},
             ],
           },
