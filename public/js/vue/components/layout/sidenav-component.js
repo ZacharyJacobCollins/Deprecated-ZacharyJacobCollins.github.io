@@ -49,12 +49,6 @@ Vue.component('sidenav-component', {
             { text: "Djikstra's Algorithm", component: 'djikstras-component' },
           ]
         },
-        // {
-        //   title: 'Tools',
-        //   content: [
-        //     { text: 'Unclosed tag finder', component: 'unclosedtagfinder-component' },
-        //   ]
-        // },
         {
           title: 'Projects',
           //The array of projects coming from the projects vue component
@@ -77,6 +71,7 @@ Vue.component('sidenav-component', {
             { text: 'Vue.js', component: 'vue-component'},
             { text: 'Excel', component: 'excel-component'},
             { text: 'CSS', component: 'css-component'},
+            { text: 'Emmet', component: 'emmet-component'},
           ]
         },
         {
